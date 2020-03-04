@@ -84,6 +84,12 @@ body {
   width: 100%;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4); }
 
+.project__details {
+  font-size: 1.5rem;
+  min-height: 3rem;
+  margin-top: 5px;
+  text-align: center; }
+
 .project__icon {
   height: 1.5rem;
   width: 2.5rem;
@@ -115,8 +121,11 @@ body {
   justify-self: center;
   font-size: 1.6rem;
   color: #475bc7; }
-  .footer span {
-    color: #ff0000; }
+  .footer__icon {
+    fill: #ff0000;
+    height: 1.5rem;
+    width: 2.5rem;
+    transform: translateY(3px); }
   .footer__link {
     text-decoration: none;
     color: currentColor;

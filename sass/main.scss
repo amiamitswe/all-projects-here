@@ -123,6 +123,13 @@ body {
     box-shadow: 0 1rem 2rem rgba(0,0,0,0.4);
   }
 
+  &__details {
+    font-size: 1.5rem;
+    min-height: 3rem;
+    margin-top: 5px;
+    text-align: center;
+  }
+
   &__icon {
     height: 1.5rem;
     width: 2.5rem;
@@ -163,8 +170,11 @@ body {
   font-size: 1.6rem;
   color: $link-color;
 
-  span {
-    color: $color-red;
+  &__icon {
+    fill: $color-red;
+    height: 1.5rem;
+    width: 2.5rem;
+    transform: translateY(3px);
   }
 
   &__link {
