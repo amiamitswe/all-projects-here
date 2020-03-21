@@ -1,0 +1,61 @@
+.sk-header {
+  &__offer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+
+    &--link {
+      text-decoration: none;
+
+      &:hover {
+        cursor: pointer;
+        color: $color-white;
+      }
+    }
+  }
+  &__logo-d {
+    height: 4rem;
+}
+  &__icon {
+    height: 2.4rem;
+  }
+
+  &__country-icon {
+    height: 1.7rem;
+  }
+
+  &__nav-desktop {
+    display: block;
+
+    @include respond(phone) {
+      display: none;
+    }
+  }
+
+  &__user-m {
+    margin-right: 10px;
+}
+
+  &__nav-mobile {
+    display: none;
+
+    @include respond(phone) {
+      display: block;
+
+      &--logo {
+        @include centerContent;
+        width: 8.786rem;
+        height: 3rem;
+      }
+    }
+  }
+
+  &__navbar {
+    padding: 1rem 0;
+
+    @include respond(phone) {
+      padding: 0.5rem 0;
+    }
+  }
+}

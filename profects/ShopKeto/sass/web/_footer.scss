@@ -1,0 +1,188 @@
+.footer {
+  padding-top: 3.2rem;
+
+  @include respond (phone) {
+    padding: 3.2rem 2rem 0;
+    margin-top: 1rem;
+  }
+
+  &__top {
+    padding-bottom: 3rem;
+  }
+  &__logo {
+    width: 8.185rem;
+    height: 3.572rem;
+  }
+
+  &__nav {
+    margin-top: 3.5rem;
+  }
+
+  &__nav-content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 0;
+
+    @include respond (phone) {
+      flex-direction: column;
+    }
+  }
+
+  &__nav-item {
+    @include respond (phone) {
+      &:not(:first-child) {
+        margin-top: 2.2rem;
+      }
+    }
+}
+
+&__nav-item-d {
+  @include respond (phone) {
+    display: none;
+  }
+}
+
+&__nav-item-m {
+  display: none;
+
+  @include respond (phone) {
+    display: block;
+    border-bottom: 1px solid $border-color-2;
+  }
+}
+
+  &__links-list {
+    list-style: none;
+
+    li {
+      display: block;
+      line-height: $line-height-21;
+    }
+  }
+
+  &__link {
+    text-transform: capitalize;
+
+    &:hover {
+      color: $color-gray;
+      cursor: pointer;
+    }
+  }
+
+  &__social-icon {
+    list-style: none;
+    margin-left: -0.7rem;
+    margin-top: 0.4rem;
+
+    li {
+      display: inline;
+
+      &:not(:last-child) {
+        margin-right: 2.4rem;
+
+        @include respond (phone) {
+          margin-right: 1.4rem;
+        }
+      }
+
+      img {
+        width: 2rem;
+        height: 2rem;
+      }
+    }
+  }
+
+  &__payments-title {
+    @include respond (phone) {
+      margin-left: -.5rem;
+    }
+  }
+
+  &__payments {
+    margin-top: 1.8rem;
+  }
+
+  &__verified {
+    height: 3.7rem;
+  }
+
+  &__payments-icons {
+    list-style: none;
+    margin-left: -0.6rem;
+    margin-top: 1.8rem;
+
+    li {
+      display: inline-block;
+
+      img {
+        width: 4.251rem;
+        height: 3.694rem;
+      }
+    }
+  }
+
+  &__bottom {
+    padding: 0.8rem 0 1.2rem;
+
+    @include respond (phone) {
+      padding-bottom: 2rem;
+    }
+  }
+
+  &__bottom-content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+    @include respond (phone) {
+      flex-direction: column;
+    }
+  }
+
+  &__bottom-copy {
+    display: flex;
+    align-items: center;
+
+    @include respond (phone) {
+      padding: .5rem 0 1rem;
+    }
+  }
+
+  &__bottom-text {
+    &-left {
+      text-align: left;
+    }
+
+    &-right {
+      text-align: right;
+
+      @include respond (phone) {
+        text-align: left;
+      }
+    }
+  }
+
+  .expend-icon {
+    padding: .6rem 0;
+    border-top: 1px solid $border-color-2;
+    position: relative; 
+  
+    &::after {
+      position: absolute;
+      content: url(../images/down.png);
+      right: 0;
+    }
+    
+    &[aria-expanded="false"]::after {
+      transform: rotate(0deg);
+      top: .4rem;
+    }
+  
+    &[aria-expanded="true"]::after {
+      transform: rotate(180deg);
+      top: 1rem;
+    }
+  }
+}
+
