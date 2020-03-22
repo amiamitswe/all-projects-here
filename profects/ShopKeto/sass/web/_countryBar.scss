@@ -51,9 +51,10 @@
 
   &__sub-list {
     background-color: $color-white-country;
+    list-style: none;
 
     > li {
-      padding: .7rem 0 1.3rem;
+      padding: 1.3rem 0;
 
       &:not(:last-child) {
         border-bottom: 1px solid $border-color-1;
