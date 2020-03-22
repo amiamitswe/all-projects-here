@@ -11,8 +11,10 @@
   <link rel="stylesheet" href="./css/bootstrap4.4.1/bootstrap.min.css">
   <link rel="stylesheet" href="./css/main.css">
 </head>
-<body>
 
+
+<body>
+  <div class="add_overlay">
   <header class="sk-header">
     <!-- header offer section  -->
     <div class="color-black-bg text-center">
@@ -31,7 +33,7 @@
       
           <ul class="navbar-nav ml-md-auto text-right">
             <li class="nav-item">
-              <a class="nav-link p-2" href="#"><img src="./images/country.png" class="img-fluid sk-header__country-icon" alt="country"><i class="fas fa-chevron-down country_select-arrow color-black"></i></a>
+              <a class="nav-link p-2 sk-header__country" href="javascript:void(0);"><img src="./images/country.png" class="img-fluid sk-header__country-icon" alt="country"><i class="fas fa-chevron-down country_select-arrow color-black"></i></a>
             </li>
 
             <li class="nav-item">
@@ -51,7 +53,7 @@
       <div class="container">
         <div class="navbar navbar-expand flex-md-row bd-navbar">
 
-          <a class="nav-link p-2" href="#"><img src="./images/country.png" class="img-fluid country__mobile" alt="country"><i class="fas fa-chevron-down country_select-arrow color-black"></i></a>
+          <a class="nav-link p-2 sk-header__country" href="javascript:void(0);"><img src="./images/country.png" class="img-fluid country__mobile" alt="country"><i class="fas fa-chevron-down country_select-arrow color-black"></i></a>
 
           <a class="m-auto" href="/" aria-label="Bootstrap">
             <img src="./images/pruvitnow-logo-m.png" class="img-fluid  sk-header__nav-mobile--logo" alt="Logo desktop">
@@ -275,7 +277,7 @@
   <footer class="footer color-black-bg">
     <section class="footer__top border-bottom-2">
       <div class="container">
-        <div class="footer__logo">
+        <div class="footer__logo-box">
           <a href="#"><img src="./images/pruvitnow-logo-footer.png" alt="Logo Footer" class="img-fluid footer__logo"></a>
         </div>
 
@@ -327,7 +329,7 @@
                   </div>
               
                   <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-                    <ul class="footer__links-list">
+                    <ul class="footer__links-list-m">
                       <li><a href="#" class="footer__link disclaimer-reg color-gray">Join as Customer</a></li>
                       <li><a href="#" class="footer__link disclaimer-reg color-gray">Join as Promoter</a></li>
                       <li><a href="#" class="footer__link disclaimer-reg color-gray">Upgrade to Promoter</a></li>
@@ -343,7 +345,7 @@
                   </div>
               
                   <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                    <ul class="footer__links-list">
+                    <ul class="footer__links-list-m">
                       <li><a href="#" class="footer__link disclaimer-reg color-gray">About</a></li>
                       <li><a href="#" class="footer__link disclaimer-reg color-gray">Promoter Rewards</a></li>
                     </ul>
@@ -358,7 +360,7 @@
                   </div>
               
                   <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                    <ul class="footer__links-list">
+                    <ul class="footer__links-list-m">
                       <li><a href="#" class="footer__link disclaimer-reg color-gray">Help Center</a></li>
                       <li><a href="#" class="footer__link disclaimer-reg color-gray">Privacy</a></li>
                       <li><a href="#" class="footer__link disclaimer-reg color-gray">Refund Policy</a></li>
@@ -412,13 +414,67 @@
       </div>
     </section>
   </footer>
+</div>
+
+<!-- --------------------------------  -->
+<!-- country menu  -->
+<div class="sk-country color-white-bg">
+  <ul class="sk-country__list accordion" id="accordionExample">
+    <li class="sk-country__list-close">
+      <a href="javascript:void(0);" class="sk-country__link button color-black">
+        <img src="./images/cross-sign.png" alt="Cross sign" class="img-fluid cross-sign">
+        <!-- &times; -->
+      </a>
+    </li>
 
 
+    <li>
+      <a href="javascript:void(0);" class="sk-country__link button color-black sk-country__expend-icon" data-toggle="collapse"  id="headingOne" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+        <img class="img-fluid sk-country__logo" src="./images/us.png" alt="US">English
+      </a>
   
+      <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <ul class="sk-country__sub-list">
+          <li><a href="#" class="sk-country__sub-link disclaimer-reg color-black">English</a></li>
+          <li><a href="#" class="sk-country__sub-link disclaimer-reg color-black">Español</a></li>
+        </ul>
+      </div>
+    </li>
 
+    <li>
+      <a href="javascript:void(0);" class="sk-country__link button color-black sk-country__expend-icon" data-toggle="collapse"  id="headingTwo" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        <img class="img-fluid sk-country__logo" src="./images/canada.png" alt="US">Canada
+      </a>
+  
+      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+        <ul class="sk-country__sub-list">
+          <li><a href="#" class="sk-country__sub-link disclaimer-reg color-black">English</a></li>
+          <li><a href="#" class="sk-country__sub-link disclaimer-reg color-black">Español</a></li>
+        </ul>
+      </div>
+    </li>
 
+    <li>
+      <a href="javascript:void(0);" class="sk-country__link button color-black sk-country__expend-icon" data-toggle="collapse"  id="headingThree" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        <img class="img-fluid sk-country__logo" src="./images/us.png" alt="US">English
+      </a>
+  
+      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+        <ul class="sk-country__sub-list">
+          <li><a href="#" class="sk-country__sub-link disclaimer-reg color-black">English</a></li>
+          <li><a href="#" class="sk-country__sub-link disclaimer-reg color-black">Español</a></li>
+        </ul>
+      </div>
+    </li>
 
+    <li>
+      <a href="#" class="sk-country__link button color-black" data-toggle="collapse"  id="headingFour" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+        <img class="img-fluid sk-country__logo" src="./images/canada.png" alt="US">Canada
+      </a>
+    </li>
 
+  </ul>
+</div>
 
   
   <script src="https://kit.fontawesome.com/c64fff7a9f.js" crossorigin="anonymous"></script>

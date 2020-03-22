@@ -31,7 +31,7 @@ body {
 }
 
 .row {
-  @include respond (phone) {
+  @include respond (tab_land) {
     margin-left: 0;
     margin-right: 0;
   }

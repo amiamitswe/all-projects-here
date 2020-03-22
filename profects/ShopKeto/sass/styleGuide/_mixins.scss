@@ -3,8 +3,8 @@
 /*------
 0 - 767px: phone
 767 - 900px: tab-portrait
-900 - 1200px: tab-landscape
-[1200 - 1800] is regular style apply
+900 - 1024px: tab-landscape
+[1024 - 1800] is regular style apply
 ---------*/
 
 //BREAKPOINTS ARGUEMENT CHOICES
@@ -29,7 +29,7 @@
   }
 
   @if $breakpoint == tab_land {
-    @media only screen and (max-width: 75em) {
+    @media only screen and (max-width: 64em) {
       @content;
     } //1200px
   }

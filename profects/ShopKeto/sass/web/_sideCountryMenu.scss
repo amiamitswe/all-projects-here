@@ -1,0 +1,19 @@
+.sk-country {
+  position: fixed;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+  transition: all 0.2s;
+}
+
+.sk-country__show {
+  transform: translateX(0);
+}
+
+.overlay {
+  opacity: 0.9;
+  filter: blur(5px);
+  z-index: -1;
+  position: relative;
+  user-select: none;
+}
