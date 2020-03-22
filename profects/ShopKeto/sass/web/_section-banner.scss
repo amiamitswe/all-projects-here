@@ -11,15 +11,15 @@
   &__title {
     margin-bottom: 4rem;
 
-    @include respond (phone) {
+    @include respond(phone) {
       margin-bottom: 3rem;
     }
 
     &-b {
       margin-top: 1rem;
 
-      @include respond (phone) {
-        margin-top: .5rem;
+      @include respond(phone) {
+        margin-top: 0.5rem;
       }
     }
   }
@@ -28,7 +28,7 @@
     padding: 5rem 8.5rem;
     border-radius: 2rem;
 
-    @include respond (phone) {
+    @include respond(phone) {
       padding: 2.7rem 3rem;
       text-align: center;
     }
@@ -37,13 +37,13 @@
   &__left {
     margin-top: 5.5rem;
 
-    @include respond (phone) {
+    @include respond(phone) {
       margin-top: 0;
     }
   }
 
   &__subtitle-m {
-    @include respond (phone) {
+    @include respond(phone) {
       font-size: $font-mid-small-m;
       line-height: $line-height-31;
     }
@@ -51,22 +51,21 @@
 
   &__how-it-work {
     margin-top: 3rem;
-    @include respond (phone) {
+    @include respond(phone) {
       margin-top: 1rem;
     }
     .a-link {
-      @include respond (phone) {
+      @include respond(phone) {
         font-size: $default-fontsize-m;
         line-height: $line-height-24;
       }
     }
-  
   }
 
   &__banner-btn {
     margin-top: 4.5rem;
 
-    @include respond (phone) {
+    @include respond(phone) {
       margin-top: 1.5rem;
     }
   }
@@ -74,15 +73,14 @@
   &__banner-img {
     width: 46.463rem;
 
-    @include respond (phone) {
+    @include respond(phone) {
       width: 21.1rem;
     }
   }
 
   &__right {
-    @include respond (phone) {
+    @include respond(phone) {
       margin-top: 2.4rem;
     }
   }
-
 }
