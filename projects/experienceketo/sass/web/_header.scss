@@ -1,0 +1,56 @@
+.ek-header {
+  padding: 1.1rem 0;
+
+  @include respond(phone) {
+    padding: 0.9rem 0;
+  }
+
+  &__desktop {
+    display: block;
+
+    @include respond(phone) {
+      display: none;
+    }
+  }
+
+  &__mobile {
+    display: none;
+
+    @include respond(phone) {
+      display: block;
+    }
+  }
+
+  &__logo-box {
+    max-width: 11.8rem;
+
+    @include respond(phone) {
+      max-width: 8.786rem;
+      margin: 0 auto;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__country {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -ms-flex-item-align: center;
+    align-self: center;
+
+    @include respond(phone) {
+      position: absolute;
+      right: 2rem;
+    }
+
+    img {
+      max-height: 1.7rem;
+    }
+  }
+}

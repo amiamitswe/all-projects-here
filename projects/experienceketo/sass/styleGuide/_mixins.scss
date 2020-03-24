@@ -1,0 +1,46 @@
+// MEDIA QUERY MANAGER
+
+/*------
+0 - 767px: phone
+767 - 900px: tab-portrait
+900 - 1024px: tab-landscape
+[1024 - 1800] is regular style apply
+---------*/
+
+//BREAKPOINTS ARGUEMENT CHOICES
+/*------- 
+- phone
+- tab_port
+- tab_land
+1em = 16px
+--------*/
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 47.94em) {
+      @content;
+    } //767px
+  }
+
+  @if $breakpoint == tab_port {
+    @media only screen and (max-width: 56.25em) {
+      @content;
+    } //900 px
+  }
+
+  @if $breakpoint == tab_land {
+    @media only screen and (max-width: 64em) {
+      @content;
+    } //1024px
+  }
+}
+
+// center content
+@mixin centerContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}

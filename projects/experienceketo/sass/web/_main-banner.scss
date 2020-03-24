@@ -1,0 +1,174 @@
+.ek-main {
+  padding-bottom: 5rem;
+
+  @include respond(phone) {
+    padding: 0 1.7rem 5rem;
+  }
+
+  &__banner-top {
+    margin-top: 5.3rem;
+    margin-bottom: 0.5rem;
+
+    @include respond(phone) {
+      margin-top: 2rem;
+    }
+  }
+
+  &__title {
+    &-d {
+      display: block;
+      @include respond(phone) {
+        display: none;
+      }
+    }
+
+    &-m {
+      display: none;
+
+      @include respond(phone) {
+        display: block;
+      }
+    }
+  }
+
+  &__learn-more {
+    padding-top: 2rem;
+
+    @include respond(phone) {
+      padding-top: 1rem;
+    }
+  }
+
+  &__video-section {
+    @include respond(phone) {
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  &__get-title {
+    margin: 3.5rem 0 2.5rem;
+
+    @include respond(phone) {
+      margin: 1.5rem 0 1.7rem;
+    }
+  }
+
+  &__from-container {
+    max-width: 570px;
+    margin: 0 auto;
+    padding-bottom: 3.8rem;
+  }
+
+  &__c-from {
+    font-family: $acumin-pro;
+    font-style: normal;
+    font-weight: $font-regular;
+    font-size: $font-18;
+    line-height: $line-height-25;
+    color: $color-black;
+    padding: 1rem 0.9rem;
+    border-radius: 0.5rem;
+    background-color: $border-color-3;
+    height: auto;
+
+    &:focus {
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      background-color: $color-white;
+      border: 1px solid $color-brand;
+    }
+
+    &::-webkit-input-placeholder {
+      color: $color-gray;
+    }
+
+    &::-moz-placeholder {
+      color: $color-gray;
+    }
+
+    &:-ms-input-placeholder {
+      color: $color-gray;
+    }
+
+    &::-ms-input-placeholder {
+      color: $color-gray;
+    }
+
+    &::placeholder {
+      color: $color-gray;
+    }
+  }
+
+  .title {
+    font-family: $acumin-pro;
+    font-style: normal;
+    font-weight: $font-bold;
+    font-size: $font-12;
+    line-height: $line-height-18;
+    color: $color-brand;
+
+    position: absolute;
+    left: 1.6rem;
+    top: 0px;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+    visibility: visible;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+
+    z-index: 100;
+  }
+
+  &__c-from:placeholder-shown + .title {
+    opacity: 0;
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+    visibility: hidden;
+  }
+
+  &__select-c-code {
+    padding-left: 5rem;
+  }
+
+  .input-group-prepend {
+    position: absolute;
+    height: 100%;
+    border: none;
+  }
+
+  .input-group-text {
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+
+    img {
+      max-height: 1.6rem;
+      margin-right: 0.5rem;
+    }
+  }
+
+  &__from-row {
+    .form-group {
+      margin-bottom: 0.8rem;
+    }
+  }
+
+  &__button {
+    width: 100%;
+    margin-top: 1.4rem;
+
+    @include respond(phone) {
+      margin-top: 0.8rem;
+    }
+
+    button {
+      max-width: 100%;
+      padding: 1.7rem 1rem;
+    }
+  }
+}
