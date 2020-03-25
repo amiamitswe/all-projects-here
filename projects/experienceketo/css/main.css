@@ -859,19 +859,13 @@ p {
 }
 
 .ek-modal-hands .ek-modal-hands__close {
-  padding: 0.7rem 0.8rem;
+  padding: 0.7rem;
   margin: -2rem -1.2rem -1rem auto;
   font-size: 2rem;
   background-color: #ffffff;
   line-height: 1rem;
   opacity: 1;
   border-radius: 50%;
-}
-
-@media only screen and (max-width: 47.94em) {
-  .ek-modal-hands .ek-modal-hands__close {
-    line-height: 0;
-  }
 }
 
 .ek-modal-hands__footer {
