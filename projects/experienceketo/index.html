@@ -60,7 +60,7 @@
         </div>
 
         <div class="ek-main__from-container border-bottom-1">
-          <form>
+          <form action="javascript:void(0);">
 
             <div class="form-row ek-main__from-row">
               <div class="form-group col-md-6 col-6">
@@ -90,7 +90,7 @@
               </div>
 
               <div class="ek-main__button col-12">
-                <button class="button button-large button-primary button-icon">Buy now</button>
+                <button class="button button-large button-primary button-icon" data-toggle="modal" data-target="#headsUpModal">Buy now</button>
               </div>
 
 
@@ -103,10 +103,10 @@
     <section class="ek-independent">
       <div class="container ek-main__from-container">
         <article class="ek-independent__join">
-          <a href="#" class="color-brand ek-independent__join-item ek-independent__link">🛒 shop now</a>
+          <a href="#" class="color-brand ek-independent__join-item ek-independent__link" data-toggle="modal" data-target="#disclaimerModal">🛒 shop now</a>
           <p class="color-gray ek-independent__join-item">OR</p>
 
-          <a href="#" class="color-brand ek-independent__join-item ek-independent__link">🌟 join as a promoter</a>
+          <a href="#" class="color-brand ek-independent__join-item ek-independent__link" data-toggle="modal" data-target="#disclaimerModal">🌟 join as a promoter</a>
         </article>
 
         <div class="ek-independent__pruver">
@@ -140,8 +140,54 @@
       </div>
     </section>
 
-
   </main>
+
+
+
+  <!-- Modal 1 -->
+<div class="modal fade ek-modal-hands" id="headsUpModal" tabindex="-1" role="dialog" aria-labelledby="headsUpModalTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content ek-modal-hands__content">
+      <div class="modal-header ek-modal-hands__header">
+        <h4 class="color-white" id="exampleModalLongTitle">Heads up! We are redirecting you to a 3rd party website for Steve to process your request.</h4>
+        <button type="button" class="close ek-modal-hands__close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <img class="img-fluid" src="./images/close-icon-red.png" alt="&times;"></span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="disclaimer-reg color-white">Please note that by clicking Continue, you agree that any follow-up requests related to your purchase will be directed to Steve. Prüvit is not responsible for the payment, shipping or refunds.</p>
+      </div>
+      <div class="modal-footer ek-modal-hands__footer d-block text-center">
+        <button type="button" class="button color-white-bg ek-modal-hands__agree-btn" data-dismiss="modal" >Continue</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal 2 -->
+<div class="modal fade ek-modal-dis" id="disclaimerModal" tabindex="-1" role="dialog" aria-labelledby="disclaimerModalTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content color-white-bg ek-modal-dis__content">
+      <div class="modal-header ek-modal-dis__header">
+        <h4 class="color-black" id="exampleModalLongTitle">Disclaimer</h4>
+        <button type="button" class="close ek-modal-dis__close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <img class="retina-img img-fluid" src="./images/close-icon.png" alt="&times;"></span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="disclaimer-reg color-gray">Please note that by clicking Agree, you are acknowledging your understanding and agreement that any follow-up requests related to purchases made via your custom link will be handled personally with the requester. Prüvit is not responsible for any issues that arise in regards to the payment, shipping or refunds of their purchase.</p>
+      </div>
+      <div class="modal-footer ek-modal-dis__footer d-block text-center">
+        <button type="button" class="button button-primary ek-modal-dis__agree-btn" data-dismiss="modal">I Agree</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
   
 
 

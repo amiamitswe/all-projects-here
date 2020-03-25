@@ -1,0 +1,28 @@
+.ek-modal-dis {
+  &__content {
+    padding: 3rem 2.1rem 2.2rem;
+    border-radius: 0.5rem;
+    border: none;
+  }
+
+  &__header {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  #{&}__close {
+    margin: -3rem -1.7rem -1rem auto;
+    font-size: 2rem;
+    opacity: 0.7;
+  }
+
+  &__footer {
+    border-top: none;
+    margin-top: 25px;
+  }
+
+  &__agree-btn {
+    max-width: 17.5rem;
+    border-radius: 5rem;
+  }
+}
