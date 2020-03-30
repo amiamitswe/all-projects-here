@@ -1,0 +1,55 @@
+/* The custom-radio */
+.custom-radio {
+  display: block;
+  position: relative;
+  margin-bottom: 1px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.custom-radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 15px;
+  left: 14px;
+  width: 18.23px;
+  height: 18px;
+    border-radius: 50%;
+    border: 1px solid $color-black;
+}
+
+.custom-radio:hover input ~ .checkmark {
+  background-color: #fff;
+}
+
+.custom-radio input:checked ~ .checkmark {
+  border-color: $color-brand;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.custom-radio input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.custom-radio .checkmark:after {
+  width: 9.12px;
+  height: 9px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	border-radius: 50%;
+	background: $color-brand;
+}

@@ -1,0 +1,65 @@
+.sk-product {
+
+  &__banner-right {
+    @include respond (phone) {
+      margin-top: 60px;
+    }
+  }
+
+  &__title {
+    margin-top: -10px;
+  }
+
+  &__short-details {
+    max-width: $content-width;
+    margin-top: 10px;
+  }
+
+  &__savings{
+    margin-top: 30px;
+  }
+
+  &__form {
+    max-width: $content-width;
+    margin-top: 55px;
+  }
+
+  &__form-item {
+    &:not(:first-child) {
+      margin-top: 20px;
+    }
+
+    .what-this {
+      &:hover {
+        color: $color-brand;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__select-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+
+  &__user-select {
+    width: 100%;
+    height: auto;
+    background-color: $border-color-3;
+    border: 0.5px solid $border-color-3;
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+
+  &__select-flavor {
+    padding: 11px 12px 15px;
+  }
+
+  &__select-formula {
+    padding: 11px 20px 15px 40px;
+  }
+  
+
+}

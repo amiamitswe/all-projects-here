@@ -1,0 +1,86 @@
+.sk-main {
+  &__top {
+    margin-top: 63px;
+
+    @include respond(phone) {
+      padding: 0 18px;
+      margin-top: 30px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 40px;
+
+    @include respond(phone) {
+      margin-bottom: 30px;
+    }
+
+    &-b {
+      margin-top: 10px;
+
+      @include respond(phone) {
+        margin-top: 5px;
+      }
+    }
+  }
+
+  &__banner {
+    padding: 50px 85px;
+    border-radius: 20px;
+
+    @include respond(phone) {
+      padding: 27px 30px;
+      text-align: center;
+    }
+  }
+
+  &__left {
+    margin-top: 55px;
+
+    @include respond(phone) {
+      margin-top: 0;
+    }
+  }
+
+  &__subtitle-m {
+    @include respond(phone) {
+      font-size: $font-mid-small-m;
+      line-height: $line-height-31;
+    }
+  }
+
+  &__how-it-work {
+    margin-top: 30px;
+    @include respond(phone) {
+      margin-top: 10px;
+    }
+    .a-link {
+      @include respond(phone) {
+        font-size: $default-fontsize-m;
+        line-height: $line-height-24;
+      }
+    }
+  }
+
+  &__banner-btn {
+    margin-top: 45px;
+
+    @include respond(phone) {
+      margin-top: 15px;
+    }
+  }
+
+  &__banner-img {
+    width: 464.63px;
+
+    @include respond(phone) {
+      width: 211px;
+    }
+  }
+
+  &__right {
+    @include respond(phone) {
+      margin-top: 24px;
+    }
+  }
+}

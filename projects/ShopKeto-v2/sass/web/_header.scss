@@ -1,0 +1,80 @@
+.sk-header {
+  &__offer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 10px 0;
+
+    &--link {
+      text-decoration: none;
+
+      &:hover {
+        cursor: pointer;
+        color: $color-white;
+      }
+    }
+  }
+
+  &__logo-box {
+    max-width: 118px;
+  }
+  &__logo-d {
+    width: 100%;
+  }
+
+  &__icon {
+    height: auto;
+
+    @include respond (phone) {
+      height: 24px;
+    }
+  }
+
+  #{&}__nav-link.nav-link {
+    padding: 6px;
+  }
+
+  &__country-icon {
+    height: 17px;
+  }
+
+  &__nav-desktop {
+    display: block;
+
+    @include respond(phone) {
+      display: none;
+    }
+  }
+
+  &__user-m {
+    margin-right: 5px;
+  }
+
+  &__nav-mobile {
+    display: none;
+
+    @include respond(phone) {
+      display: block;
+
+      &--logo {
+        @include centerContent;
+        width: 87.86px;
+        height: 30px;
+      }
+    }
+  }
+
+  &__navbar {
+    padding: 10px 0;
+
+    @include respond(phone) {
+      padding: 5px 0;
+    }
+  }
+}

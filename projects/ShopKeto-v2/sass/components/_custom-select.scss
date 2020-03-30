@@ -1,0 +1,36 @@
+/* custom select */
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+
+  flex: 1;
+  cursor: pointer;
+}
+/* Remove IE arrow */
+select::-ms-expand {
+  display: none;
+}
+
+.select {
+  position: relative;
+  display: flex;
+}
+
+.select::after {
+  content: '\f0d7';
+  font-family: $FontAwesome;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  pointer-events: none;
+  -webkit-transition: .25s all ease;
+  -o-transition: .25s all ease;
+  transition: .25s all ease;
+  color: $color-black;
+}
+
+.select:hover::after {
+  color: $color-brand;
+}
