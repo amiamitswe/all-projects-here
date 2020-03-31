@@ -315,10 +315,18 @@ p {
   &-white-dsrk-bg {
     background-color: $color-white-dark;
   }
+
+  &-green {
+    color: $color-green;
+  }
 }
 
 /* ----------------------- retina-img ---------------------------*/
 .retina-img {
   width: 50%;
   height: auto;
+}
+
+.full-width {
+  max-width: 100%;
 }

@@ -18,12 +18,15 @@
 
 .checkmark {
   position: absolute;
-  top: 15px;
+  top: 18px;
   left: 14px;
-  width: 18.23px;
+  // top: 50%;
+  // left: 6%;
+  // transform: translate(-50%, -50%);
+  width: 18px;
   height: 18px;
-    border-radius: 50%;
-    border: 1px solid $color-black;
+  border-radius: 50%;
+  border: 1px solid $color-black;
 }
 
 .custom-radio:hover input ~ .checkmark {
@@ -45,11 +48,11 @@
 }
 
 .custom-radio .checkmark:after {
-  width: 9.12px;
+  width: 9px;
   height: 9px;
   top: 50%;
-  left: 50%;
+  left: 49%;
   transform: translate(-50%, -50%);
-	border-radius: 50%;
-	background: $color-brand;
+  border-radius: 50%;
+  background: $color-brand;
 }

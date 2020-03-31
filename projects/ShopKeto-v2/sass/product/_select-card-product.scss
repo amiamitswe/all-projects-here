@@ -1,7 +1,6 @@
 .sk-product {
-
   &__banner-right {
-    @include respond (phone) {
+    @include respond(phone) {
       margin-top: 60px;
     }
   }
@@ -15,7 +14,7 @@
     margin-top: 10px;
   }
 
-  &__savings{
+  &__savings {
     margin-top: 30px;
   }
 
@@ -58,8 +57,50 @@
   }
 
   &__select-formula {
-    padding: 11px 20px 15px 40px;
-  }
-  
+    padding: 13px 20px 14px 44px;
 
+    &.every-month {
+      padding-top: 8px;
+      padding-bottom: 12px;
+    }
+  }
+
+  &__earn-offer {
+    margin-top: 8px;
+    a {
+      text-decoration: underline;
+
+      &:hover {
+        color: $btn-hover-color;
+      }
+    }
+  }
+  &__user-amount {
+    margin: 50px 0 30px;
+
+    .pack-qty-btn {
+      width: 50px;
+      height: 50px;
+      background: $border-color-3;
+      border: none;
+      border-radius: 5px;
+      font-style: normal;
+      font-weight: $font-bold;
+      font-size: $default-fontsize-m;
+      line-height: $line-height-24;
+      text-align: center;
+      color: $color-black;
+    }
+
+    .width {
+      width: 53px;
+    }
+  }
+
+  &__add-tocart {
+    .cart-icon {
+      width: 24px;
+      margin: -6px 5px -2px 0;
+    }
+  }
 }

@@ -1,0 +1,64 @@
+.sk-product {
+  &__info {
+    display: block;
+  }
+
+  &__info-nav {
+    @include customWidth(1130px);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    margin-bottom: 90px;
+
+    @include respond(phone) {
+      @include customWidth(100%);
+    }
+  }
+
+  &__info-list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    @include respond(phone) {
+      flex-direction: column;
+      padding: 0 15px;
+    }
+
+    li {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  &__info-btn {
+    width: inherit;
+
+    color: $color-black;
+    font-family: $font-rift;
+    font-style: normal;
+    font-weight: $font-bold;
+    font-size: $default-fontsize-m;
+    line-height: $line-height-19;
+    text-align: center;
+    letter-spacing: $letter-spacing-p5;
+    text-transform: uppercase;
+    background-color: $color-white;
+
+    padding: 0 30px;
+    border: 1px solid $border-color-3;
+    border-bottom: 2px solid transparent;
+    min-height: 74px;
+    transition: all 0.2s;
+
+    &:hover,
+    &.active {
+      cursor: pointer;
+      color: $color-brand;
+      border-bottom: 2px solid $color-brand;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
