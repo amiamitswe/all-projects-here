@@ -1,0 +1,121 @@
+.sk-product {
+  &__review {
+    @include customWidth ($width-950);
+    margin-top: 90px;
+    margin-bottom: 90px;
+
+    @include respond (phone) {
+      @include customWidth (100%);
+      padding: 15px;
+    }
+  }
+
+  &__average-review {
+    margin-bottom: 50px;
+}
+
+  .review-star {
+    font-size: 12px;
+
+    &:not(:first-of-type) {
+      margin-left: -5px;
+    }
+
+    &-fill {
+      color: $color-for-star;
+    }
+
+    &-null {
+      color: $color-gray-3;
+    }
+  }
+
+  &__review-summery {
+    margin-left: 12px;
+  }
+
+  &__review-stars {
+    margin-top: -5px;
+    margin-bottom: -15px;
+  }
+
+  &__total-review {
+    font-family: $acumin-pro;
+    font-style: normal;
+    font-weight: $font-regular;
+    font-size: $font-12;
+    line-height: $line-height-18;
+  }
+
+  &__users-review {
+    min-height: 180px;
+
+    &:not(:last-child) {
+      margin-bottom: 54px;
+    }
+
+    @include respond (phone) {
+      flex-direction: column;
+    }
+}
+
+  &__users-info {
+    width: $width-200;
+    border-right: 2px solid $review-user-color;
+
+    @include respond (phone) {
+      @include customWidth (100%);
+      border-right: none;
+      border-bottom: 2px solid $review-user-color;
+      padding-bottom: 10px;
+    }
+  }
+
+  &__users-img {
+    min-width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: $review-user-color;
+  }
+
+  &__users-name {
+    margin-left: 12px;
+
+    .users-name {
+      margin-bottom: -5px;
+      margin-top: 2px;
+    }
+  }
+
+  &__review-details {
+    width: $width-730;
+    padding: 10px 10px 10px 32px;
+
+    @include respond (phone) {
+      @include customWidth (100%);
+      padding: 10px 0;
+    }
+  }
+
+  &__s-review-text {
+    padding-bottom: 0;
+  }
+
+  &__s-review {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+
+    &-stars {
+      margin-top: -5px;
+    }
+
+    .review-time {
+      margin-left: 8px;
+    }
+  }
+
+  &__s-title {
+    margin-bottom: 5px;
+  }
+}

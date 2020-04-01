@@ -1,7 +1,25 @@
 .sk-product__item {
   &-info {
+    margin-top: 90px;
+    margin-bottom: 90px;
+
     @include respond(phone) {
       margin-top: 30px;
+    }
+  }
+
+  &-suggested {
+    margin-top: 57px;
+    margin-bottom: 75px;
+
+    .suggested-right-content {
+      margin-top: 5px;
+
+      p {
+        &:not(:first-of-type) {
+          margin-top: 25px;
+        }
+      }
     }
   }
 
@@ -13,6 +31,14 @@
   
   &-video {
     width: 500px;
+
+    @include respond(phone) {
+      width: 100%;
+    }
+  }
+
+  &-img {
+    width: 522px;
 
     @include respond(phone) {
       width: 100%;
