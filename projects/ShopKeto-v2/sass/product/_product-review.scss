@@ -4,7 +4,7 @@
     margin-top: 90px;
     margin-bottom: 90px;
 
-    @include respond (phone) {
+    @include respond (tab_port) {
       @include customWidth (100%);
       padding: 15px;
     }
@@ -50,7 +50,7 @@
   &__users-review {
     min-height: 180px;
 
-    &:not(:last-child) {
+    &:not(:last-of-type) {
       margin-bottom: 54px;
     }
 
@@ -117,5 +117,9 @@
 
   &__s-title {
     margin-bottom: 5px;
+  }
+
+  &__more-review {
+    margin-top: 36px;
   }
 }

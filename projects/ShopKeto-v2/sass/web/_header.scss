@@ -21,6 +21,16 @@
     }
   }
 
+  &__navbar-padding {
+    padding-left: 0;
+    padding-right: 0;
+
+    @include respond (tab_land) {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  }
+
   &__logo-box {
     max-width: 118px;
   }

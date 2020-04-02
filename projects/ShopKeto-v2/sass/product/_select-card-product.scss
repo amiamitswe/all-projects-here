@@ -21,6 +21,10 @@
   &__form {
     max-width: $content-width;
     margin-top: 55px;
+
+    @include respond (phone) {
+      max-width: 100%;
+    }
   }
 
   &__form-item {

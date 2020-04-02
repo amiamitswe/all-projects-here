@@ -216,6 +216,7 @@ p {
 }
 
 /*------------ links -------------------*/
+
 .a-link {
   font-size: $default-fontsize;
   font-family: $acumin-pro;
@@ -225,13 +226,16 @@ p {
   letter-spacing: $letter-spacing-05;
   border: none;
   background-color: transparent;
-  cursor: pointer;
   text-decoration: none;
+}
+
+.link-hover {
   color: $color-brand;
 
   &:hover {
     color: $btn-hover-color;
     text-decoration: underline;
+    cursor: pointer;
   }
 }
 
@@ -329,4 +333,8 @@ p {
 
 .full-width {
   max-width: 100%;
+}
+
+.display-none {
+  display: none;
 }

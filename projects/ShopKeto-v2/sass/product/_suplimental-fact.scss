@@ -1,0 +1,98 @@
+.sk-sf {
+  @include customWidth($table-width);
+
+  @include respond (phone) {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .margin-bottom {
+    margin-bottom: 20px;
+  }
+
+  .margin-bottom-s {
+    margin-bottom: 15px;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__serving-size {
+    margin-bottom: 7px;
+  }
+
+  &__select {
+    @include respond (phone) {
+      flex-direction: column;
+    }
+  }
+
+  &__select-flavor-content {
+    width: 40%;
+
+    @include respond (phone) {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+
+    &::before {
+      content: "\f0d7";
+      font-family: $FontAwesome;
+      position: absolute;
+      top: 0;
+      right: 15px;
+      pointer-events: none;
+      -webkit-transition: 0.1s all ease;
+      -o-transition: 0.1s all ease;
+      transition: 0.1s all ease;
+      transform: rotate(180deg);
+    }
+
+    &::after {
+      top: 7px;
+      -webkit-transition: 0.1s all ease;
+      -o-transition: 0.1s all ease;
+      transition: 0.1s all ease;
+    }
+
+    &:hover {
+      &::before,
+      &::after {
+        color: $color-brand;
+      }
+    }
+  }
+
+  &__select-flavor {
+    height: fit-content;
+  }
+
+  &__table {
+    margin-bottom: 0;
+    border-bottom: 8px solid $color-black;
+    font-size: $font-15;
+  }
+
+  &__table &__border-large {
+    border-top: 14px solid $color-black;
+    padding: 3px 0;
+    font-size: $font-12;
+    font-weight: $font-regular;
+  }
+
+  &__table tr td {
+    border-top: 1px solid $color-black;
+    padding: 4px 0;
+    font-weight: $font-regular;
+  }
+
+  &__details {
+    font-size: $font-12;
+    line-height: $line-height-16;
+  }
+
+  &__table tr &__table-custom-pad {
+    padding-left: 20px;
+  }
+}
