@@ -21,12 +21,16 @@
     .slick-next {
       width: 34px;
       height: 34px;
+      -webkit-box-shadow: 0px 1px 4px rgba(32, 38, 62, 0.25);
       box-shadow: 0px 1px 4px rgba(32, 38, 62, 0.25);
       border-radius: 50%;
       z-index: 10;
+      -webkit-transition: all 0.2s;
+      -o-transition: all 0.2s;
       transition: all 0.2s;
 
       &:hover {
+        -webkit-box-shadow: 0px 0.5px 2px rgba(32, 38, 62, 0.25);
         box-shadow: 0px 0.5px 2px rgba(32, 38, 62, 0.25);
       }
     }
@@ -80,10 +84,17 @@
   }
 
   &__flavor-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     list-style: none;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 
     li {

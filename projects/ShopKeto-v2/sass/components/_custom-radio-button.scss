@@ -20,9 +20,6 @@
   position: absolute;
   top: 18px;
   left: 14px;
-  // top: 50%;
-  // left: 6%;
-  // transform: translate(-50%, -50%);
   width: 18px;
   height: 18px;
   border-radius: 50%;
@@ -30,7 +27,7 @@
 }
 
 .custom-radio:hover input ~ .checkmark {
-  background-color: #fff;
+  background-color: $color-white;
 }
 
 .custom-radio input:checked ~ .checkmark {
@@ -52,6 +49,8 @@
   height: 9px;
   top: 50%;
   left: 49%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   border-radius: 50%;
   background: $color-brand;

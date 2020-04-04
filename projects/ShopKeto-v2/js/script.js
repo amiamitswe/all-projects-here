@@ -1,10 +1,15 @@
-$('.sk-product__main-img').slick({
-  
-});
-
-
 
 $(document).ready(function() {
+
+  // jquery for slick slider
+  $('.sk-product__main-img').slick({
+    autoplay: false,
+    dots: false,
+    draggable: true
+  });
+
+  
+  // jquery for content navigation
   // add active calss at nav
   $(".sk-product__info-btn").click(function() {
     $(".sk-product__info-btn").removeClass("active");

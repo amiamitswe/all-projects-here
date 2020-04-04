@@ -5,6 +5,8 @@ select {
   -ms-appearance: none;
   appearance: none;
 
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
   flex: 1;
   cursor: pointer;
 }
@@ -15,19 +17,21 @@ select::-ms-expand {
 
 .select {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .select::after {
-  content: '\f0d7';
+  content: "\f0d7";
   font-family: $FontAwesome;
   position: absolute;
   top: 10px;
   right: 15px;
   pointer-events: none;
-  -webkit-transition: .25s all ease;
-  -o-transition: .25s all ease;
-  transition: .25s all ease;
+  -webkit-transition: 0.25s all ease;
+  -o-transition: 0.25s all ease;
+  transition: 0.25s all ease;
   color: $color-black;
 }
 

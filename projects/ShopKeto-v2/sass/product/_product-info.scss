@@ -5,8 +5,8 @@
 
   &__info-nav {
     @include customWidth(1130px);
+    -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
-    // margin-bottom: 90px;
 
     @include respond(tab_land) {
       @include customWidth(100%);
@@ -15,11 +15,21 @@
 
   &__info-list {
     list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
 
     @include respond(tab_port) {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
       flex-direction: column;
       padding: 0 15px;
     }
@@ -48,6 +58,8 @@
     border: 1px solid $border-color-3;
     border-bottom: 2px solid transparent;
     min-height: 74px;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
     transition: all 0.2s;
 
     &:hover,

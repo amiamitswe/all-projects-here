@@ -1,18 +1,18 @@
 .sk-product {
   &__review {
-    @include customWidth ($width-950);
+    @include customWidth($width-950);
     margin-top: 90px;
     margin-bottom: 90px;
 
-    @include respond (tab_port) {
-      @include customWidth (100%);
+    @include respond(tab_port) {
+      @include customWidth(100%);
       padding: 15px;
     }
   }
 
   &__average-review {
     margin-bottom: 50px;
-}
+  }
 
   .review-star {
     font-size: 12px;
@@ -54,17 +54,20 @@
       margin-bottom: 54px;
     }
 
-    @include respond (phone) {
+    @include respond(phone) {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
       flex-direction: column;
     }
-}
+  }
 
   &__users-info {
     width: $width-200;
     border-right: 2px solid $review-user-color;
 
-    @include respond (phone) {
-      @include customWidth (100%);
+    @include respond(phone) {
+      @include customWidth(100%);
       border-right: none;
       border-bottom: 2px solid $review-user-color;
       padding-bottom: 10px;
@@ -91,8 +94,8 @@
     width: $width-730;
     padding: 10px 10px 10px 32px;
 
-    @include respond (phone) {
-      @include customWidth (100%);
+    @include respond(phone) {
+      @include customWidth(100%);
       padding: 10px 0;
     }
   }
@@ -102,7 +105,11 @@
   }
 
   &__s-review {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     margin-bottom: 8px;
 

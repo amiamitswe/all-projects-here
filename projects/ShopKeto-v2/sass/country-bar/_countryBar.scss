@@ -40,6 +40,11 @@
     }
   }
 
+  &__link-lenguage {
+    margin-right: 20px;
+    text-transform: capitalize;
+  }
+
   &__logo {
     width: 22px;
     height: 17px;
@@ -78,7 +83,8 @@
       content: "\f078";
       font-family: "Font Awesome 5 Pro";
       right: 20px;
-      font-size: 15px;
+      top: 16px;
+      font-size: 12px;
       color: $color-gray;
     }
 

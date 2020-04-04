@@ -9,6 +9,7 @@
     padding: 30px 20px 48px 20px;
 
     @include respond(phone) {
+      border-radius: 5px;
       margin-bottom: 10px;
       padding: 10px 5px 16px 5px;
     }
@@ -26,6 +27,7 @@
 
     img {
       max-height: -webkit-fill-available;
+      max-height: 100%;
     }
   }
 
@@ -43,6 +45,9 @@
   &__product-title {
     line-height: $line-height-21;
     height: 45px;
+
+    max-width: 259px;
+    margin: 0 auto;
 
     @include respond(phone) {
       line-height: $line-height-15;
