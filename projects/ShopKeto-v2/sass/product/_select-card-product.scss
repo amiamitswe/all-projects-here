@@ -68,11 +68,11 @@
   }
 
   &__select-formula {
-    padding: 13px 20px 14px 44px;
+    padding: 12px 20px 12px 40px;
 
     &.every-month {
       padding-top: 8px;
-      padding-bottom: 12px;
+      padding-bottom: 8px;
     }
   }
 
@@ -97,13 +97,13 @@
       border-radius: 5px;
       font-style: normal;
       font-weight: $font-bold;
-      font-size: $default-fontsize-m;
+      font-size: $font-12;
       line-height: $line-height-24;
       text-align: center;
       color: $color-black;
     }
 
-    .width {
+    .qty-width {
       width: 53px;
     }
   }

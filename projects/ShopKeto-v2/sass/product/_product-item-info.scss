@@ -1,16 +1,29 @@
 .sk-product__item {
+
   &-info {
-    margin-top: 90px;
-    margin-bottom: 90px;
+    padding-top: 93px;
+    padding-bottom: 90px;
+    // margin-bottom: 90px;
 
     @include respond(phone) {
-      margin-top: 30px;
+      padding-top: 30px;
     }
   }
 
+  &-info-bg {
+    background-color: $color-white-country;
+  }
+
   &-suggested {
-    margin-top: 57px;
-    margin-bottom: 75px;
+    @include customWidth($width-1130);
+    padding-top: 60px;
+    padding-bottom: 77px;
+    // margin-top: 57px;
+    // margin-bottom: 75px;
+
+    @include respond(tab_port) {
+      @include customWidth(100%);
+    }
 
     .suggested-right-content {
       margin-top: 5px;
@@ -32,7 +45,7 @@
   &-video {
     width: 500px;
 
-    @include respond(phone) {
+    @include respond(tab_port) {
       width: 100%;
     }
   }
@@ -40,16 +53,20 @@
   &-img {
     width: 522px;
 
-    @include respond(phone) {
+    @include respond(tab_port) {
       width: 100%;
     }
   }
 
   &-download {
+    font-family: $font-rift;
     font-size: $btn-default-fontsize;
     line-height: $line-height-19;
+    font-weight: $font-bold;
+    font-style: normal;
+    letter-spacing: $letter-spacing-p5;
+    margin-top: 26px;
     display: block;
-    margin-top: 20px;
 
     img {
       height: 24px;
@@ -62,7 +79,7 @@
   &-right-content {
     width: 550px;
 
-    @include respond(phone) {
+    @include respond(tab_port) {
       width: 100%;
     }
   }
@@ -76,6 +93,10 @@
 
     li {
       display: block;
+
+      &:not(:last-child) {
+        margin-bottom: 5px;
+      }
     }
   }
 }

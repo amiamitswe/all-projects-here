@@ -1,9 +1,16 @@
 .sk-sf {
   @include customWidth($table-width);
+  margin-top: 25px;
 
   @include respond(phone) {
     width: 100%;
     padding: 0 15px;
+  }
+
+  &__table-box {
+    // background-color: $color-white;
+    padding: 20px;
+    border-radius: 1px;
   }
 
   .margin-bottom {
@@ -33,32 +40,35 @@
 
   &__select-flavor-content {
     width: 40%;
+    margin-top: 10px;
 
     @include respond(phone) {
       width: 100%;
       margin-bottom: 15px;
     }
 
+    &::before,
+    &::after {
+      color: $color-gray;
+      -webkit-transition: 0.1s all ease;
+      -o-transition: 0.1s all ease;
+      transition: 0.1s all ease;
+    }
+
     &::before {
       content: "\f0d7";
       font-family: $FontAwesome;
       position: absolute;
-      top: 0;
+      top: -1px;
       right: 15px;
       pointer-events: none;
-      -webkit-transition: 0.1s all ease;
-      -o-transition: 0.1s all ease;
-      transition: 0.1s all ease;
       -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
       transform: rotate(180deg);
     }
 
     &::after {
-      top: 7px;
-      -webkit-transition: 0.1s all ease;
-      -o-transition: 0.1s all ease;
-      transition: 0.1s all ease;
+      top: 8px;
     }
 
     &:hover {
@@ -73,6 +83,7 @@
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
+    border: 1px solid $border-color-2;
   }
 
   &__table {

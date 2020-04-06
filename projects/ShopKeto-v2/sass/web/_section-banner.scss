@@ -33,9 +33,17 @@
       text-align: center;
     }
   }
+  
+  &__right {
+    margin-right: -60px;
+
+    @include respond (phone) {
+      margin-right: 0;
+    }
+  }
 
   &__left {
-    margin-top: 55px;
+    margin-top: 50px;
 
     @include respond(phone) {
       margin-top: 0;

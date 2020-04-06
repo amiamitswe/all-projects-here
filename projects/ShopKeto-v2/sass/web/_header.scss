@@ -48,6 +48,7 @@
 
     @include respond (phone) {
       height: 24px;
+      margin-top: -5px;
     }
   }
 
@@ -86,10 +87,14 @@
   }
 
   &__navbar {
-    padding: 10px 0;
+    padding: 6px 0;
 
     @include respond(phone) {
-      padding: 5px 0;
+      padding: 0;
+
+      .bd-navbar {
+        padding: 6px 10px;
+      }
     }
   }
 }
