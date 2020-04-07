@@ -21,7 +21,7 @@
     // margin-top: 57px;
     // margin-bottom: 75px;
 
-    @include respond(tab_port) {
+    @include respond(tab_land) {
       @include customWidth(100%);
     }
 
@@ -45,7 +45,7 @@
   &-video {
     width: 500px;
 
-    @include respond(tab_port) {
+    @include respond(tab_land) {
       width: 100%;
     }
   }
@@ -53,7 +53,7 @@
   &-img {
     width: 522px;
 
-    @include respond(tab_port) {
+    @include respond(tab_land) {
       width: 100%;
     }
   }
@@ -79,7 +79,7 @@
   &-right-content {
     width: 550px;
 
-    @include respond(tab_port) {
+    @include respond(tab_land) {
       width: 100%;
     }
   }

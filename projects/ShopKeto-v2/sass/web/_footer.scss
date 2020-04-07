@@ -59,6 +59,7 @@
   }
 
   &__nav-item-d {
+    width: 185px;
     @include respond(phone) {
       display: none;
     }
