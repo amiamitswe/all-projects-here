@@ -18,14 +18,17 @@
 
 .checkmark {
   position: absolute;
-  top: 16px;
-  left: 14px;
+  // top: 16px;
+  // left: 14px;
+
+  top: 50%;
+  left: 22px;
+  transform: translate(-50%, -50%);
   width: 16px;
   height: 16px;
   border-radius: 50%;
   border: 1px solid $color-black;
 }
-
 
 .custom-radio:hover input ~ .checkmark {
   background-color: $color-white;
@@ -33,6 +36,10 @@
 
 .custom-radio input:checked ~ .checkmark {
   border-color: $color-brand;
+
+  @include respond (phone) {
+    border-color: $color-black;
+  }
 }
 
 .checkmark:after {
@@ -55,5 +62,8 @@
   transform: translate(-50%, -50%);
   border-radius: 50%;
   background: $color-brand;
-}
 
+  @include respond (phone) {
+    background: $color-black;
+  }
+}

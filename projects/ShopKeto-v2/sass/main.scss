@@ -7,8 +7,8 @@
 @import './styleGuide/utilities';
 
 /*import slick slider --------------------*/
-@import './slick/slick.scss';
-@import './slick/slick-theme.scss';
+@import './slick/slick';
+@import './slick/slick-theme';
 
 
 /*import web-component styles ------------*/
@@ -21,7 +21,7 @@
 /*import country-bar style --------------*/
 @import './country-bar/countryBar';
 
-/*import cust component ----------------*/
+/*import custom component ----------------*/
 @import './components/custom-select';
 @import './components/custom-radio-button';
 

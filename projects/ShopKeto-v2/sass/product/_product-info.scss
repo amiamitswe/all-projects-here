@@ -3,6 +3,24 @@
     display: block;
   }
 
+  &__info--desktop {
+    @include respond(tab_port) {
+      display: none;
+    }
+  }
+
+  &__info--mobile {
+    display: none;
+    @include respond(tab_port) {
+      display: block;
+      padding-bottom: 25px;
+
+      .accordion {
+        border-top: 1px solid $box-shadow-1;
+      }
+    }
+  }
+
   &__info-nav {
     @include customWidth($width-1130);
     -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
@@ -40,7 +58,8 @@
     }
   }
 
-  &__info-btn {
+  &__info-btn,
+  &__info-btn-mobile {
     width: inherit;
 
     color: $color-black;
@@ -62,15 +81,62 @@
     -o-transition: all 0.2s;
     transition: all 0.2s;
 
+    &:focus {
+      outline: none;
+    }
+  }
+
+
+  &__info-btn {
     &:hover,
     &.active {
       cursor: pointer;
       color: $color-brand;
       border-bottom: 2px solid $color-brand;
     }
+  }
 
-    &:focus {
-      outline: none;
+
+  &__info--mobile-card {
+    border-radius: 0;
+    border: none;
+    // box-shadow: 0px 1px 0px $box-shadow-1;
+    border-bottom: 1px solid $box-shadow-1;
+
+    // &:not(:last-of-type) {
+    //   border-bottom: 1px solid $box-shadow-1;
+    // }
+  }
+  
+
+  &__info-btn-mobile {
+    width: 100%;
+    padding: 0 15px;
+    text-align: left;
+    border-bottom: none;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      font-family: $FontAwesome;
+      font-size: $font-12;
+      right: 20px;
+      
+    }
+
+    &[aria-expanded="true"] {
+      border-bottom: none;
+      color: $color-brand;
+
+      &::after {
+        content: "\f068";
+      }
+    }
+
+    &[aria-expanded="false"] {
+      &::after {
+        content: "\f067";
+      }
     }
   }
 }

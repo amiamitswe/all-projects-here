@@ -3,10 +3,10 @@
   &-info {
     padding-top: 93px;
     padding-bottom: 90px;
-    // margin-bottom: 90px;
 
     @include respond(phone) {
-      padding-top: 30px;
+      padding-top: 0;
+      padding-bottom: 50px;
     }
   }
 
@@ -18,11 +18,11 @@
     @include customWidth($width-1130);
     padding-top: 60px;
     padding-bottom: 77px;
-    // margin-top: 57px;
-    // margin-bottom: 75px;
 
     @include respond(tab_land) {
       @include customWidth(100%);
+      padding-top: 0;
+      padding-bottom: 50px;
     }
 
     .suggested-right-content {
@@ -38,7 +38,7 @@
 
   &-left-content {
     @include respond(phone) {
-      margin-bottom: 30px;
+      margin-bottom: 10px;
     }
   }
 
@@ -47,6 +47,7 @@
 
     @include respond(tab_land) {
       width: 100%;
+      padding-bottom: 10px;
     }
   }
 

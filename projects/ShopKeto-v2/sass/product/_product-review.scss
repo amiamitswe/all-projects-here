@@ -1,23 +1,30 @@
 .sk-product {
   &__review {
     @include customWidth($width-950);
-    //  margin-top: 90px;
-    //  margin-bottom: 90px;
     padding-top: 47px;
     padding-bottom: 24px;
 
     @include respond(tab_port) {
       @include customWidth(100%);
-      padding: 15px;
+      padding: 0 15px 15px;
     }
   }
 
   &__average-review {
     margin-bottom: 50px;
+
+    @include respond (phone) {
+      margin-bottom: 15px;
+      margin-top: -7px;
+    }
   }
 
   .review-star {
-    font-size: 12px;
+    font-size: $font-12;
+
+    @include respond (phone) {
+      font-size: 10px;
+    }
 
     &:not(:first-of-type) {
       margin-left: -5px;
@@ -39,6 +46,10 @@
   &__review-stars {
     margin-top: -5px;
     margin-bottom: -15px;
+
+    @include respond (phone) {
+      margin-top: -7px;
+    }
   }
 
   &__total-review {
@@ -61,6 +72,13 @@
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
       flex-direction: column;
+      border-bottom: 2px solid $review-user-color;
+      padding-bottom: 20px;
+
+      &:not(:last-of-type) {
+        margin-bottom: 25px;
+      }
+      
     }
   }
 
@@ -72,8 +90,6 @@
     @include respond(phone) {
       @include customWidth(100%);
       border-right: none;
-      border-bottom: 2px solid $review-user-color;
-      padding-bottom: 10px;
     }
   }
 
@@ -99,7 +115,7 @@
 
     @include respond(phone) {
       @include customWidth(100%);
-      padding: 10px 0;
+      padding: 7px 0 10px;
     }
   }
 

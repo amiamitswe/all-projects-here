@@ -5,10 +5,11 @@
   @include respond(phone) {
     width: 100%;
     padding: 0 15px;
+    margin-top: 0;
+    padding-top: 20px;
   }
 
   &__table-box {
-    // background-color: $color-white;
     padding: 20px;
     border-radius: 1px;
   }
@@ -23,6 +24,10 @@
 
   &__title {
     margin-bottom: 40px;
+
+    @include respond (phone) {
+      margin-bottom: 20px;
+    }
   }
 
   &__serving-size {

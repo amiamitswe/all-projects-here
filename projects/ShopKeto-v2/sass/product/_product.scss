@@ -4,14 +4,18 @@
     margin-bottom: 100px;
 
     @include respond(phone) {
-      padding-top: 40px;
-      margin-bottom: 40px;
+      padding-top: 25px;
+      margin-bottom: 50px;
     }
   }
 
   &__thum-img {
     height: auto;
     margin: 0 auto;
+
+    @include respond (phone) {
+      height: 198px;
+    }
   }
 
   &__main-img {
@@ -37,10 +41,18 @@
 
     .slick-prev {
       left: 35px;
+
+      @include respond (phone) {
+        left: 5px;
+      }
     }
 
     .slick-next {
       right: 35px;
+
+      @include respond (phone) {
+        right: 5px;
+      }
     }
 
     .slick-prev:before {
@@ -81,6 +93,10 @@
 
   &__flavor-img {
     margin-top: 50px;
+
+    @include respond (phone) {
+      margin-top: 15px;
+    }
   }
 
   &__flavor-list {
