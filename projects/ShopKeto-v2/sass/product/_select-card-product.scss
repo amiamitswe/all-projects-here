@@ -141,6 +141,10 @@
       line-height: $line-height-24;
       text-align: center;
       color: $color-black;
+
+      &:hover {
+        color: $color-brand;
+      }
     }
 
     .qty-width {

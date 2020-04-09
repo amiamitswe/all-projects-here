@@ -2,7 +2,7 @@
   &__review {
     @include customWidth($width-950);
     padding-top: 47px;
-    padding-bottom: 24px;
+    padding-bottom: 66px;
 
     @include respond(tab_port) {
       @include customWidth(100%);

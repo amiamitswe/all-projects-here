@@ -28,9 +28,14 @@
     padding: 50px 85px;
     border-radius: 20px;
 
+    @include respond (tab_land) {
+      margin: 0 15px;
+    }
+
     @include respond(phone) {
       padding: 27px 30px;
       text-align: center;
+      margin: 0;
     }
   }
   

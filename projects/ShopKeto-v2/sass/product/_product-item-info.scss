@@ -10,10 +10,6 @@
     }
   }
 
-  &-info-bg {
-    background-color: $color-white-country;
-  }
-
   &-suggested {
     @include customWidth($width-1130);
     padding-top: 60px;
