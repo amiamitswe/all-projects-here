@@ -1578,6 +1578,7 @@ select::-ms-expand {
   -webkit-transition: all 0.2s;
   -o-transition: all 0.2s;
   transition: all 0.2s;
+  top: 42%;
 }
 
 .sk-product__main-img .slick-prev:hover,
@@ -1629,8 +1630,13 @@ select::-ms-expand {
   color: #204ceb;
 }
 
+.sk-product .slick-slide:focus {
+  outline: none;
+}
+
 .sk-product__subtitle {
   margin-left: 60px;
+  margin-top: 15px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -1645,12 +1651,12 @@ select::-ms-expand {
 }
 
 .sk-product__flavor-img {
-  margin-top: 50px;
+  margin-top: 55px;
 }
 
 @media only screen and (max-width: 767px) {
   .sk-product__flavor-img {
-    margin-top: 15px;
+    margin-top: 20px;
   }
 }
 
@@ -1674,6 +1680,7 @@ select::-ms-expand {
   cursor: pointer;
   padding-bottom: 7px;
   border-bottom: 1px solid transparent;
+  width: unset !important;
 }
 
 .sk-product__flavor-list li:not(:last-child) {
