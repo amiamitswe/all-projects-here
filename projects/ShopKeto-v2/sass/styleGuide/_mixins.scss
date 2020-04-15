@@ -1,6 +1,12 @@
 // MEDIA QUERY MANAGER
 
 @mixin respond($breakpoint) {
+  @if $breakpoint == phone_small {
+    @media only screen and (max-width: 340px) {
+      @content;
+    } //340px
+  }
+
   @if $breakpoint == phone {
     @media only screen and (max-width: 767px) {
       @content;
@@ -30,7 +36,7 @@
   transform: translate(-50%, -50%);
 }
 
-@mixin customWidth ($width) {
+@mixin customWidth($width) {
   width: $width;
   margin: 0 auto;
 }

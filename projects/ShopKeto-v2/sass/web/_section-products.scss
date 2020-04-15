@@ -3,7 +3,7 @@
     margin-top: 50px;
     padding-bottom: 56px;
 
-    @include respond (phone) {
+    @include respond(phone) {
       padding-bottom: 40px;
     }
   }
@@ -13,7 +13,7 @@
     margin-bottom: 30px;
     padding: 30px 20px 48px 20px;
 
-    @include respond (tab_port) {
+    @include respond(tab_port) {
       padding: 30px 10px 33px 10px;
     }
 
@@ -46,10 +46,6 @@
   &__product-details {
     height: 75px;
 
-    // @include respond (tab_port) {
-    //   height: 95px;
-    // }
-
     @include respond(phone) {
       height: 55px;
     }
@@ -57,9 +53,7 @@
 
   &__product-title {
     line-height: $line-height-21;
-    // height: 45px;
     height: auto;
-
     max-width: 259px;
     margin: 0 auto;
 
@@ -69,6 +63,10 @@
       line-height: $line-height-15;
       height: 28px;
       margin-bottom: 0;
+    }
+
+    @include respond(phone_small) {
+      font-size: 13px;
     }
   }
 

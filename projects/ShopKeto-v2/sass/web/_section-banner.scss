@@ -32,10 +32,73 @@
       margin: 0 15px;
     }
 
+    @include respond (tab_port) {
+      padding: 50px 50px;
+    }
+
     @include respond(phone) {
       padding: 27px 30px;
       text-align: center;
       margin: 0;
+    }
+  }
+
+  &__banner-slider {
+    .slick-arrow {
+      width: 48px;
+      height: 48px;
+      background-color: $color-white;
+      -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 50%;
+      z-index: 10;
+      -webkit-transition: all 0.2s;
+      -o-transition: all 0.2s;
+      transition: all 0.2s;
+      top: 42%;
+
+      &:hover {
+        -webkit-box-shadow: 0px 0.5px 2px rgba(32, 38, 62, 0.25);
+        box-shadow: 0px 0.5px 2px rgba(32, 38, 62, 0.25);
+      }
+    }
+
+    .slick-prev {
+      left: -27px;
+
+      @include respond (tab_land) {
+        left: 25px;
+      }
+    }
+
+    .slick-next {
+      right: -27px;
+
+      @include respond (tab_land) {
+        right: 25px;
+      }
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+      font-family: $FontAwesome;
+      color: $color-brand;
+      opacity: 1;
+      font-size: 22px;
+
+      &:hover {
+        color: $btn-hover-color;
+      }
+    }
+
+    .slick-prev:before {
+      content: "\f053";
+      margin-right: 2px;
+    }
+
+    .slick-next:before {
+      content: "\f054";
+      margin-left: 2px;
     }
   }
   
@@ -50,7 +113,7 @@
   &__left {
     margin-top: 50px;
 
-    @include respond(phone) {
+    @include respond(tab_port) {
       margin-top: 0;
     }
   }
@@ -87,7 +150,8 @@
     width: 464.63px;
 
     @include respond(phone) {
-      width: 211px;
+      // width: 211px;
+      @include customWidth (211px)
     }
   }
 

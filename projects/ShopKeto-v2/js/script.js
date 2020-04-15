@@ -2,10 +2,19 @@
 $(document).ready(function() {
 
   // jquery for slick slider
-  $('.sk-product__main-img-test').slick({
+  $('.sk-main__banner-slider').slick({
     autoplay: false,
-    dots: false,
-    draggable: true
+    dots: true,
+    draggable: true,
+    autoplay: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false
+        }
+      }
+    ]
   });
 
   
