@@ -27,8 +27,11 @@
 
 /*import product page style ------------*/
 @import './product/product';
-@import './product/select-card-product';
+@import './product/select-cart-product';
 @import './product/product-info';
 @import './product/product-item-info';
 @import './product/product-review';
 @import './product/suplimental-fact';
+
+/* import popup page style ----------------*/
+@import './popup/quick_buy';

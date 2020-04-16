@@ -6,12 +6,12 @@ $(document).ready(function() {
     autoplay: false,
     dots: true,
     draggable: true,
-    autoplay: true,
+    autoplay: false,
     responsive: [
       {
         breakpoint: 768,
         settings: {
-          arrows: false
+          dots: false,
         }
       }
     ]

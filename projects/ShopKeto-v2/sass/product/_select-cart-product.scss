@@ -13,7 +13,7 @@
     max-width: $content-width;
     margin-top: 10px;
 
-    @include respond (phone) {
+    @include respond(phone) {
       display: none;
     }
   }
@@ -28,16 +28,7 @@
 
     @include respond(phone) {
       max-width: 100%;
-      margin-top: 15px;
-    }
-  }
-
-  &__form-mobile {
-    @include respond(phone) {
-      padding: 17px 21px;
-      background-color: $color-white-country;
-      border: 0.5px solid #dcdcdc;
-      border-radius: 5px;
+      margin-top: 8px;
     }
   }
 
@@ -76,12 +67,7 @@
     border: 0.5px solid $border-color-3;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    border-radius: 5px;
-
-    @include respond (phone) {
-      background: $color-white;
-      border: 0.5px solid #DCDCDC;
-    }
+    border-radius: 4px;
   }
 
   &__select-flavor {
@@ -91,19 +77,14 @@
   &__select-formula {
     padding: 11px 20px 13px 40px;
 
-    @include respond (phone) {
-      margin-bottom: 0;
+    &:not(:last-of-type) {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
 
-      &:not(:last-of-type) {
-        border-bottom: none;
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
-      }
-
-      &:not(:first-of-type) {
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
-      }
+    &:not(:first-of-type) {
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
     }
 
     &.every-month {
@@ -122,11 +103,13 @@
       }
     }
   }
+
   &__user-amount {
     margin: 50px 0 30px;
 
-    @include respond (phone) {
-      margin-top: 16px;
+    @include respond(phone) {
+      margin-top: 23px;
+      margin-bottom: 42px;
     }
 
     .pack-qty-btn {

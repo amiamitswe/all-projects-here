@@ -1,10 +1,11 @@
 .sk-main {
   &__products {
-    margin-top: 50px;
+    margin-top: 65px;
     padding-bottom: 56px;
 
     @include respond(phone) {
       padding-bottom: 40px;
+      margin-top: 21px;
     }
   }
 
