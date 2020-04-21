@@ -55,7 +55,12 @@ body {
     grid-template-columns: unset;
     padding-bottom: 2rem;
   }
-
+  &__title-box {
+    @media only screen and (max-width: $bp-small) {
+      padding-bottom: 1rem;
+      text-align: center;
+    }
+  }
   &__title {
     font-size: 3rem;
     text-transform: uppercase;
@@ -81,7 +86,7 @@ body {
     }
 
     span {
-      font-size: 1.2rem;
+      font-size: 1rem;
       text-transform: uppercase;
       font-family: $font-display;
       font-weight: 400;
@@ -94,6 +99,10 @@ body {
       transform: translate(-50%, -50%);
       opacity: 0;
       transition: all 0.2s;
+
+      @media only screen and (max-width: $bp-small) {
+        display: none;
+      }
     }
 
     &:hover {
@@ -113,14 +122,19 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   grid-gap: 4rem;
-  padding-top: 3rem;
+  padding-top: 3.5rem;
   padding-bottom: 4rem;
 }
 
 .project {
   &__img {
     width: 100%;
-    box-shadow: 0 1rem 2rem rgba(0,0,0,0.4);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+    transition: all 0.2s;
+
+    &:hover {
+      transform: translateY(-10px);
+    }
   }
 
   &__details {
@@ -183,7 +197,7 @@ body {
     transition: all 0.2s;
 
     &:hover {
-      box-shadow: 0 1rem 2rem rgba(0,0,0,0.4);
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
       transform: rotate(5deg) scale(1.2);
     }
   }
