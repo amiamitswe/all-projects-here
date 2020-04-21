@@ -1,0 +1,72 @@
+.sk-cart {
+
+  &__padd {
+    padding: 0 20px;
+  }
+
+  &__subtitle {
+    height: 40px;
+    background-color: #F8F8F8;
+    display: flex;
+    align-items: center;
+    border: 1px solid #EFEFEF;
+
+    &--text {
+      font-family: $font-rift;
+      font-style: normal;
+      font-weight: $font-bold;
+      font-size: $default-fontsize-m;
+      line-height: $line-height-19;
+      letter-spacing: $letter-spacing-p5;
+      text-transform: uppercase;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  &__chackout-btn-wrap {
+    margin: 24px auto 42px;
+  }
+
+  &__chackout-btn {
+    max-width: 100%;
+    color: #0C30B3;
+    background-color: #FFC421;
+    transition: all 0.2s;
+    
+    background-image: url(../images/checkout-cart-icon.png);
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-position: 18px 50%;
+  
+
+    &:hover {
+      background-color: #eed435;
+    }
+  }
+}

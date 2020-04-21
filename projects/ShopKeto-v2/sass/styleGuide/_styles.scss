@@ -162,6 +162,7 @@ p {
 .buy-now {
   max-width: $buynow-btn-width;
   padding: 15.3px 10px;
+  height: 48px;
 
   @include respond(phone) {
     max-width: $buynow-btn-width-m;
@@ -169,18 +170,21 @@ p {
     font-size: $font-14;
     line-height: $line-height-14;
     letter-spacing: $letter-spacing-03;
+    height: auto;
   }
 }
 
 .buy-now-lg {
   max-width: $buynow-btn-width-l;
   padding: 20px 10px;
+  height: 58px;
 
   @include respond(phone) {
     max-width: $buynow-btn-width-l-m;
     padding: 15px 10px;
     font-size: $font-18;
     line-height: $line-height-22;
+    height: auto;
   }
 }
 
@@ -227,6 +231,20 @@ p {
   border: none;
   background-color: transparent;
   text-decoration: none;
+}
+
+.button-link {
+  font-family: $font-rift;
+  font-size: $btn-default-fontsize;
+  line-height: $line-height-19;
+  font-style: normal;
+  font-weight: $font-bold;
+  text-transform: uppercase;
+  letter-spacing: $letter-spacing-p5;
+  text-decoration: none;
+  color: $color-brand;
+  transition: all 0.2s;
+  display: block;
 }
 
 .link-hover {

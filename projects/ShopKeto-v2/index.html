@@ -156,7 +156,7 @@
             </div>
 
             <div class="sk-main__product-btn">
-              <button class="button button-primary buy-now">buy now</button>
+              <button class="button button-primary buy-now" data-toggle="modal" data-target="#exampleModalCenter">buy now</button>
             </div>
           </div>
         </div>
@@ -302,6 +302,147 @@
     </section>
   </main>
 
+
+  <!-- ****************************** Modal ************************** -->
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered quick-buy" role="document">
+        <div class="modal-content quick-buy__modal-content">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><i class="fas fa-times"></i></span>
+          </button>
+          <div class="modal-body quick-buy__modal-body">
+            <!-- quick buy content start -->
+            <section class="sk-product__banner-hide-now">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-6 col-12 sk-product__img">
+                    <figure class="sk-product__banner-left">
+        
+                      <div class="quick-buy__main-img">
+                          <img src="./images/nat-product-thum.png" alt="" class="img-fluid quick-buy__thum-img">
+                          
+                          <h3 class="sk-product__title color-black">KETO//OS® NAT™</h3>
+        
+                      <div class="color-gray sk-product__short-details quick-buy__short-details">
+                        <p>The world’s first and only Pure Therapeutic Ketones® made naturally.</p>
+                        <p class="sk-product__savings quick-buy__savings">📦 20 servings (packets)</p>
+
+                        <a href="#" class="link link-hover button-link quick-buy__view-details">View DETAILS &nbsp; <i class="fas fa-long-arrow-alt-right"></i></a>
+                      </div>
+
+                        </div>
+                    </figure>
+                    
+                  </div>
+                  <div class="col-md-6 col-12 sk-product__select">
+                    <figure class="sk-product__banner-right quick-buy__right-contetn">
+        
+                      <div class="sk-product__form quick-buy__form">
+        
+                        <!-- select flavor  -->
+                        <figure class="sk-product__form-item">
+                          <figcaption class="sk-product__select-title">
+                            <p class="p-small color-black font-bold">Flavor</p>
+                            <p class="disclaimer-reg color-gray">12 available</p>
+                          </figcaption>
+        
+        
+                          <div class="select">
+                            <select class="sk-product__user-select sk-product__select-flavor form-control p-small color-black">
+                              <option selected disabled>Raspberry Lemonade</option>
+                              <option value="volvo">Volvo</option>
+                              <option value="saab">Saab</option>
+                              <option value="opel">Opel</option>
+                              <option value="audi">Audi</option>
+                            </select>
+                          </div>
+                        </figure>
+        
+                        <!-- select formula  -->
+                        <figure class="sk-product__form-item">
+                          <figcaption class="sk-product__select-title">
+                            <p class="p-small color-black font-bold">Formula</p>
+                            <a href="#" class="disclaimer-reg color-gray what-this">What’s this?</a>
+                          </figcaption>
+        
+                          <label class="custom-radio sk-product__user-select  sk-product__select-formula form-control p-small color-black">Charged
+                            <input type="radio" checked="checked" name="formula">
+                            <span class="checkmark"></span>
+                          </label>
+                  
+                          <label class="custom-radio sk-product__user-select  sk-product__select-formula form-control p-small color-black">Caffeine free
+                            <input type="radio" name="formula">
+                            <span class="checkmark"></span>
+                          </label>
+                        </figure>
+        
+                        <!-- Delivery method  -->
+                        <figure class="sk-product__form-item">
+                          <figcaption class="sk-product__select-title">
+                            <p class="p-small color-black font-bold">Delivery</p>
+                          </figcaption>
+        
+                          <label class="custom-radio sk-product__user-select  sk-product__select-formula form-control p-small color-black">
+                            <span class="d-flex justify-content-between align-items-center">
+                              <span>One-time only</span>
+                              <span>$130</span>
+                            </span>
+                            <input type="radio" name="delivery">
+                            <span class="checkmark"></span>
+                          </label>
+                  
+                          <label class="custom-radio sk-product__user-select sk-product__select-formula form-control p-small color-black every-month">
+                            <span class="d-flex justify-content-between align-items-center">
+                              <span>Every month (SmartShip) 
+                                <span class="d-block color-green disclaimer-bold">
+                                  Save $28.60 starting next month
+                                </span>
+                              </span>
+                              <span class="font-bold">$101.40</span>
+                            </span>
+                            <input type="radio" name="delivery" checked="checked" >
+                            <span class="checkmark"></span>
+                          </label>
+                        </figure>
+        
+                        <p class="disclaimer-reg color-gray sk-product__earn-offer">You are eligible to earn FREE product. <a href="#" class="color-gray">Learn more</a></p>
+                      
+        
+                        <figure class="sk-product__user-amount quick-buy__user-amount d-flex justify-content-between align-items-center">
+        
+                          <div class="sk-product__amount-modify d-flex justify-content-between align-items-center">
+                            <button class="pack-qty-btn"><i class="fas fa-minus"></i></button>
+                            <p class="text-center qty-width p-small font-bold">1</p>
+                            <button class="pack-qty-btn"><i class="fas fa-plus"></i></button>
+                          </div>
+        
+                          <div class="sk-product__amount-cost">
+                            <!-- <h4 class="color-black d-none d-lg-block">Total: $101.40</h4> -->
+                            <h4 class="color-green"><del class="color-black font-reg">$130.00</del> $101.40</h4>
+                          </div>
+        
+                        </figure>
+        
+                        <button class="button buy-now button-primary full-width sk-product__add-tocart">
+                          <img src="./images/cart-icon-w.png" alt="Cart" class="cart-icon">
+                          ADD TO CART</button>
+        
+                      </div>
+                                    
+                    </figure>
+                  </div>
+                </div>
+                
+              </div>
+            </section>
+            <!-- quick buy content end -->
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- end of modal  -->
+
   <!-- end for main  -->
 
   <footer class="footer color-black-bg">
@@ -444,6 +585,9 @@
       </div>
     </div>
   </footer>
+
+
+  
 
   
   <script src="https://kit.fontawesome.com/c64fff7a9f.js" crossorigin="anonymous"></script>

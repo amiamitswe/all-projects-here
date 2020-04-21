@@ -1,4 +1,116 @@
 .quick-buy {
   max-width: 1100px;
-  margin: 30px auto;
+  margin: 5px auto;
+
+  @include respond(phone) {
+    padding: 5px;
+  }
+
+  @include respond(phone_small) {
+    padding: 0;
+  }
+
+  &__modal-content {
+    border-radius: 20px;
+
+    @include respond(tab_port) {
+      border-radius: 5px;
+    }
+  }
+
+  &__modal-body {
+    padding: 69px 93px 65px;
+
+    @include respond(tab_port) {
+      padding: 75px 25px 50px;
+    }
+
+    @include respond(phone) {
+      padding: 87px 5px 42px;
+    }
+
+    @include respond(phone_small) {
+      padding: 87px 0 42px;
+    }
+  }
+
+  .close {
+    width: 28px;
+    position: absolute;
+    height: 28px;
+    color: $color-white;
+    background: $color-black;
+    opacity: 1;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    z-index: 100;
+    right: 24px;
+    top: 24px;
+
+    @include respond(phone) {
+      right: 11px;
+      top: 16px;
+    }
+
+    span {
+      font-size: 15px;
+    }
+  }
+
+  &__thum-img {
+    width: 357.96px;
+    margin-bottom: 42px;
+    margin-left: 20px;
+
+    @include respond(phone) {
+      @include customWidth(222px);
+      margin-bottom: 23px;
+      display: block;
+    }
+  }
+
+  &__short-details {
+    display: block;
+
+    @include respond(phone) {
+      max-width: 100%;
+    }
+  }
+
+  &__savings {
+    @include respond(phone) {
+      margin-top: 20px;
+    }
+  }
+
+  &__view-details {
+    margin-top: 40px;
+
+    @include respond(phone) {
+      margin-top: 22px;
+    }
+  }
+
+  &__right-contetn {
+    padding-left: 40px;
+
+    @include respond(phone) {
+      padding-left: 0;
+      margin-top: 10px;
+    }
+  }
+
+  &__form {
+    max-width: 400px;
+    margin-top: 0;
+
+    @include respond(phone) {
+      max-width: 100%;
+    }
+  }
+
+  &__user-amount {
+    margin: 16px 0 42px;
+  }
 }
