@@ -2616,6 +2616,7 @@ select::-ms-expand {
   border-radius: 50%;
   display: flex;
   justify-content: center;
+  align-items: center;
   z-index: 100;
   right: 24px;
   top: 24px;
@@ -2760,10 +2761,6 @@ select::-ms-expand {
 
 .sk-cart__please-note--text p:not(:last-of-type) {
   margin-bottom: 10px;
-}
-
-.sk-cart {
-  padding-bottom: 200px;
 }
 
 .sk-cart__padd {
@@ -2962,6 +2959,7 @@ select::-ms-expand {
 .sk-cart__shipment {
   max-width: 314px;
   margin: 0 auto;
+  padding-bottom: 200px;
 }
 
 .sk-cart__shipment p,

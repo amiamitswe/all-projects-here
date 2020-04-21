@@ -1,5 +1,5 @@
 .sk-cart {
-  padding-bottom: 200px;
+
   &__padd {
     padding: 0 20px;
   }
@@ -196,6 +196,7 @@
   &__shipment {
     max-width: 314px;
     margin: 0 auto;
+    padding-bottom: 200px;
 
     p,
     a {
