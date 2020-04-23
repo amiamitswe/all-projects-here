@@ -134,8 +134,12 @@
       }
 
       img {
-        width: 33.87px;
+        width: 64px;
         height: auto;
+
+        @include respond (phone) {
+          width: 48px;
+        }
       }
     }
 

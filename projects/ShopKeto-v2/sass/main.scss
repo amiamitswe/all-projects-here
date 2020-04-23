@@ -12,11 +12,11 @@
 
 
 /*import web-component styles ------------*/
-@import './web/components';
-@import './web/header';
-@import './web/section-banner';
-@import './web/section-products';
-@import './web/footer';
+@import './home/components';
+@import './home/header';
+@import './home/section-banner';
+@import './home/section-products';
+@import './home/footer';
 
 /*import country-bar style --------------*/
 @import './country-bar/countryBar';
