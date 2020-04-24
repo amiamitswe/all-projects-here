@@ -217,6 +217,8 @@ p {
 }
 
 .button-icon {
+  position: relative;
+
   &::after {
     content: "\f061";
     font-family: FontAwesome;
@@ -228,6 +230,13 @@ p {
       content: none;
     }
   }
+}
+
+.add-to-cart-icon {
+  background-image: url(../images/cart-icon-w.png);
+  background-repeat: no-repeat;
+  background-size: 24px;
+  background-position: 20px 50%;
 }
 
 /*------------ links -------------------*/

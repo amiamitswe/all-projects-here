@@ -67,10 +67,7 @@
 
     .button-icon {
       &::after {
-        font-family: $FontAwesome;
         font-size: unset;
-        margin-left: 28px;
-        position: absolute;
         content: "\f30b";
       }
     }

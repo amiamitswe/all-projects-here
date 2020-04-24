@@ -271,6 +271,10 @@ p {
   }
 }
 
+.button-icon {
+  position: relative;
+}
+
 .button-icon::after {
   content: "\f061";
   font-family: FontAwesome;
@@ -283,6 +287,13 @@ p {
   .button-icon::after {
     content: none;
   }
+}
+
+.add-to-cart-icon {
+  background-image: url(../images/cart-icon-w.png);
+  background-repeat: no-repeat;
+  background-size: 24px;
+  background-position: 20px 50%;
 }
 
 /*------------ links -------------------*/
@@ -2846,10 +2857,7 @@ select::-ms-expand {
 }
 
 .sk-ref__input-btn .button-icon::after {
-  font-family: "FontAwesome";
   font-size: unset;
-  margin-left: 28px;
-  position: absolute;
   content: "\f30b";
 }
 
@@ -3024,6 +3032,12 @@ select::-ms-expand {
   height: 48px;
   font-size: 16px;
   line-height: 19px;
+}
+
+.sk-cart__cart-btn.button-icon:after {
+  right: 20px;
+  font-size: unset;
+  content: "\f30b";
 }
 
 .sk-cart__suggest-product-wrap {
@@ -3271,7 +3285,7 @@ select::-ms-expand {
   background-image: url(../images/checkout-cart-icon.png);
   background-repeat: no-repeat;
   background-size: 16px;
-  background-position: 18px 50%;
+  background-position: 20px 50%;
 }
 
 .sk-cart__chackout-btn:hover {

@@ -42,6 +42,14 @@
     height: 48px;
     font-size: $default-fontsize-m;
     line-height: $line-height-19;
+
+    &.button-icon {
+      &:after {
+        right: 20px;
+        font-size: unset;
+        content: "\f30b";
+      }
+    }
   }
 
   &__suggest-product-wrap {
