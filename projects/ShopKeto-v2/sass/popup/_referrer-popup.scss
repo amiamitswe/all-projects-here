@@ -1,0 +1,84 @@
+.sk-ref {
+  &__dialog {
+    max-width: 740px;
+  }
+
+  &__content {
+    border-radius: 20px;
+  }
+
+  &__body {
+    padding: 52px 45px 57px;
+
+    @include respond(phone) {
+      padding: 50px 25px 30px;
+    }
+  }
+
+  .close {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: $color-black;
+    opacity: 1;
+    color: $color-white;
+    line-height: 0;
+    right: 20px;
+    top: 20px;
+    font-size: $btn-default-fontsize;
+
+    @include respond(phone) {
+      right: 15px;
+      top: 15px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 8px;
+    font-size: $font-mid-small;
+    line-height: $line-height-36;
+  }
+
+  &__subtitle {
+    font-size: $font-small;
+    line-height: $line-height-28;
+  }
+
+  &__form-box {
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+
+  &__input-form {
+    margin-right: 12px;
+
+    @include respond(phone) {
+      margin-right: 0;
+      margin-bottom: 12px;
+    }
+  }
+
+  &__input-btn {
+    width: 187px;
+
+    @include respond(phone) {
+      width: 100%;
+    }
+
+    .button-icon {
+      &::after {
+        font-family: $FontAwesome;
+        font-size: unset;
+        margin-left: 28px;
+        position: absolute;
+        content: "\f30b";
+      }
+    }
+  }
+
+  &__msg {
+    @include respond(phone) {
+      text-align: center;
+    }
+  }
+}

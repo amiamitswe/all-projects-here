@@ -48,15 +48,11 @@
     z-index: 100;
     right: 24px;
     top: 24px;
+    font-size: $btn-default-fontsize;
 
     @include respond(phone) {
       right: 11px;
       top: 16px;
-    }
-
-    span {
-      font-size: 15px;
-      line-height: 0;
     }
   }
 

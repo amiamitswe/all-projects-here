@@ -1,11 +1,16 @@
 .sk-main {
   &__top {
     margin-top: 63px;
+    overflow: hidden;
 
     @include respond(phone) {
       padding: 0 18px;
       margin-top: 30px;
     }
+  }
+
+  &__slider-container {
+    max-width: 1210px;
   }
 
   &__title {
@@ -27,11 +32,18 @@
   &__banner {
     padding: 43px 135px 15px;
     border-radius: 20px;
+    margin: 0 20px;
+    opacity: 0.25;
+
+    &.slick-current {
+      opacity: 1;
+    }
 
     @include respond(tab_land) {
       margin: 0 30px;
       padding-left: 85px;
       padding-right: 85px;
+      margin: 0 10px;
     }
 
     @include respond(tab_port) {
@@ -41,15 +53,19 @@
     @include respond(phone) {
       padding: 27px 30px 20px;
       text-align: center;
-      margin: 0 15px;
+      margin: 0 10px;
     }
 
-    @include respond (phone_small) {
-      margin: 0;
+    @include respond(phone_small) {
+      margin: 0 5px;
     }
   }
 
   &__banner-slider {
+    .slick-list {
+      overflow: visible;
+    }
+
     .slick-arrow {
       width: 48px;
       height: 48px;
@@ -75,35 +91,39 @@
     }
 
     .slick-prev {
-      left: -27px;
+      left: -10px;
 
       @include respond(tab_land) {
         left: 5px;
       }
 
-      @include respond (phone) {
+      @include respond(phone) {
         left: 0;
       }
 
-      @include respond (phone_small) {
+      @include respond(phone_small) {
         left: -15px;
       }
     }
 
     .slick-next {
-      right: -27px;
+      right: -5px;
 
       @include respond(tab_land) {
         right: 5px;
       }
 
-      @include respond (phone) {
-       right: 0; 
+      @include respond(phone) {
+        right: 0;
       }
 
-      @include respond (phone_small) {
+      @include respond(phone_small) {
         right: -15px;
       }
+    }
+
+    .slick-disabled {
+      display: none !important;
     }
 
     .slick-prev:before,
@@ -151,7 +171,7 @@
   }
 
   &__custom-col-m {
-    @include respond (phone) {
+    @include respond(phone) {
       padding: 0;
     }
   }
@@ -203,7 +223,7 @@
   }
 
   &__banner-custom-btn {
-    @include respond (phone) {
+    @include respond(phone) {
       padding: 13.2px;
     }
   }
@@ -217,7 +237,6 @@
     }
 
     @include respond(phone) {
-      // width: 211px;
       @include customWidth(211px);
     }
   }

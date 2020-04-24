@@ -63,7 +63,6 @@ h6 {
   letter-spacing: $h6-letter-spacing;
 }
 
-
 p {
   font-family: $acumin-pro;
   font-style: normal;
@@ -192,7 +191,6 @@ p {
   padding: 18px 10px 20px;
   font-size: $font-18;
   line-height: $line-height-22;
-  padding-right: 20px;
   letter-spacing: $letter-spacing-p5;
   height: 58px;
 
@@ -214,10 +212,9 @@ p {
     padding: 15px 10px;
     font-size: $btn-default-fontsize;
     line-height: $line-height-19;
-    letter-spacing: $letter-spacing-p5
+    letter-spacing: $letter-spacing-p5;
   }
 }
-
 
 .button-icon {
   &::after {
@@ -355,9 +352,13 @@ p {
   &-green {
     color: $color-green;
   }
+
+  &-red {
+    color: $color-red;
+  }
 }
 
-/* ----------------------- retina-img ---------------------------*/
+/* retina-img ----------------*/
 .retina-img {
   width: 50%;
   height: auto;
@@ -369,4 +370,26 @@ p {
 
 .display-none {
   display: none;
+}
+
+/* sk-form-control ---------*/
+.sk-form-control {
+  height: 58px;
+  border-radius: 5px;
+  font-family: $acumin-pro;
+  font-style: normal;
+  font-weight: $font-regular;
+  font-size: $default-fontsize;
+  line-height: $line-height-28;
+  border: 1px solid $color-gray-3;
+  color: $color-black;
+
+  &:focus {
+    box-shadow: inset 0px 0px 5px #0534D8;
+    border-color: $color-brand;
+  }
+
+  ::placeholder {
+    color: $color-gray;
+  }
 }

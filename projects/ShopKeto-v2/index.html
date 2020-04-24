@@ -81,12 +81,13 @@
 
   <main class="sk-main">
     <section class="sk-main__top">
-      <div class="container">
+      <div class="container sk-main__slider-container">
         <div class="sk-main__title text-center">
           <h1 class="color-black">Official Store</h1>
-          <h4 class="color-black sk-main__title-b">Brought to you by <span class="color-brand">Whisper Underwood</span></h4>
-        </div>
 
+          <h4 class="color-black sk-main__title-b">Brought to you by <a href="#" class="color-brand link-hover" data-toggle="modal" data-target="#referrerCode">Whisper Underwood</a></h4>
+        </div>
+  
         <div class="sk-main__banner-slider">
           <div class="sk-main__banner sk-hpage-header-bg">
             <div class="row">
@@ -133,10 +134,10 @@
               </div>
             </div>
           </div>
-          
+        </div>
         </div>
 
-      </div>
+      
     </section>
 
     <section class="sk-main__products">
@@ -443,6 +444,45 @@
       </div>
     </div>
   <!-- end of modal  -->
+
+
+  <!-- referral modal 2 start  -->
+  <div class="modal fade sk-ref" id="referrerCode" tabindex="-1" role="dialog" aria-labelledby="referrerCodeTitle" aria-hidden="true">
+    <div class="modal-dialog sk-ref__dialog" role="document">
+      <div class="modal-content sk-ref__content">
+        <div class="modal-body sk-ref__body">
+          <button type="button" class="close position-absolute" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><i class="fas fa-times"></i></span>
+          </button>
+          <h3 class="color-black text-center sk-ref__title">Who told you about Prüvit?</h3>
+          <h4 class="text-center color-gray sk-ref__subtitle">Please enter your referring member’s Referrer Code</h4>
+
+
+          <form>
+            <div class="form-row align-items-center sk-ref__form-box">
+              <div class="sk-ref__input-form flex-fill">
+                <label class="sr-only" for="referrerEmail">Name</label>
+                <input type="email" class="form-control sk-form-control" id="referrerEmail" placeholder="Referrer code">
+              </div>
+
+              <div class="sk-ref__input-btn">
+                <button type="submit" class="button button-large button-primary button-icon">Submit 
+                  <!-- <i class="fas fa-long-arrow-alt-right right-arrow"></i> -->
+                </button>
+              </div>
+            </div>
+          </form>
+
+
+          <p class="color-gray disclaimer-bold sk-ref__msg">Not sure what this means? Send an email with subject line Referrer code to <a href="mailto:support@pruvithq.com" class="color-gray link-hover">support@pruvithq.com</a></p>
+
+          <p class="color-red disclaimer-bold sk-ref__msg d-none">This Referrer Code is invalid. Please check with your Referrer and try again</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- referral modal 2 end  -->
 
   <!-- end for main  -->
 

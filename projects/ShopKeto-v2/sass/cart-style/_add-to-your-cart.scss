@@ -10,6 +10,11 @@
     line-height: 23px;
   }
 
+  &__header-title {
+    font-size: $font-small;
+    line-height: $line-height-28;
+  }
+
   &__content-width {
     padding: 0 20px;
   }
@@ -33,16 +38,79 @@
   &__cart-btn {
     max-width: 100%;
     margin-bottom: 20px;
+    padding: 15.3px 10px;
+    height: 48px;
+    font-size: $default-fontsize-m;
+    line-height: $line-height-19;
   }
 
-  &__suggest-product {
-    margin-top: 30px;
+  &__suggest-product-wrap {
+    margin-top: 32px;
+  }
 
-    &--img {
-      width: 224px;
-      height: 224px;
-      margin: 13px auto 7px;
-      background-color: $border-color-3;
+  &__sug-product-all {
+    margin-top: 15px;
+    padding-bottom: 50px;
+  }
+
+  &-sug__product {
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px 5px 16px 5px;
+  }
+
+  &-sug__product-img {
+    width: 87.2px;
+    height: 81px;
+    margin: 0 auto;
+
+    img {
+      max-height: -webkit-fill-available;
+      max-height: 100%;
+    }
+  }
+
+  &-sug__custom-pad {
+    &-l {
+      padding-left: 0;
+      padding-right: 5px;
+    }
+
+    &-r {
+      padding-right: 0;
+      padding-left: 5px;
+    }
+  }
+
+  &-sug__product-details {
+    height: 55px;
+    margin-top: 6px;
+  }
+
+  &-sug__product-title {
+    font-size: $font-14;
+    line-height: $line-height-15;
+    height: 28px;
+    margin-bottom: 0;
+
+    @include respond (phone_small) {
+      font-size: $font-12;
+    }
+  }
+
+  &-sug__product-from {
+    font-size: $font-12;
+  }
+
+  &-sug__product-btn {
+    margin-top: 5px;
+
+    button {
+      max-width: $buynow-btn-width-m;
+      padding: 11.2px 10px;
+      font-size: $font-14;
+      line-height: $line-height-14;
+      height: auto;
     }
   }
 

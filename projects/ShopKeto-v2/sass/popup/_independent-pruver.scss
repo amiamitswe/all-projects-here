@@ -1,0 +1,112 @@
+.sk-pruver {
+  &__dialog {
+    max-width: 570px;
+  }
+
+  &__content {
+    border-radius: 20px;
+  }
+
+  &__body {
+    padding: 54px 50px;
+
+    @include respond (phone) {
+      padding: 30px;
+    }
+  }
+
+  .close {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: $color-black;
+    opacity: 1;
+    color: $color-white;
+    line-height: 0;
+    right: 20px;
+    top: 20px;
+    font-size: $btn-default-fontsize;
+
+    @include respond (phone) {
+      right: 15px;
+      top: 15px;
+    }
+  }
+
+  &__user {
+    &-info {
+      margin-bottom: 25px;
+    }
+
+    &-img {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      background-color: $color-gray-3;
+    }
+
+    &-name {
+      margin-top: 7px;
+      margin-bottom: 5px;
+    }
+
+    &-designation {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+
+    @include respond (phone) {
+      flex-direction: column;
+    }
+  }
+
+  &__btn {
+    font-family: $font-rift;
+    font-style: normal;
+    font-weight: $font-bold;
+    font-size: $btn-default-fontsize;
+    line-height: $line-height-19;
+    text-align: center;
+    letter-spacing: $letter-spacing-p5;
+    text-transform: uppercase;
+    border: none;
+    box-shadow: 0px 9px 24px #E2E5F5;
+    border-radius: 50px;
+    padding: 10px 20px;
+    height: 38px;
+    width: 145px;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0px 0px 15px #E2E5F5;
+    }
+
+    @include respond (phone) {
+      margin: 0 auto;
+    }
+
+    &:not(:last-child) {
+      margin-right: 14px;
+
+      @include respond (phone) {
+        margin-right: auto;
+        margin-bottom: 14px;
+      }
+    }
+  }
+}
