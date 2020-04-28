@@ -1,0 +1,237 @@
+.rs-main {
+  padding-bottom: 50px;
+
+  @include respond(phone) {
+    padding: 0 17px 50px;
+  }
+
+  &__banner-top-img {
+    width: 155px;
+    height: 155px;
+    margin: 48px auto 0;
+    background: $color-white-country;
+
+    img {
+      height: 77.07px;
+    }
+
+    @include respond (phone) {
+      margin-top: 28px;
+    }
+  }
+
+  &__banner-top {
+    margin-top: 20px;
+    margin-bottom: 5px;
+
+    @include respond(phone) {
+      margin-top: 20px;
+    }
+  }
+
+  &__title {
+    &-d {
+      display: block;
+      @include respond(phone) {
+        display: none;
+      }
+    }
+
+    &-m {
+      display: none;
+
+      @include respond(phone) {
+        display: block;
+      }
+    }
+  }
+
+  &__get-title {
+    margin: 35px auto 40px;
+    width: 274px;
+    height: 37px;
+    background: #ffdcc4;
+    border: 1px solid #fcc197;
+    border-radius: 43px;
+  }
+
+  &__time-left {
+    font-family: $acumin-pro;
+    font-style: normal;
+    font-weight: $font-regular;
+    font-size: $default-fontsize-m;
+    line-height: $line-height-22;
+    color: #af8c73;
+    padding-top: 5px;
+
+    .clock-icon {
+      margin-right: 8px;
+    }
+
+    .the-time {
+      margin-left: 8px;
+    }
+  }
+
+  &__from-container {
+    max-width: 570px;
+    margin: 0 auto;
+    padding-bottom: 62px;
+
+    @include respond(phone) {
+      padding-bottom: 40px;
+    }
+  }
+
+  &__c-from {
+    font-family: $acumin-pro;
+    font-style: normal;
+    font-weight: $font-regular;
+    font-size: $font-18;
+    line-height: $line-height-25;
+    color: $color-black;
+    padding: 15px 12px 5px;
+    border-radius: 5px;
+    background-color: $border-color-3;
+    height: auto;
+    border: 1px solid transparent;
+
+    &:focus {
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      background-color: $color-white;
+      border: 1px solid $color-brand;
+    }
+
+    &::-webkit-input-placeholder {
+      color: $color-gray;
+    }
+
+    &::-moz-placeholder {
+      color: $color-gray;
+    }
+
+    &:-ms-input-placeholder {
+      color: $color-gray;
+    }
+
+    &::-ms-input-placeholder {
+      color: $color-gray;
+    }
+
+    &::placeholder {
+      color: $color-gray;
+    }
+  }
+
+  .title {
+    font-family: $acumin-pro;
+    font-style: normal;
+    font-weight: $font-bold;
+    font-size: $font-12;
+    line-height: $line-height-18;
+    color: $color-gray;
+
+    position: absolute;
+    left: 16px;
+    top: 0px;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+    visibility: visible;
+    -webkit-transform: translateY(5px);
+    -ms-transform: translateY(5px);
+    transform: translateY(5px);
+
+    z-index: 100;
+
+    @include respond(phone) {
+      -webkit-transform: translateY(3px);
+      -ms-transform: translateY(3px);
+      transform: translateY(3px);
+    }
+  }
+
+  &__c-from:placeholder-shown {
+    padding: 10px  12px;
+  }
+
+  &__c-from:placeholder-shown + .title {
+    opacity: 0;
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+    visibility: hidden;
+  }
+
+  &__c-from.rs-main__select-c-code {
+    padding-left: 60px;
+  }
+
+  .input-group-prepend {
+    position: absolute;
+    height: 100%;
+    border: none;
+  }
+
+  .input-group-text {
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+
+    img {
+      max-height: 16px;
+      margin-right: 7px;
+    }
+  }
+
+  &__from-row {
+    .form-group {
+      margin-bottom: 8px;
+
+      .down-arrow-icon {
+        font-size: 10px;
+      }
+    }
+  }
+
+  &__button {
+    width: 100%;
+    margin-top: 14px;
+
+    @include respond(phone) {
+      margin-top: 8px;
+    }
+
+    button {
+      max-width: 100%;
+      padding: 17px 10px;
+      height: 58px;
+
+      &::after {
+        content: "\f30b";
+        right: 20px;
+        font-size: unset;
+      }
+    }
+  }
+
+  &__learn-more {
+    margin-bottom: 5px;
+  }
+
+  &__video-section {
+    width: 571px;
+    height: 340px;
+    margin: 0 auto;
+
+    @include respond(phone) {
+      height: auto;
+      width: 100%;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.rs-disclaimer {
+  margin-top: 90px;
+
+  @include respond(tab_port) {
+    padding: 0 30px;
+  }
+
+  @include respond(phone) {
+    margin-top: 30px;
+  }
+
+  &__container {
+    max-width: 936px;
+    margin: 0 auto;
+
+    @include respond(tab_land) {
+      padding: 0 10px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,56 @@
+.rs-header {
+  padding: 7px 0;
+
+  @include respond(phone) {
+    padding: 9px 0;
+  }
+
+  &__desktop {
+    display: block;
+
+    @include respond(phone) {
+      display: none;
+    }
+  }
+
+  &__mobile {
+    display: none;
+
+    @include respond(phone) {
+      display: block;
+    }
+  }
+
+  &__logo-box {
+    max-width: 118px;
+
+    @include respond(phone) {
+      max-width: 87.86px;
+      margin: 0 auto;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &-contat-btn {
+    padding: 0 0 0 10px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__user {
+    @include respond(phone) {
+      position: absolute;
+      right: 20px;
+    }
+
+    img {
+      width: 29px;
+      height: 29px;
+    }
+  }
+}
