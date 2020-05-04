@@ -48,7 +48,7 @@
 
   &__get-title {
     margin: 35px auto 40px;
-    width: 274px;
+    width: 300px;
     height: 37px;
     background: #ffdcc4;
     border: 1px solid #fcc197;
@@ -168,20 +168,41 @@
     padding-left: 60px;
   }
 
-  .input-group-prepend {
-    position: absolute;
-    height: 100%;
-    border: none;
+  &__select-country {
+    width: 60px;
   }
 
-  .input-group-text {
-    border: none;
-    background-color: inherit;
-    cursor: pointer;
+  &__mybtn {
+    width: 60px;
+    padding: 12px 5px;
+    height: 46.8px;
 
-    img {
-      max-height: 16px;
-      margin-right: 7px;
+    &::after {
+      font-family: FontAwesome;
+      content: "\f078";
+      border: none;
+      font-size: 10px;
+      color: $color-gray;
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+
+  &__country-list {
+    padding-left: 10px;
+    border-bottom: 1px solid $color-white-country;
+    width: 100%;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    a {
+      width: 100%;
+      display: block;
     }
   }
 
@@ -194,6 +215,16 @@
       }
     }
   }
+
+  &__shiping-cost {
+    margin: 8px 0;
+
+    .total-cost {
+      font-size: $font-mid-big-m;
+      font-weight: $font-bold;
+    }
+  }
+
 
   &__button {
     width: 100%;
@@ -211,7 +242,7 @@
       &::after {
         content: "\f30b";
         right: 20px;
-        font-size: unset;
+        font-size: 20px;
       }
     }
   }

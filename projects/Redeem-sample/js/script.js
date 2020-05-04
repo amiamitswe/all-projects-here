@@ -1,0 +1,26 @@
+$("#options").flagStrap({
+  countries: {
+    BD: "",
+    GB: "",
+    US: "",
+    AF: "",
+    AL: "",
+    DZ: "",
+    AS: "",
+    AD: "",
+    AO: "",
+    AI: "",
+    AG: "",
+  },
+  buttonSize: "btn-sm",
+  buttonType: "rs-main__mybtn",
+  labelMargin: "5px",
+  scrollable: true,
+  scrollableHeight: "150px",
+  listWidth: "280px",
+  listStyle: "rs-main__country-list",
+  placeholder: {
+    value: "",
+    text: "",
+  },
+});
