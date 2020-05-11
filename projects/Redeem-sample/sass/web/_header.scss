@@ -1,8 +1,10 @@
 .rs-header {
   padding: 7px 0;
+  height: 81px;
 
   @include respond(phone) {
     padding: 9px 0;
+    height: auto;
   }
 
   &__desktop {
@@ -40,6 +42,12 @@
     &:focus {
       outline: none;
     }
+  }
+
+  &__user-box {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 100%;
+    flex: 0 1 100%;
   }
 
   &__user {
