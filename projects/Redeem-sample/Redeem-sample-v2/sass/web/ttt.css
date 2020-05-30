@@ -1,0 +1,25 @@
+.rs-main__c-from.rs-main__select-c-code {
+  padding-left: 70px;
+}
+
+.rs-main__select-country {
+  width: 70px;
+  font-size: 17px;
+  padding-left: 10px;
+  color: #131313;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.rs-main__select-country-wrap::after {
+  position: absolute;
+  content: "\f107";
+  font-family: "FontAwesome";
+  top: 14.5px;
+  right: 4.5px;
+  pointer-events: none;
+  font-size: 14px;
+  color: #131313;
+}

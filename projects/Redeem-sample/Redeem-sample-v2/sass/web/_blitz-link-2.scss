@@ -1,0 +1,32 @@
+.rs-main {
+  &__banner-top-img
+  &__banner-thums-up {
+    height: 54px;
+  }
+
+  &__banner-title-2 {
+    max-width: 770px;
+  }
+
+  &__inTheMintime-alert {
+    margin-top: 58px;
+  }
+
+  &__watch-tv-btn-box {
+    margin-top: 55px;
+  }
+
+  &__watch-tv-btn {
+    max-width: 343px;
+    padding-left: 19px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "\f26c";
+      font-family: $FontAwesome;
+      left: 19px;
+      font-size: 20px;
+    }
+  }
+}
