@@ -53,6 +53,10 @@
     background: #ffdcc4;
     border: 1px solid #fcc197;
     border-radius: 43px;
+
+    @include respond (phone_small) {
+      width: 280px;
+    }
   }
 
   &__time-left {
@@ -80,6 +84,30 @@
 
     @include respond(phone) {
       padding-bottom: 40px;
+    }
+
+
+    .dropdown-menu {
+      padding: 0;
+      width: 282px !important;
+
+      @include respond (phone) {
+        width: calc(100vw - 34px) !important;
+      }
+
+      &::-webkit-scrollbar {
+        width: 5px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: #c1c1c1; 
+        border-radius: 2px;
+      }
+
+      &::-webkit-scrollbar-track {
+        border-radius: 2px;
+        background: #f1f1f1;
+      }
     }
   }
 
@@ -203,6 +231,20 @@
     a {
       width: 100%;
       display: block;
+    }
+
+    &:not(:first-child) {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      height: 46px;
+    }
+
+    .remove-country {
+      margin-left: 8px;
     }
   }
 

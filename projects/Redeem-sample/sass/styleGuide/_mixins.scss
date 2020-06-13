@@ -1,6 +1,13 @@
 // MEDIA QUERY MANAGER
 
 @mixin respond($breakpoint) {
+
+  @if $breakpoint == phone_small {
+    @media only screen and (max-width: 320px) {
+      @content;
+    } //320px
+  }
+
   @if $breakpoint == phone {
     @media only screen and (max-width: 767px) {
       @content;
