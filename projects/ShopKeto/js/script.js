@@ -128,6 +128,11 @@ $(document).ready(function(){
     $(".add_overlay").removeClass("overlay");
   });
 
+  $(".sk-cart__chackout-btn").click(function(){
+    $(".sk-checkout-cart").removeClass("sk-cart__show");
+    $(".add_overlay").removeClass("overlay");
+  });
+
 
 
   // please note

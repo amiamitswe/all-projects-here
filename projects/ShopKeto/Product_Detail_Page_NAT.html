@@ -33,17 +33,17 @@
       
           <ul class="navbar-nav ml-md-auto text-right">
             <li class="nav-item">
-              <a class="nav-link sk-header__nav-link" href="javascript:void(0);"><img src="./images/country.png" class="img-fluid sk-header__country-icon" alt="country">
+              <a class="nav-link sk-header__nav-link sk-header__country" href="javascript:void(0);"><img src="./images/country.png" class="img-fluid sk-header__country-icon" alt="country">
                 <!-- <i class="fas fa-chevron-down country_select-arrow color-black"></i> -->
               </a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link sk-header__nav-link" href="javascript:void(0);"><img src="./images/user.png" class="img-fluid retina-img sk-header__icon" alt="user"></a>
+              <a class="nav-link sk-header__nav-link" href="javascript:void(0);" data-toggle="modal" data-target="#independentPruver"><img src="./images/user.png" class="img-fluid retina-img sk-header__icon" alt="user"></a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link sk-header__nav-link cart-has-product" href="javascript:void(0);"><img src="./images/cart.png" class="img-fluid retina-img sk-header__icon" alt="cart"></a>
+              <a class="nav-link sk-header__nav-link cart-has-product sk-header__cart" href="javascript:void(0);"><img src="./images/cart.png" class="img-fluid retina-img sk-header__icon" alt="cart"></a>
             </li>
           </ul>
         </div>
@@ -1216,6 +1216,45 @@
     </section>
 
   </main>
+
+
+  <!--independentPruver Modal start -->
+  <div class="modal fade sk-pruver" id="independentPruver" tabindex="-1" role="dialog" aria-labelledby="independentPruverTitle" aria-hidden="true">
+    <div class="modal-dialog sk-pruver__dialog" role="document">
+      <div class="modal-content sk-pruver__content color-light-white-bg">
+        <div class="modal-body sk-pruver__body">
+          <button type="button" class="close position-absolute" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><i class="fas fa-times"></i></span>
+          </button>
+
+          <div class="sk-pruver__user-info text-center">
+            <figure class="sk-pruver__user-img mx-auto">
+              <img src="./images/indepedent-pruver-user.png" class="img-fluid" alt="pruver">
+            </figure>
+
+            <h3 class="color-black sk-pruver__user-name">Emili Iv</h3>
+
+            <p class="disclaimer-reg color-gray sk-pruver__user-designation">Independent Prüver</p>
+
+            <a href="tel:+982589259052" class="p-small color-gray d-block link-hover">+982589259052</a>
+
+            <a href="mailto:emili.iv@gmail.com" class="p-small color-gray link-hover d-block">emili.iv@gmail.com</a>
+          </div>
+
+          <div class="ff">
+            <div class="sk-pruver__btns">
+              <button class="sk-pruver__btn color-brand color-white-bg">CALL me 📞</button>
+              <button class="sk-pruver__btn color-brand color-white-bg">text me 💬</button>
+              <button class="sk-pruver__btn color-brand color-white-bg">EMAIL me 📨</button>
+            </div>
+          </div>
+          
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!--independentPruver Modal end -->
 
 
   <footer class="footer color-black-bg">
