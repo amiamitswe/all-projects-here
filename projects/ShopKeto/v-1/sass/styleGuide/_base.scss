@@ -7,11 +7,12 @@
   box-sizing: inherit;
 }
 
-h1,h2,h3,h4,h5,h6,p,img,div,figure,section,ul,ol,li,table,tbody,thead, label {
+h1,h2,h3,h4,h5,h6,p,img,div,figure,section,ul,ol,li,table,tbody,thead {
   margin: 0;
 }
 
 html {
+  font-size: 62.5%; /* 1rem = 10px */
   scroll-behavior: smooth;
 }
 

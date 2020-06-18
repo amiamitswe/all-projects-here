@@ -54,14 +54,6 @@ h4 {
   }
 }
 
-h6 {
-  font-size: $h6-font-size;
-  font-family: $h6-font-family;
-  font-style: $h6-font-style;
-  font-weight: $h6-font-weight;
-  line-height: $h6-line-height;
-  letter-spacing: $h6-letter-spacing;
-}
 
 p {
   font-family: $acumin-pro;
@@ -109,15 +101,6 @@ p {
   letter-spacing: $letter-spacing-p2;
 }
 
-.learn-bold {
-  font-family: $font-rift;
-  font-style: normal;
-  font-weight: $font-bold;
-  font-size: $font-12;
-  line-height: $line-height-20;
-  letter-spacing: $letter-spacing-p5;
-}
-
 /* ------------------------ Buttons -----------------------------*/
 
 .button {
@@ -134,7 +117,7 @@ p {
   display: inline-block;
   border-radius: 5px;
   width: 100%;
-  padding: 10px;
+  padding: 1rem;
   max-width: fit-content;
   text-align: center;
   white-space: nowrap;
@@ -160,65 +143,47 @@ p {
 
 .buy-now {
   max-width: $buynow-btn-width;
-  padding: 15.3px 10px;
-  height: 48px;
+  padding: 1.53rem 1rem;
 
   @include respond(phone) {
     max-width: $buynow-btn-width-m;
-    padding: 11.2px 10px;
+    padding: 1.12rem 1rem;
     font-size: $font-14;
     line-height: $line-height-14;
-    height: auto;
+    letter-spacing: $letter-spacing-03;
   }
 }
 
 .buy-now-lg {
   max-width: $buynow-btn-width-l;
-  padding: 20px 10px;
-  height: 58px;
+  padding: 2rem 1rem;
 
   @include respond(phone) {
     max-width: $buynow-btn-width-l-m;
-    padding: 15px 10px;
+    padding: 1.5rem 1rem;
     font-size: $font-18;
     line-height: $line-height-22;
-    height: auto;
   }
 }
 
 .button-large {
   max-width: $button-large-width;
-  padding: 18px 10px 20px;
+  padding: 2rem 1rem;
   font-size: $font-18;
   line-height: $line-height-22;
-  letter-spacing: $letter-spacing-p5;
-  height: 58px;
-
-  @include respond(phone) {
-    max-width: 100%;
-  }
-}
-
-.button-large-2 {
-  max-width: $button-large-width;
-  padding: 20px 10px;
-  font-size: $font-18;
-  line-height: $line-height-22;
-  padding-right: 20px;
+  padding-right: 2rem;
   letter-spacing: $letter-spacing-p7;
 
   @include respond(phone) {
     max-width: 100%;
-    padding: 15px 10px;
+    padding: 1.5rem 1rem;
     font-size: $btn-default-fontsize;
     line-height: $line-height-19;
-    letter-spacing: $letter-spacing-p5;
+    letter-spacing: $letter-spacing-p5
   }
 }
 
 .button-icon {
-  position: relative;
-
   &::after {
     content: "\f061";
     font-family: FontAwesome;
@@ -232,15 +197,7 @@ p {
   }
 }
 
-.add-to-cart-icon {
-  background-image: url(../images/cart-icon-w.png);
-  background-repeat: no-repeat;
-  background-size: 24px;
-  background-position: 20px 50%;
-}
-
 /*------------ links -------------------*/
-
 .a-link {
   font-size: $default-fontsize;
   font-family: $acumin-pro;
@@ -250,30 +207,13 @@ p {
   letter-spacing: $letter-spacing-05;
   border: none;
   background-color: transparent;
+  cursor: pointer;
   text-decoration: none;
-}
-
-.button-link {
-  font-family: $font-rift;
-  font-size: $btn-default-fontsize;
-  line-height: $line-height-19;
-  font-style: normal;
-  font-weight: $font-bold;
-  text-transform: uppercase;
-  letter-spacing: $letter-spacing-p5;
-  text-decoration: none;
-  color: $color-brand;
-  transition: all 0.2s;
-  display: block;
-}
-
-.link-hover {
+  border-bottom: 1px solid transparent;
   color: $color-brand;
 
   &:hover {
     color: $btn-hover-color;
-    text-decoration: underline;
-    cursor: pointer;
   }
 }
 
@@ -357,48 +297,10 @@ p {
   &-white-dsrk-bg {
     background-color: $color-white-dark;
   }
-
-  &-green {
-    color: $color-green;
-  }
-
-  &-red {
-    color: $color-red;
-  }
 }
 
-/* retina-img ----------------*/
+/* ----------------------- retina-img ---------------------------*/
 .retina-img {
   width: 50%;
   height: auto;
-}
-
-.full-width {
-  max-width: 100%;
-}
-
-.display-none {
-  display: none;
-}
-
-/* sk-form-control ---------*/
-.sk-form-control {
-  height: 58px;
-  border-radius: 5px;
-  font-family: $acumin-pro;
-  font-style: normal;
-  font-weight: $font-regular;
-  font-size: $default-fontsize;
-  line-height: $line-height-28;
-  border: 1px solid $color-gray-3;
-  color: $color-black;
-
-  &:focus {
-    box-shadow: inset 0px 0px 5px #0534D8;
-    border-color: $color-brand;
-  }
-
-  ::placeholder {
-    color: $color-gray;
-  }
 }

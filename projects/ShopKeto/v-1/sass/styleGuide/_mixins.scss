@@ -1,26 +1,35 @@
 // MEDIA QUERY MANAGER
 
-@mixin respond($breakpoint) {
-  @if $breakpoint == phone_small {
-    @media only screen and (max-width: 340px) {
-      @content;
-    } //340px
-  }
+/*------
+0 - 767px: phone
+767 - 900px: tab-portrait
+900 - 1024px: tab-landscape
+[1024 - 1800] is regular style apply
+---------*/
 
+//BREAKPOINTS ARGUEMENT CHOICES
+/*------- 
+- phone
+- tab_port
+- tab_land
+1em = 16px
+--------*/
+
+@mixin respond($breakpoint) {
   @if $breakpoint == phone {
-    @media only screen and (max-width: 767px) {
+    @media only screen and (max-width: 47.94em) {
       @content;
     } //767px
   }
 
   @if $breakpoint == tab_port {
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 56.25em) {
       @content;
     } //900 px
   }
 
   @if $breakpoint == tab_land {
-    @media only screen and (max-width: 1200px) {
+    @media only screen and (max-width: 64em) {
       @content;
     } //1200px
   }
@@ -34,9 +43,4 @@
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-}
-
-@mixin customWidth($width) {
-  width: $width;
-  margin: 0 auto;
 }

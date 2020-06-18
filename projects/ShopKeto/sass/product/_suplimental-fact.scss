@@ -1,0 +1,121 @@
+.sk-sf {
+  @include customWidth($table-width);
+  margin-top: 25px;
+
+  @include respond(phone) {
+    width: 100%;
+    padding: 0 15px;
+    margin-top: 0;
+    padding-top: 20px;
+  }
+
+  &__table-box {
+    padding: 20px;
+    border-radius: 1px;
+  }
+
+  .margin-bottom {
+    margin-bottom: 20px;
+  }
+
+  .margin-bottom-s {
+    margin-bottom: 15px;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+
+    @include respond(phone) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__serving-size {
+    margin-bottom: 7px;
+  }
+
+  &__select {
+    @include respond(phone) {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+    }
+  }
+
+  &__select-flavor-content {
+    width: 40%;
+    margin-top: 10px;
+
+    @include respond(phone) {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+
+    &::after {
+      content: "";
+      background-image: url(../images/select-bg.png);
+      height: 18px;
+      width: 10px;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: center;
+
+      @supports(mask: url("")) {
+        
+      -webkit-mask-image: url(../images/select-bg.png);
+      mask-image: url(../images/select-bg.png);
+      background-color: $color-gray;
+      -webkit-mask-size: 100%;
+      mask-size: 100%;
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      -webkit-mask-position: center;
+      mask-position: center;
+      background-image: none
+      }
+    }
+
+    &:hover {
+      &::after {
+        background-color: unset;
+        @supports(mask: url("")) {
+          background-color: $color-brand;
+        }
+      }
+    }
+  }
+
+  &__select-flavor {
+    height: 38px;
+    border: 1px solid $border-color-2;
+  }
+
+  &__table {
+    margin-bottom: 0;
+    border-bottom: 8px solid $color-black;
+    font-size: $font-15;
+  }
+
+  &__table &__border-large {
+    border-top: 14px solid $color-black;
+    padding: 3px 0;
+    font-size: $font-12;
+    font-weight: $font-regular;
+  }
+
+  &__table tr td {
+    border-top: 1px solid $color-black;
+    padding: 4px 0;
+    font-weight: $font-regular;
+  }
+
+  &__details {
+    font-size: $font-12;
+    line-height: $line-height-16;
+  }
+
+  &__table tr &__table-custom-pad {
+    padding-left: 20px;
+  }
+}

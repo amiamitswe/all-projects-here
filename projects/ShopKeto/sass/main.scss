@@ -6,14 +6,40 @@
 @import './styleGuide/styles';
 @import './styleGuide/utilities';
 
+/*import slick slider --------------------*/
+@import './slick/slick';
+@import './slick/slick-theme';
+
 
 /*import web-component styles ------------*/
-@import './web/components';
-@import './web/header';
-@import './web/section-banner';
-@import './web/section-products';
-@import './web/footer';
+@import './home/components';
+@import './home/header';
+@import './home/section-banner';
+@import './home/section-products';
+@import './home/footer';
 
 /*import country-bar style --------------*/
-@import './web/countryBar';
-@import './web/sideCountryMenu';
+@import './country-bar/countryBar';
+
+/*import custom component ----------------*/
+@import './components/custom-select';
+@import './components/custom-radio-button';
+@import './components/sideCountryMenu';
+
+/*import product page style ------------*/
+@import './product/product';
+@import './product/select-cart-product';
+@import './product/product-info';
+@import './product/product-item-info';
+@import './product/product-review';
+@import './product/suplimental-fact';
+@import './product/faq';
+
+/* import popup page style ----------------*/
+@import './popup/quick_buy';
+@import './popup/referrer-popup';
+@import './popup/independent-pruver';
+
+/* import cart style ----------------------*/
+@import './cart-style/add-to-your-cart';
+@import './cart-style/chackout-cart';

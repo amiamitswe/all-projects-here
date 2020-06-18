@@ -1,0 +1,75 @@
+.sk-product {
+
+  &__faqs {
+    padding-top: 70px;
+    padding-bottom: 70px;
+
+    @include respond (tab_port) {
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 15px 15px;
+    }
+  }
+
+  &__faqs-content {
+    padding-top: 20px;
+  }
+
+  &__faq-padding {
+    padding: 0 40px;
+
+    @include respond (tab_port) {
+      padding: 0;
+    }
+  }
+
+  &-faq {
+    border-bottom: 1px solid rgba(14, 18, 35, 0.3);
+  }
+
+  &-faq-header {
+    padding: 14px 0 20px;
+
+    @include respond (phone) {
+      padding: 14px 0;
+    }
+  }
+
+  &-faq-title {
+    p {
+      width: 397px;
+
+      @include respond (phone) {
+        width: 100%;
+      }
+
+      &::after {
+        position: absolute;
+        font-family: $FontAwesome;
+        font-size: 14px;
+        color: $color-brand;
+        top: 50%;
+        right: 0;
+        transform: translate(0%, -50%);
+      }
+    }
+
+    &[aria-expanded="false"] {
+      p::after {
+        content: "\f067";
+      }
+    }
+
+    &[aria-expanded="true"] {
+      p::after {
+        content: "\f068";
+      }
+    }
+  }
+
+  &-faq-body {
+    padding-bottom: 45px;
+    color: $faq-text-color;
+  }
+}
+

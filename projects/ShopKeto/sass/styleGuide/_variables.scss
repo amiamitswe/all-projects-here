@@ -4,6 +4,7 @@
 
 $acumin-pro: acumin-pro, sans-serif;
 $font-rift: rift, sans-serif;
+$FontAwesome: "FontAwesome";
 
 
 // ------------------ colors -------------------------*/
@@ -13,12 +14,18 @@ $homepage-header-bg:  #FEE54B;
 $sk-hpage-header-bg:  #32D4EC;
 
 $color-white:         #ffffff;
-$color-white-dark:   rgba(255, 255, 255, 0.6);
+$color-white-dark:    rgba(255, 255, 255, 0.6);
+$color-white-dark-2:  #D3D3D3;
 $color-light-white:   #FAFAFA;
 $color-white-country: #F7F7F7;
 $color-black:         #131313;
 $color-gray:          #919192;
 $color-gray-2:        #A1A1A1;
+$color-gray-3:        #dadada;
+$color-pink:          #FF37B5;
+$color-green:         #219653;
+$color-for-star:      #F3BE03;
+$color-red:           #FA1F1F;
 
 $color-brand:         #2152FF;
 $btn-hover-color:     #204ceb;
@@ -28,51 +35,61 @@ $border-color-1:      #E1E1E1;
 $border-color-2:      rgba(145, 145, 146, 0.2);
 $border-color-3:      #F5F5F5;
 
+$review-user-color:   #EBEBEB;
+
+$box-shadow-1:        #E3E3E3;
+
+$faq-text-color:      #5F5F5F;
+
 
 // ------------------ Font sizes ---------------------*/
 
-$font-big: 7.2rem;
-$font-mid-big: 5.8rem;
-$font-mid-small: 3.6rem;
-$font-small: 2rem;
+$font-big: 72px;
+$font-mid-big: 58px;
+$font-mid-small: 36px;
+$font-small: 20px;
 
-$default-fontsize: 2rem;
+$default-fontsize: 20px;
 
-$btn-default-fontsize: 1.6rem;
+$btn-default-fontsize: 16px;
 
 //----------------------- font-size mobile ------------*/
-$font-big-m: 4rem;
-$font-mid-big-m: 3rem;
-$font-mid-small-m: 2.4rem;
-$font-small-m: 1.4rem;
+$font-big-m: 40px;
+$font-mid-big-m: 30px;
+$font-mid-small-m: 24px;
+$font-small-m: 14px;
 
-$default-fontsize-m: 1.6rem;
+$default-fontsize-m: 16px;
 
 //--------------------- btn font size mobile ----------*/
-$font-18: 1.8rem;
-$font-14: 1.4rem;
-$font-12: 1.2rem;
+$font-22: 22px;
+$font-18: 18px;
+$font-15: 15px;
+$font-14: 14px;
+$font-12: 12px;
 
 // ------------------ Font weight ---------------------*/
 $font-bold: 700;
 $font-regular: 400;
 
 // ------------------ line height ---------------------*/
-$line-height-72: 7.2rem;
-$line-height-52: 5.2rem;
-$line-height-40: 4.0rem;
-$line-height-36: 3.6rem;
-$line-height-34: 3.4rem;
-$line-height-33: 3.3rem;
-$line-height-31: 3.1rem;
-$line-height-28: 2.8rem;
-$line-height-24: 2.4rem;
-$line-height-22: 2.2rem;
-$line-height-21: 2.1rem;
-$line-height-19: 1.9rem;
-$line-height-18: 1.8rem;
-$line-height-15: 1.5rem;
-$line-height-14: 1.4rem;
+$line-height-72: 72px;
+$line-height-52: 52px;
+$line-height-40: 40px;
+$line-height-36: 36px;
+$line-height-34: 34px;
+$line-height-33: 33px;
+$line-height-31: 31px;
+$line-height-28: 28px;
+$line-height-24: 24px;
+$line-height-22: 22px;
+$line-height-21: 21px;
+$line-height-20: 20px;
+$line-height-19: 19px;
+$line-height-18: 18px;
+$line-height-16: 16px;
+$line-height-15: 15px;
+$line-height-14: 14px;
 
 
 // ------------------ letter spacing ---------------------*/
@@ -84,12 +101,21 @@ $letter-spacing-p7: 0.07em;
 
 
 // ------------------ width ---------------------------- */
-$buynow-btn-width: 25.9rem;
-$buynow-btn-width-l: 22.4rem;
+$buynow-btn-width:      259px;
+$buynow-btn-width-l:    224px;
 
-$buynow-btn-width-m: 13.46rem;
-$buynow-btn-width-l-m: 20.8rem;
+$buynow-btn-width-m:    135px ;
+$buynow-btn-width-l-m:  208px;
 
-$button-large-width: 26.8rem;
+$button-large-width:    268px;
+$country-bar-width:     305px;
+$cart-width:            375px;
 
-$country-bar-width: 30.5rem;
+$content-width:         400px;
+
+$table-width:           570px;
+
+$width-200:             206px;
+$width-730:             730px;
+$width-950:             950px;
+$width-1130:            1130px;
