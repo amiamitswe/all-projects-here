@@ -1,0 +1,18 @@
+/* import styleGuide ---------------------*/
+@import './styleGuide/variables';
+@import './styleGuide/prototypeVariables';
+@import './styleGuide/mixins';
+@import './styleGuide/base';
+@import './styleGuide/styles';
+@import './styleGuide/utilities';
+
+/*import slick slider --------------------*/
+@import './slick/slick';
+@import './slick/slick-theme';
+
+/* import custom input styles -----------*/
+@import './custom-input/toggle_switch';
+
+/* import landing page style -----------*/
+@import './landing-page/header';
+@import './landing-page/hadder-banner';

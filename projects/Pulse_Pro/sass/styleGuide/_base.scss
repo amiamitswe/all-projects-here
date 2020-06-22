@@ -1,0 +1,37 @@
+/*------------------------ base style ------------------------*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+h1,h2,h3,h4,h5,h6,p,img,div,figure,section,ul,ol,li,table,tbody,thead, label {
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: $acumin-pro;
+  font-size: $default-fontsize;
+  font-weight: $font-regular;
+
+  background-color: $color-white;
+}
+
+.container {
+  max-width: 1170px;
+  padding: 0;
+}
+
+.row {
+  @include respond (tab_land) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

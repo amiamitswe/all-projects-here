@@ -1,0 +1,62 @@
+/*pp header nav bar---------*/
+.pp-header {
+  &__offer {
+    padding: 10px 0;
+  }
+
+  &__offer--link {
+    color: $color-white-dark-2;
+
+    &:hover {
+      cursor: pointer;
+      color: $color-white-dark-2;
+    }
+  }
+
+  &__logo-box {
+    max-width: 117.14px;
+  }
+
+  &__nav-item {
+    &:not(:last-child) {
+      margin-right: 35px;
+    }
+  }
+
+  &__cart-has-product {
+      position: relative;
+
+      &::after {
+        position: absolute;
+    content: "";
+    height: 10px;
+    width: 10px;
+    background-color: $color-brand;
+    top: 15px;
+    right: 5px;
+    border-radius: 50%;
+      }
+    }
+
+  &__mobile--logo {
+    @include respond (phone) {
+      max-width: 87.86px;
+    }
+  }
+
+  &__country-icon {
+    height: 17px;
+  }
+
+  &__icon {
+    height: 22px;
+
+    @include respond (phone) {
+      height: 24px;
+    }
+  }
+
+  &__navbar-m {
+    margin-top: -1px;
+  }
+}

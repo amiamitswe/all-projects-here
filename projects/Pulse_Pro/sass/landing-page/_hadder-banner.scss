@@ -1,0 +1,54 @@
+/* header banner ----------*/
+.pp-header {
+  &__banner {
+    padding: 40px 20px 0;
+
+    @include respond(phone) {
+      padding-top: 20px;
+    }
+  }
+
+  &__banner-content {
+    max-width: 1000px;
+    padding-top: 95px;
+  }
+
+  &__banner-img {
+    width: 334.09px;
+  }
+
+  &__banner-tick {
+    margin-right: 10px;
+  }
+
+  &__feature {
+    margin-bottom: 32px;
+  }
+
+  &__price-info {
+    margin-bottom: 10px;
+  }
+
+  &__price-pm {
+    font-family: $acumin-pro;
+    font-style: normal;
+    font-weight: $font-bold;
+    font-size: 48px;
+    line-height: 90.5%;
+    letter-spacing: -0.05em;
+    margin-bottom: 7px;
+
+    h1 {
+      margin: 0px 3px -5px 4px;
+    }
+  }
+
+
+  &__time-duration {
+    margin-top: 18px;
+  }
+
+  &__active-duration {
+    color:#fff6;
+  }
+}

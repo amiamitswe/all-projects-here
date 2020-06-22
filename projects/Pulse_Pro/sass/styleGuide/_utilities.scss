@@ -1,0 +1,17 @@
+.br-mobile {
+  @include respond (phone) {
+    display: block;
+  }
+}
+
+.br-desktop {
+  display: block;
+}
+
+.border-bottom-1 {
+  border-bottom: 1px solid $border-color-1;
+}
+
+.border-bottom-2 {
+  border-bottom: 1px solid $border-color-2;
+}

@@ -1,0 +1,59 @@
+.pp-switch {
+  position: relative;
+  display: inline-block;
+  width: 62px;
+  height: 34px;
+}
+
+.pp-switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.pp-slider {
+  cursor: pointer;
+  width: 48px;
+  height: 24px;
+  border: 2px solid $color-brand;
+  -webkit-transition: .4s;
+  transition: .4s;
+  
+  @include centerContent;
+}
+
+.pp-slider:before {
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 16px;
+  left: 2px;
+  bottom: 2px;
+  -webkit-transition: .4s;
+  transition: .4s;
+  background-color: $color-brand;
+}
+
+input:checked + .pp-slider {
+  border-color: $color-white;
+}
+
+// input:focus + .pp-slider {
+//   box-shadow: 0 0 1px #2196F3;
+// }
+
+input:checked + .pp-slider:before {
+  -webkit-transform: translateX(24px);
+  -ms-transform: translateX(24px);
+  transform: translateX(24px);
+  background-color: $color-white;
+}
+
+/* pp-rounded pp-sliders */
+.pp-slider.pp-round {
+  border-radius: 100px;
+}
+
+.pp-slider.pp-round:before {
+  border-radius: 50%;
+}
