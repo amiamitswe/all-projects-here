@@ -12,3 +12,11 @@ $(function() {
     
   })
 })
+
+
+
+$(document).ready(function(){
+  $('.pp__testimonial-wrap').slick({
+    arrows: true
+  });
+});

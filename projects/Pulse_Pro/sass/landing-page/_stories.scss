@@ -1,0 +1,56 @@
+.pp__stories {
+  padding-top: 95px;
+
+  @include respond (tab_port) {
+    padding-top: 33px;
+  }
+
+  &-wrap {
+    padding: 0 20px 0 32px;
+
+    @include respond (tab_port) {
+      padding: 0;
+    }
+  }
+
+  &-left {
+    margin-top: 75px;
+
+    @include respond (tab_port) {
+      margin-top: 0;
+      padding: 0 33px;
+    }
+}
+
+&-title {
+  h2 {
+    margin-bottom: 20px;
+  }
+}
+
+&-info {
+  margin-top: 60px;
+
+  @include respond (tab_port) {
+    margin-top: 28px;
+  }
+
+  h4 {
+    @include respond (tab_port) {
+      font-size: $default-fontsize-m;
+      line-height: 150%;
+    }
+  }
+}
+
+  &-right {
+
+    @include respond (tab_port) {
+      margin-top: 22px;
+      padding: 0 10px;
+    }
+    .story-img {
+      width: 518px;
+    }
+  }
+}

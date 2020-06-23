@@ -4,13 +4,29 @@
     padding: 40px 20px 0;
 
     @include respond(phone) {
-      padding-top: 20px;
+      padding: 20px 0 0;
     }
   }
 
   &__banner-content {
     max-width: 1000px;
-    padding-top: 95px;
+    padding-top: 80px;
+
+    @include respond(phone) {
+      padding: 0;
+    }
+  }
+
+  &__banner-right {
+    @include respond(phone) {
+      padding: 30px 54px 0;
+    }
+  }
+
+  &__banner-left {
+    @include respond(phone) {
+      padding: 45px 46px 0;
+    }
   }
 
   &__banner-img {
@@ -19,36 +35,87 @@
 
   &__banner-tick {
     margin-right: 10px;
+    height: 20px;
+    margin-top: 5px; 
+
+    @include respond (tab_port) {
+      margin-top: 4px;
+    }
   }
 
   &__feature {
-    margin-bottom: 32px;
+    margin-bottom: 35px;
+
+    @include respond (tab_port) {
+      margin-bottom: 12px;
+    }
+
+    h4 {
+      @include respond (tab_port) {
+        font-size: $default-fontsize-m;
+        line-height: 150%;
+      }
+    }
   }
 
   &__price-info {
     margin-bottom: 10px;
+
+    @include respond (tab_port) {
+
+    }
   }
 
   &__price-pm {
     font-family: $acumin-pro;
     font-style: normal;
     font-weight: $font-bold;
-    font-size: 48px;
+    font-size: $font-mid-big-2;
     line-height: 90.5%;
-    letter-spacing: -0.05em;
-    margin-bottom: 7px;
+    letter-spacing: $letter-spacing-05;
+    margin-bottom: 5px;
+
+    @include respond (tab_port) {
+      font-size: $font-mid-small;
+      line-height: 100%;
+      margin-bottom: 14px;
+    }
 
     h1 {
-      margin: 0px 3px -5px 4px;
+      margin: 0px 5px -5px;
+
+      @include respond (tab_port) {
+        margin: 0px 6px;
+        font-size: $font-mid-big;
+        line-height: 90.5%;
+      }
     }
   }
 
 
   &__time-duration {
-    margin-top: 18px;
+    margin-top: 20px;
+
+    @include respond (tab_port) {
+      margin-top: 14px;
+    }
   }
 
   &__active-duration {
     color:#fff6;
+  }
+
+  &__button {
+    margin-top: 30px;
+
+    @include respond (tab_port) {
+      margin-top: 36px;
+    }
+  }
+
+  &__reg-now::after {
+    content: "\f30b";
+    right: 15px;
+    font-size: 17px;
   }
 }
