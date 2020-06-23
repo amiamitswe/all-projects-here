@@ -59,10 +59,12 @@
   height: 20px;
   margin-right: 14px;
   margin-top: 5px;
+  margin-bottom: 10px;
 
   @include respond(tab_port) {
     height: 16px;
     margin-right: 8px;
     margin-top: 7px;
+    margin-bottom: 5px;
   }
 }

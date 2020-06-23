@@ -1,0 +1,35 @@
+.pp-highlights {
+  padding-top: 80px;
+
+  @include respond (tab_port) {
+    padding-top: 34px;
+  }
+
+  &-title {
+    max-width: 355px;
+
+    h2 {
+      margin-bottom: 32px;
+
+      @include respond (tab_port) {
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  &-right {
+    margin-top: 100px;
+
+    @include respond (tab_port) {
+      margin-top: 0;
+    }
+  }
+
+  &-info {
+    margin-top: 38px;
+
+    @include respond (tab_port) {
+      margin-top: 30px;
+    }
+  }
+}

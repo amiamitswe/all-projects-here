@@ -17,6 +17,8 @@ $(function() {
 
 $(document).ready(function(){
   $('.pp__testimonial-wrap').slick({
-    arrows: true
+    arrows: true,
+    autoplay: true,
+    autoplaySpeed: 2000
   });
 });
