@@ -1,18 +1,19 @@
+/*stories ------------ */
 .pp__stories {
   padding-top: 95px;
 
-  @include respond (tab_port) {
+  @include respond(tab_port) {
     padding-top: 33px;
   }
 
   &-wrap {
     padding: 0 20px 0 32px;
 
-    @include respond (tab_port) {
+    @include respond(tab_port) {
       padding-bottom: 20px;
     }
 
-    @include respond (phone) {
+    @include respond(phone) {
       padding: 0;
     }
   }
@@ -20,33 +21,32 @@
   &-left {
     margin-top: 75px;
 
-    @include respond (tab_port) {
+    @include respond(tab_port) {
       margin-top: 0;
       padding: 0 0 0 33px;
     }
 
-    @include respond (phone) {
+    @include respond(phone) {
       padding: 0 33px;
     }
-}
-
-&-title {
-  h2 {
-    margin-bottom: 20px;
   }
-}
 
-&-info {
-  margin-top: 60px;
-
-  @include respond (tab_port) {
-    margin-top: 28px;
+  &-title {
+    h2 {
+      margin-bottom: 20px;
+    }
   }
-}
+
+  &-info {
+    margin-top: 60px;
+
+    @include respond(tab_port) {
+      margin-top: 28px;
+    }
+  }
 
   &-right {
-
-    @include respond (tab_port) {
+    @include respond(tab_port) {
       margin-top: 22px;
       padding: 0 10px;
     }

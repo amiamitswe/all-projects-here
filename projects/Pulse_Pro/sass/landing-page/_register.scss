@@ -1,0 +1,44 @@
+/* register-----------*/
+.pp__register {
+  background: url(/images/register-bg-d.png) center/cover no-repeat #f66cbb;
+  padding: 77px 0;
+
+  @include respond(phone) {
+    padding: 64px 24px;
+
+    background-image: url(/images/register-bg-m.png);
+  }
+
+  &-wrap {
+    max-width: 518px;
+    border-radius: 20px;
+    padding: 50px 70px 43px;
+
+    @include respond(phone) {
+      padding: 31px 40px 43px;
+    }
+
+    h3 {
+      margin-bottom: 25px;
+
+      @include respond(phone) {
+        font-size: $default-fontsize;
+        line-height: 140%;
+        margin-bottom: 8px;
+      }
+    }
+
+    p {
+      margin-bottom: 35px;
+
+      @include respond(phone) {
+        color: $color-black;
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  &-btn {
+    max-width: 230px;
+  }
+}

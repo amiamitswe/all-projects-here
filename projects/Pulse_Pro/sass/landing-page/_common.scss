@@ -1,6 +1,7 @@
+/* some common styles ------*/
 .pp__info-section {
   h4 {
-    @include respond (tab_port) {
+    @include respond(tab_port) {
       font-size: $default-fontsize-m;
       line-height: 150%;
     }

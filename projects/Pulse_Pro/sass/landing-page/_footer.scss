@@ -1,0 +1,253 @@
+/* footer style ----------*/
+.footer {
+  padding-top: 32px;
+
+  @include respond(tab_land) {
+    padding: 32px 20px 0;
+  }
+
+  @include respond(phone) {
+    padding: 30px 0 0;
+  }
+
+  &__top {
+    padding-bottom: 30px;
+
+    @include respond(phone) {
+      padding-bottom: 27px;
+    }
+  }
+
+  &__logo {
+    width: 81.85px;
+    height: 35.72px;
+
+    @include respond(phone) {
+      width: auto;
+      padding: 0 20px;
+    }
+  }
+
+  &__nav {
+    margin-top: 35px;
+  }
+
+  &__nav-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    margin: 0;
+
+    @include respond(phone) {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+    }
+  }
+
+  &__nav-item {
+    @include respond(phone) {
+      padding: 0 20px;
+      &:not(:first-child) {
+        margin-top: 26px;
+      }
+    }
+  }
+
+  &__nav-item-d {
+    width: 185px;
+    @include respond(phone) {
+      display: none;
+    }
+  }
+
+  &__nav-item-m {
+    display: none;
+
+    @include respond(phone) {
+      display: block;
+      border-bottom: 1px solid $border-color-2;
+    }
+  }
+
+  &__links-list {
+    list-style: none;
+
+    li {
+      display: block;
+      line-height: $line-height-21;
+    }
+  }
+
+  &__link {
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 0.4);
+
+    &:hover {
+      color: $color-gray;
+      cursor: pointer;
+    }
+  }
+
+  &__social-icon {
+    list-style: none;
+    margin-left: -7px;
+    margin-top: 4px;
+
+    li {
+      display: inline;
+
+      &:not(:last-child) {
+        margin-right: 24px;
+
+        @include respond(phone) {
+          margin-right: 14px;
+        }
+      }
+
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+
+  &__payments-title {
+    @include respond(phone) {
+      margin-left: -5px;
+    }
+  }
+
+  &__payments {
+    margin-top: 18px;
+  }
+
+  &__verified {
+    height: 37px;
+  }
+
+  &__payments-icons {
+    list-style: none;
+    margin-left: -6px;
+    margin-top: 18px;
+
+    li {
+      display: inline-block;
+
+      img {
+        width: 42.51px;
+        height: 36.94px;
+      }
+    }
+  }
+
+  &__bottom {
+    padding: 8px 0 12px;
+
+    @include respond(phone) {
+      padding: 8px 20px 20px;
+    }
+  }
+
+  &__bottom-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+
+    @include respond(phone) {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+    }
+  }
+
+  &__bottom-copy {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    @include respond(phone) {
+      padding: 5px 0 10px;
+    }
+  }
+
+  &__bottom-text {
+    &-left {
+      text-align: left;
+    }
+
+    &-right {
+      text-align: right;
+
+      @include respond(phone) {
+        text-align: left;
+      }
+    }
+  }
+
+  .expend-icon {
+    @include respond(phone) {
+      padding: 6px 20px;
+      border-top: 1px solid $border-color-2;
+      position: relative;
+
+      &::after {
+        position: absolute;
+        content: "\f078";
+        font-family: "Font Awesome 5 Pro";
+        color: $border-color-3;
+        right: 20px;
+        font-size: 10px;
+      }
+
+      &[aria-expanded="false"]::after {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: all 0.2s;
+        -o-transition: all 0.2s;
+        transition: all 0.2s;
+      }
+
+      &[aria-expanded="true"]::after {
+        -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        transform: rotate(180deg);
+        -webkit-transition: all 0.2s;
+        -o-transition: all 0.2s;
+        transition: all 0.2s;
+      }
+    }
+  }
+
+  &__links-list-m {
+    @include respond(phone) {
+      list-style: none;
+      padding: 6px 20px;
+
+      li {
+        display: block;
+        line-height: $line-height-21;
+      }
+    }
+  }
+}

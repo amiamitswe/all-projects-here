@@ -1,3 +1,4 @@
+/* trials ----------------------*/
 .pp__trials {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -13,6 +14,7 @@
 
     @include respond(tab_port) {
       margin-top: 65px;
+      padding: 0 20px;
     }
 
     @include respond(phone) {
@@ -27,19 +29,19 @@
   &-title {
     margin-bottom: 45px;
 
-    @include respond (tab_port) {
-      padding: 0 20px;
+    @include respond(tab_port) {
       margin-bottom: 30px;
     }
   }
 
   &-info {
-    @include respond (tab_port) {
-      padding: 0 35px;
+    @include respond(phone) {
+      padding: 0 15px;
     }
   }
+
   &-right {
-    @include respond (tab_port) {
+    @include respond(tab_port) {
       margin-top: 3px;
     }
 

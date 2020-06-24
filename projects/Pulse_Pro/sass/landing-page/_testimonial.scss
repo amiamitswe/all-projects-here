@@ -1,14 +1,15 @@
+/*testimonial ----------------*/
 .pp__testimonial {
   padding-top: 100px;
   padding-bottom: 96px;
 
-  @include respond (tab_port) {
+  @include respond(tab_port) {
     padding-top: 33px;
     padding-bottom: 56px;
   }
 
   &-title-wrap {
-    @include respond (tab_port) {
+    @include respond(phone) {
       width: 278px;
       margin: 0 auto;
     }
@@ -17,7 +18,7 @@
   &-title {
     margin-bottom: 20px;
 
-    @include respond (tab_port) {
+    @include respond(tab_port) {
       margin-bottom: 10px;
     }
   }
@@ -26,7 +27,7 @@
     max-width: 660px;
     margin-top: 45px;
 
-    @include respond (tab_port) {
+    @include respond(tab_port) {
       padding: 0 23px;
       margin-top: 20px;
     }
@@ -38,10 +39,14 @@
       border-radius: 50%;
 
       background: #ffffff;
+      -webkit-box-shadow: 0px 1px 4px rgba(32, 38, 62, 0.25);
       box-shadow: 0px 1px 4px rgba(32, 38, 62, 0.25);
+      -webkit-transition: all 0.2s;
+      -o-transition: all 0.2s;
       transition: all 0.2s;
 
-      @include respond (tab_port) {
+      @include respond(tab_port) {
+        -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
       }
 
@@ -53,6 +58,7 @@
       }
 
       &:hover {
+        -webkit-box-shadow: 0px 1px 4px rgba(85, 90, 107, 0.25);
         box-shadow: 0px 1px 4px rgba(85, 90, 107, 0.25);
         &::before {
           color: $btn-hover-color;
@@ -63,7 +69,7 @@
     .slick-prev {
       left: -84px;
 
-      @include respond (tab_port) {
+      @include respond(tab_port) {
         left: 7px;
         z-index: 999;
       }
@@ -79,7 +85,7 @@
     .slick-next {
       right: -84px;
 
-      @include respond (tab_port) {
+      @include respond(tab_port) {
         right: 7px;
         z-index: 999;
       }
