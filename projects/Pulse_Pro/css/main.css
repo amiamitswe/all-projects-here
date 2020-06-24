@@ -1419,14 +1419,14 @@ input:checked + .pp-slider:before {
 
 /* register-----------*/
 .pp__register {
-  background: url(/images/register-bg-d.png) center/cover no-repeat #f66cbb;
+  background: url(../images/register-bg-d.png) center/cover no-repeat #f66cbb;
   padding: 77px 0;
 }
 
 @media only screen and (max-width: 767px) {
   .pp__register {
     padding: 64px 24px;
-    background-image: url(/images/register-bg-m.png);
+    background-image: url(../images/register-bg-m.png);
   }
 }
 
