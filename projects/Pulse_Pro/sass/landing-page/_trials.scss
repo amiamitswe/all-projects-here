@@ -1,0 +1,50 @@
+.pp__trials {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  @include respond(tab_port) {
+    padding-top: 35px;
+    padding-bottom: 0;
+  }
+
+  &-left {
+    margin-top: 140px;
+    max-width: 564px;
+
+    @include respond(tab_port) {
+      margin-top: 65px;
+    }
+
+    @include respond(phone) {
+      margin-top: 0;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+  }
+
+  &-title {
+    margin-bottom: 45px;
+
+    @include respond (tab_port) {
+      padding: 0 20px;
+      margin-bottom: 30px;
+    }
+  }
+
+  &-info {
+    @include respond (tab_port) {
+      padding: 0 35px;
+    }
+  }
+  &-right {
+    @include respond (tab_port) {
+      margin-top: 3px;
+    }
+
+    .trials-img {
+      width: 325.04px;
+    }
+  }
+}

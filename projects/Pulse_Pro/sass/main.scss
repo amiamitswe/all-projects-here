@@ -13,6 +13,9 @@
 /* import custom input styles -----------*/
 @import './custom-input/toggle_switch';
 
+/* import landing page common stle ------*/
+@import './landing-page/common';
+
 /* import landing page style -----------*/
 @import './landing-page/header';
 @import './landing-page/hadder-banner';
@@ -20,3 +23,4 @@
 @import './landing-page/broadcasts';
 @import './landing-page/stories';
 @import './landing-page/highlights';
+@import './landing-page/trials';

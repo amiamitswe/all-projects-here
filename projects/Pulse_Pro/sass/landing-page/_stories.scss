@@ -9,6 +9,10 @@
     padding: 0 20px 0 32px;
 
     @include respond (tab_port) {
+      padding-bottom: 20px;
+    }
+
+    @include respond (phone) {
       padding: 0;
     }
   }
@@ -18,6 +22,10 @@
 
     @include respond (tab_port) {
       margin-top: 0;
+      padding: 0 0 0 33px;
+    }
+
+    @include respond (phone) {
       padding: 0 33px;
     }
 }
@@ -33,13 +41,6 @@
 
   @include respond (tab_port) {
     margin-top: 28px;
-  }
-
-  h4 {
-    @include respond (tab_port) {
-      font-size: $default-fontsize-m;
-      line-height: 150%;
-    }
   }
 }
 

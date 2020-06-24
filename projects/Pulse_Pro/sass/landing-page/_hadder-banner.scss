@@ -49,13 +49,6 @@
     @include respond (tab_port) {
       margin-bottom: 12px;
     }
-
-    h4 {
-      @include respond (tab_port) {
-        font-size: $default-fontsize-m;
-        line-height: 150%;
-      }
-    }
   }
 
   &__price-info {

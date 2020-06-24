@@ -21,8 +21,12 @@
     margin-top: 90px;
 
     @include respond(tab_port) {
-      margin-top: 0;
+      margin-top: 65px;
       padding: 0 33px;
+    }
+
+    @include respond(phone) {
+      margin-top: 0;
     }
   }
 
@@ -45,26 +49,6 @@
     @include respond(tab_port) {
       margin-top: 35px;
     }
-
-    h4 {
-      @include respond(tab_port) {
-        font-size: $default-fontsize-m;
-        line-height: 150%;
-      }
-    }
   }
 }
 
-.pp-info-icon {
-  height: 20px;
-  margin-right: 14px;
-  margin-top: 5px;
-  margin-bottom: 10px;
-
-  @include respond(tab_port) {
-    height: 16px;
-    margin-right: 8px;
-    margin-top: 7px;
-    margin-bottom: 5px;
-  }
-}

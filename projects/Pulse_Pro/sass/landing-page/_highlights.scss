@@ -21,6 +21,10 @@
     margin-top: 100px;
 
     @include respond (tab_port) {
+      margin-top: 65px;
+    }
+
+    @include respond (phone) {
       margin-top: 0;
     }
   }
