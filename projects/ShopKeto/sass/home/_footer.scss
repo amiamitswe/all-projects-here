@@ -13,7 +13,7 @@
   &__top {
     padding-bottom: 30px;
 
-    @include respond (phone) {
+    @include respond(phone) {
       padding-bottom: 27px;
     }
   }

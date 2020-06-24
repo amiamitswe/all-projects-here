@@ -61,25 +61,24 @@
       background-size: 100%;
       background-position: center;
 
-      @supports(mask: url("")) {
-        
-      -webkit-mask-image: url(../images/select-bg.png);
-      mask-image: url(../images/select-bg.png);
-      background-color: $color-gray;
-      -webkit-mask-size: 100%;
-      mask-size: 100%;
-      -webkit-mask-repeat: no-repeat;
-      mask-repeat: no-repeat;
-      -webkit-mask-position: center;
-      mask-position: center;
-      background-image: none
+      @supports (mask: url("")) {
+        -webkit-mask-image: url(../images/select-bg.png);
+        mask-image: url(../images/select-bg.png);
+        background-color: $color-gray;
+        -webkit-mask-size: 100%;
+        mask-size: 100%;
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        -webkit-mask-position: center;
+        mask-position: center;
+        background-image: none;
       }
     }
 
     &:hover {
       &::after {
         background-color: unset;
-        @supports(mask: url("")) {
+        @supports (mask: url("")) {
           background-color: $color-brand;
         }
       }

@@ -13,7 +13,7 @@
     height: auto;
     margin: 0 auto;
 
-    @include respond (phone) {
+    @include respond(phone) {
       height: 198px;
     }
   }
@@ -33,7 +33,7 @@
       transition: all 0.2s;
       top: 42%;
 
-      @include respond (phone) {
+      @include respond(phone) {
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
       }
 
@@ -46,7 +46,7 @@
     .slick-prev {
       left: 35px;
 
-      @include respond (phone) {
+      @include respond(phone) {
         left: 5px;
       }
     }
@@ -54,7 +54,7 @@
     .slick-next {
       right: 35px;
 
-      @include respond (phone) {
+      @include respond(phone) {
         right: 5px;
       }
     }
@@ -107,7 +107,7 @@
   &__flavor-img {
     margin-top: 55px;
 
-    @include respond (phone) {
+    @include respond(phone) {
       margin-top: 20px;
     }
   }
@@ -141,7 +141,7 @@
         width: 64px;
         height: auto;
 
-        @include respond (phone) {
+        @include respond(phone) {
           width: 48px;
         }
       }

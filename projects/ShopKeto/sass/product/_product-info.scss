@@ -86,7 +86,6 @@
     }
   }
 
-
   &__info-btn {
     &:hover,
     &.active {
@@ -95,7 +94,6 @@
       border-bottom: 2px solid $color-brand;
     }
   }
-
 
   &__info--mobile-card {
     border-radius: 0;
@@ -107,7 +105,6 @@
     //   border-bottom: 1px solid $box-shadow-1;
     // }
   }
-  
 
   &__info-btn-mobile {
     width: 100%;
@@ -121,7 +118,6 @@
       font-family: $FontAwesome;
       font-size: $font-12;
       right: 20px;
-      
     }
 
     &[aria-expanded="true"] {

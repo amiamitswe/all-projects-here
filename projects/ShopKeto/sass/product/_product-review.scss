@@ -13,7 +13,7 @@
   &__average-review {
     margin-bottom: 50px;
 
-    @include respond (phone) {
+    @include respond(phone) {
       margin-bottom: 15px;
       margin-top: -7px;
     }
@@ -22,7 +22,7 @@
   .review-star {
     font-size: $font-12;
 
-    @include respond (phone) {
+    @include respond(phone) {
       font-size: 10px;
     }
 
@@ -47,7 +47,7 @@
     margin-top: -5px;
     margin-bottom: -15px;
 
-    @include respond (phone) {
+    @include respond(phone) {
       margin-top: -7px;
     }
   }
@@ -78,7 +78,6 @@
       &:not(:last-of-type) {
         margin-bottom: 25px;
       }
-      
     }
   }
 

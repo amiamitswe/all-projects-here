@@ -1,5 +1,4 @@
 .sk-product__item {
-
   &-info {
     padding-top: 93px;
     padding-bottom: 90px;
@@ -20,7 +19,7 @@
       padding-bottom: 50px;
     }
 
-    @include respond (phone) {
+    @include respond(phone) {
       padding-top: 0;
     }
 

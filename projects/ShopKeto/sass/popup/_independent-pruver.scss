@@ -10,7 +10,7 @@
   &__body {
     padding: 54px 50px;
 
-    @include respond (phone) {
+    @include respond(phone) {
       padding: 30px;
     }
   }
@@ -27,7 +27,7 @@
     top: 20px;
     font-size: $btn-default-fontsize;
 
-    @include respond (phone) {
+    @include respond(phone) {
       right: 15px;
       top: 15px;
     }
@@ -67,7 +67,7 @@
     -ms-flex-direction: row;
     flex-direction: row;
 
-    @include respond (phone) {
+    @include respond(phone) {
       flex-direction: column;
     }
   }
@@ -82,7 +82,7 @@
     letter-spacing: $letter-spacing-p5;
     text-transform: uppercase;
     border: none;
-    box-shadow: 0px 9px 24px #E2E5F5;
+    box-shadow: 0px 9px 24px #e2e5f5;
     border-radius: 50px;
     padding: 10px 20px;
     height: 38px;
@@ -93,17 +93,17 @@
 
     &:hover {
       cursor: pointer;
-      box-shadow: 0px 0px 15px #E2E5F5;
+      box-shadow: 0px 0px 15px #e2e5f5;
     }
 
-    @include respond (phone) {
+    @include respond(phone) {
       margin: 0 auto;
     }
 
     &:not(:last-child) {
       margin-right: 14px;
 
-      @include respond (phone) {
+      @include respond(phone) {
         margin-right: auto;
         margin-bottom: 14px;
       }

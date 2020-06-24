@@ -15,7 +15,7 @@
       text-decoration: none;
       color: $color-white;
 
-      @include respond (phone) {
+      @include respond(phone) {
         color: $color-white-dark-2;
       }
 
@@ -30,7 +30,7 @@
     padding-left: 0;
     padding-right: 0;
 
-    @include respond (tab_land) {
+    @include respond(tab_land) {
       padding-left: 16px;
       padding-right: 16px;
     }
@@ -46,7 +46,7 @@
   &__icon {
     height: auto;
 
-    @include respond (phone) {
+    @include respond(phone) {
       height: 24px;
       margin-top: -5px;
     }

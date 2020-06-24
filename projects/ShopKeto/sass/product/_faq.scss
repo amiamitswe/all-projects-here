@@ -1,10 +1,9 @@
 .sk-product {
-
   &__faqs {
     padding-top: 70px;
     padding-bottom: 70px;
 
-    @include respond (tab_port) {
+    @include respond(tab_port) {
       width: 100%;
       margin: 0 auto;
       padding: 0 15px 15px;
@@ -18,7 +17,7 @@
   &__faq-padding {
     padding: 0 40px;
 
-    @include respond (tab_port) {
+    @include respond(tab_port) {
       padding: 0;
     }
   }
@@ -30,7 +29,7 @@
   &-faq-header {
     padding: 14px 0 20px;
 
-    @include respond (phone) {
+    @include respond(phone) {
       padding: 14px 0;
     }
   }
@@ -39,8 +38,8 @@
     p {
       width: 397px;
 
-      @include respond (phone) {
-        width: 100%;
+      @include respond(tab_port) {
+        width: 95%;
       }
 
       &::after {
@@ -72,4 +71,3 @@
     color: $faq-text-color;
   }
 }
-

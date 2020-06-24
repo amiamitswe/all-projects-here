@@ -83,6 +83,10 @@ body {
       width: 2rem;
       transform: scale(1);
       transition: all 0.2s;
+
+      &:hover {
+        fill: $link-color;
+      }
     }
 
     span {
@@ -127,13 +131,19 @@ body {
 }
 
 .project {
+  &__title {
+    font-size: 2.5rem;
+    line-height: 150%;
+    margin-bottom: 0.3rem;
+  }
+
   &__img {
     width: 100%;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
     transition: all 0.2s;
 
     &:hover {
-      transform: translateY(-10px);
+      transform: translateY(-5px);
     }
   }
 
