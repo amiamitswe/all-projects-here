@@ -221,7 +221,8 @@ p {
 
   &::after {
     content: "\f061";
-    font-family: FontAwesome;
+    font-family: $FontAwesome;
+    font-weight: $font-weight-400;
     font-size: 14px;
     margin-left: 28px;
     position: absolute;

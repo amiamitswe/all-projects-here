@@ -25,13 +25,11 @@
 
   &-wrap {
     max-width: 660px;
-    margin: 24px;
-    // margin-top: 45px;
+    margin-top: 45px;
 
     @include respond(tab_port) {
       padding: 0 23px;
-      margin: 8px;
-      // margin-top: 20px;
+      margin-top: 20px;
     }
 
     .slick-prev,
@@ -54,6 +52,7 @@
 
       &::before {
         font-family: $FontAwesome;
+        font-weight: $font-weight-900;
         color: $color-brand;
         position: absolute;
         opacity: 1;
@@ -105,6 +104,11 @@
     background-color: $color-white-country;
     border-radius: 20px;
     padding: 27px 32px 35px;
+    margin: 0 14px;
+    
+    @include respond (tab_port) {
+      margin: 0 4px;
+    }
   }
 
   &-by {

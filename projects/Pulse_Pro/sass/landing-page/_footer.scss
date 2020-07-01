@@ -212,26 +212,22 @@
 
       &::after {
         position: absolute;
-        content: "\f078";
-        font-family: "Font Awesome 5 Pro";
+        font-family: $FontAwesome;
+        font-weight: $font-weight-400;
         color: $border-color-3;
         right: 20px;
         font-size: 10px;
       }
 
       &[aria-expanded="false"]::after {
-        -webkit-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-        transform: rotate(0deg);
+        content: "\f078";
         -webkit-transition: all 0.2s;
         -o-transition: all 0.2s;
         transition: all 0.2s;
       }
 
       &[aria-expanded="true"]::after {
-        -webkit-transform: rotate(180deg);
-        -ms-transform: rotate(180deg);
-        transform: rotate(180deg);
+        content: "\f077";
         -webkit-transition: all 0.2s;
         -o-transition: all 0.2s;
         transition: all 0.2s;

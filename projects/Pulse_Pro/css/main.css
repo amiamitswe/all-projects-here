@@ -277,7 +277,8 @@ p {
 
 .button-icon::after {
   content: "\f061";
-  font-family: FontAwesome;
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 400;
   font-size: 14px;
   margin-left: 28px;
   position: absolute;
@@ -775,7 +776,7 @@ p {
   cursor: pointer;
   width: 48px;
   height: 24px;
-  border: 2px solid #2152FF;
+  border: 2px solid #ffffff;
   -webkit-transition: .4s;
   transition: .4s;
   position: absolute;
@@ -795,7 +796,7 @@ p {
   bottom: 2px;
   -webkit-transition: .4s;
   transition: .4s;
-  background-color: #2152FF;
+  background-color: #ffffff;
 }
 
 input:checked + .pp-slider {
@@ -1037,7 +1038,7 @@ input:checked + .pp-slider:before {
 .pp-header__reg-now::after {
   content: "\f30b";
   right: 15px;
-  font-size: 17px;
+  font-size: 18px;
 }
 
 /*testimonial ----------------*/
@@ -1072,13 +1073,13 @@ input:checked + .pp-slider:before {
 
 .pp__testimonial-wrap {
   max-width: 660px;
-  margin: 24px;
+  margin-top: 45px;
 }
 
 @media only screen and (max-width: 900px) {
   .pp__testimonial-wrap {
     padding: 0 23px;
-    margin: 8px;
+    margin-top: 20px;
   }
 }
 
@@ -1105,7 +1106,8 @@ input:checked + .pp-slider:before {
 
 .pp__testimonial-wrap .slick-prev::before,
 .pp__testimonial-wrap .slick-next::before {
-  font-family: "FontAwesome";
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 900;
   color: #2152FF;
   position: absolute;
   opacity: 1;
@@ -1162,6 +1164,13 @@ input:checked + .pp-slider:before {
   background-color: #F7F7F7;
   border-radius: 20px;
   padding: 27px 32px 35px;
+  margin: 0 14px;
+}
+
+@media only screen and (max-width: 900px) {
+  .pp__testimonial-single {
+    margin: 0 4px;
+  }
 }
 
 .pp__testimonial-by {
@@ -1705,24 +1714,20 @@ input:checked + .pp-slider:before {
   }
   .footer .expend-icon::after {
     position: absolute;
-    content: "\f078";
     font-family: "Font Awesome 5 Pro";
+    font-weight: 400;
     color: #F5F5F5;
     right: 20px;
     font-size: 10px;
   }
   .footer .expend-icon[aria-expanded="false"]::after {
-    -webkit-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    transform: rotate(0deg);
+    content: "\f078";
     -webkit-transition: all 0.2s;
     -o-transition: all 0.2s;
     transition: all 0.2s;
   }
   .footer .expend-icon[aria-expanded="true"]::after {
-    -webkit-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    transform: rotate(180deg);
+    content: "\f077";
     -webkit-transition: all 0.2s;
     -o-transition: all 0.2s;
     transition: all 0.2s;

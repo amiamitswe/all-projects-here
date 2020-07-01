@@ -15,7 +15,7 @@
   cursor: pointer;
   width: 48px;
   height: 24px;
-  border: 2px solid $color-brand;
+  border: 2px solid $color-white;
   -webkit-transition: .4s;
   transition: .4s;
   
@@ -31,16 +31,12 @@
   bottom: 2px;
   -webkit-transition: .4s;
   transition: .4s;
-  background-color: $color-brand;
+  background-color: $color-white;
 }
 
 input:checked + .pp-slider {
   border-color: $color-white;
 }
-
-// input:focus + .pp-slider {
-//   box-shadow: 0 0 1px #2196F3;
-// }
 
 input:checked + .pp-slider:before {
   -webkit-transform: translateX(24px);
