@@ -4,7 +4,7 @@
   padding-bottom: 30px;
 
   @include respond(tab_port) {
-    padding-top: 35px;
+    padding-top: $section-pt-m;
     padding-bottom: 0;
   }
 

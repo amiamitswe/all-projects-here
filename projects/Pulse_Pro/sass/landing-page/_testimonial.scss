@@ -4,7 +4,7 @@
   padding-bottom: 96px;
 
   @include respond(tab_port) {
-    padding-top: 33px;
+    padding-top: $section-pt-m;
     padding-bottom: 56px;
   }
 
@@ -25,11 +25,13 @@
 
   &-wrap {
     max-width: 660px;
-    margin-top: 45px;
+    margin: 24px;
+    // margin-top: 45px;
 
     @include respond(tab_port) {
       padding: 0 23px;
-      margin-top: 20px;
+      margin: 8px;
+      // margin-top: 20px;
     }
 
     .slick-prev,

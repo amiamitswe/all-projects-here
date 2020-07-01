@@ -44,11 +44,9 @@
 
   &__banner-tick {
     margin-right: 10px;
-    height: 20px;
-    margin-top: 5px;
 
     @include respond(tab_port) {
-      margin-top: 4px;
+      margin-right: 5px;
     }
   }
 

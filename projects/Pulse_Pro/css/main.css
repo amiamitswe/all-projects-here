@@ -958,13 +958,11 @@ input:checked + .pp-slider:before {
 
 .pp-header__banner-tick {
   margin-right: 10px;
-  height: 20px;
-  margin-top: 5px;
 }
 
 @media only screen and (max-width: 900px) {
   .pp-header__banner-tick {
-    margin-top: 4px;
+    margin-right: 5px;
   }
 }
 
@@ -1050,7 +1048,7 @@ input:checked + .pp-slider:before {
 
 @media only screen and (max-width: 900px) {
   .pp__testimonial {
-    padding-top: 33px;
+    padding-top: 72px;
     padding-bottom: 56px;
   }
 }
@@ -1074,13 +1072,13 @@ input:checked + .pp-slider:before {
 
 .pp__testimonial-wrap {
   max-width: 660px;
-  margin-top: 45px;
+  margin: 24px;
 }
 
 @media only screen and (max-width: 900px) {
   .pp__testimonial-wrap {
     padding: 0 23px;
-    margin-top: 20px;
+    margin: 8px;
   }
 }
 
@@ -1179,7 +1177,7 @@ input:checked + .pp-slider:before {
 
 @media only screen and (max-width: 900px) {
   .pp-broadcasts {
-    padding-top: 34px;
+    padding-top: 72px;
   }
 }
 
@@ -1243,7 +1241,7 @@ input:checked + .pp-slider:before {
 
 @media only screen and (max-width: 900px) {
   .pp__stories {
-    padding-top: 33px;
+    padding-top: 72px;
   }
 }
 
@@ -1312,7 +1310,7 @@ input:checked + .pp-slider:before {
 
 @media only screen and (max-width: 900px) {
   .pp-highlights {
-    padding-top: 34px;
+    padding-top: 72px;
   }
 }
 
@@ -1364,7 +1362,7 @@ input:checked + .pp-slider:before {
 
 @media only screen and (max-width: 900px) {
   .pp__trials {
-    padding-top: 35px;
+    padding-top: 72px;
     padding-bottom: 0;
   }
 }
