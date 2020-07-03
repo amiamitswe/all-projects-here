@@ -1,0 +1,16 @@
+.mb-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $color-primary;
+  color: $color-grey-light-1;
+  padding: 0 1rem;
+}
+
+h2 {
+  font-size: 3.6rem;
+
+  @include respond (tab_port) {
+    font-size: 3rem;
+  }
+}

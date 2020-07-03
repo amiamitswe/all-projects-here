@@ -1,0 +1,30 @@
+.mb-main__input {
+  width: 30rem;
+  font-size: 1.6rem;
+  padding: 1rem;
+  border: none;
+  border-radius: 2px;
+  margin-bottom: 1rem;
+
+  @include respond (tab_port) {
+    width: 20rem;
+  }
+}
+
+.mb__button {
+  font-size: 1.6rem;
+  width: 10rem;
+  padding: 1rem;
+  border: none;
+  border-radius: 2px;
+  background: #0093ff;
+  color: #fff;
+  text-transform: uppercase;
+  margin-left: 1rem;
+  transition: all 0.2s;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #0093ffb8;
+  }
+}

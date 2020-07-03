@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moneybag</title>
+  <link rel="icon" type="image/png" href="https://image.flaticon.com/icons/svg/189/189093.svg" sizes="16x16" />
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+
+  <div class="container">
+    <header class="mb-header">
+      <div class="mb-header__username">
+        <h2>Amit Samadder</h2>
+      </div>
+      <div class="mb-header__login">
+        <button class="mb__button" id="reset">Reset</button>
+      </div>
+    </header>
+
+
+    <main class="mb-main">
+      <section class="mb-main__daily">
+        <figure class="mb-main__paid">
+          <input type="text" class="mb-main__input" id="mb-main__paid" placeholder="Total Paid Amount">
+          <button class="mb__button" id="paid-btn">Paid</button>
+        </figure>
+
+        <figure class="mb-main__spend">
+          <input type="text" class="mb-main__input" placeholder="Total Spand Amount">
+          <button class="mb__button" id="spand-btn">Spand</button>
+        </figure>
+      </section>
+
+      <section class="mb-main__summarry">
+        <div class="mb-main__summarry-text">
+          <figure>
+            <h1>Total Depisit: <span id="total__deposit">00</span>/=</h1>
+          </figure>
+          <figure>
+            <h1>Total Spend: <span id="total__spend">00</span>/=</h1>
+          </figure>
+        </div>
+
+        <div class="mb-main__summarry-graph">
+          <h2>My chart</h2>
+          <div id="piechart_3d" class="my-chart"></div>
+        </div>
+      </section>
+
+      
+    </main>
+
+
+    <footer>
+      <div class="mb__footer">Designed by <a href="https://web.facebook.com/amit.s.abir">Amit</a> with <span>&#10084;</span></div>
+    </footer>
+    
+  </div>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+
+  <script src="./js/script.js"></script>
+  <script src="./js/script2.js"></script>
+  <script src="./js/my-chart.js"></script>
+
+  <script src="./js/typetext.js"></script>
+</body>
+</html>

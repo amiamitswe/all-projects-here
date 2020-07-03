@@ -1,0 +1,222 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: initial;
+          box-sizing: initial;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+@media only screen and (max-width: 50em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  color: #f9f7f6;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.my-chart {
+  width: 400px;
+  height: 400px;
+}
+
+@media only screen and (max-width: 900px) {
+  .my-chart {
+    height: auto;
+    width: 300px;
+  }
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.mb-main__input {
+  width: 30rem;
+  font-size: 1.6rem;
+  padding: 1rem;
+  border: none;
+  border-radius: 2px;
+  margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .mb-main__input {
+    width: 20rem;
+  }
+}
+
+.mb__button {
+  font-size: 1.6rem;
+  width: 10rem;
+  padding: 1rem;
+  border: none;
+  border-radius: 2px;
+  background: #0093ff;
+  color: #fff;
+  text-transform: uppercase;
+  margin-left: 1rem;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.mb__button:hover {
+  cursor: pointer;
+  background-color: #0093ffb8;
+}
+
+.mb-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #c69963;
+  color: #f9f7f6;
+  padding: 0 1rem;
+}
+
+h2 {
+  font-size: 3.6rem;
+}
+
+@media only screen and (max-width: 900px) {
+  h2 {
+    font-size: 3rem;
+  }
+}
+
+.mb-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media only screen and (max-width: 900px) {
+  .mb-main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.mb-main__daily {
+  background-color: #54483a;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (max-width: 900px) {
+  .mb-main__daily {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+.mb-main__paid, .mb-main__spend {
+  margin: 0 auto;
+}
+
+.mb-main__summarry {
+  background-color: #6d5d4b;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 3rem;
+  padding-bottom: 6rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .mb-main__summarry {
+    padding-top: 4rem;
+    padding-bottom: 28rem;
+  }
+}
+
+.mb-main__summarry-text {
+  padding-bottom: 1rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .mb-main__summarry-text {
+    padding-bottom: 5rem;
+  }
+}
+
+.mb-main__summarry-text h1 {
+  color: #f9f7f6;
+  font-size: 2.6rem;
+}
+
+.mb-main__summarry-graph h2 {
+  color: #f9f7f6;
+}
+
+.mb__footer {
+  font-size: 1.6rem;
+  text-align: center;
+  padding: .6rem;
+  background: #c69963;
+  color: #f9f7f6;
+}
+
+.mb__footer a {
+  color: #f9f7f6;
+  text-decoration: none;
+}
+
+.mb__footer a:hover {
+  color: #f9f7f6;
+  text-decoration: none;
+}
+
+.mb__footer span {
+  color: red;
+}

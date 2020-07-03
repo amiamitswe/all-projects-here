@@ -1,0 +1,39 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: initial;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 10px/16px = 62.5%// 1rem = 10px;
+  // if wants to use rem
+
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: $font-primary;
+  color: $color-grey-light-1;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.my-chart {
+  width: 400px;
+  height: 400px;
+
+  @include respond (tab_port) {
+    height: auto;
+    width: 300px;
+  }
+}
+
+
+.container {
+  @include customWidth ($container-width);
+}
