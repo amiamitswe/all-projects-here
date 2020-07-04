@@ -3,9 +3,9 @@ google.charts.load("current", { packages: ["corechart"] });
 google.charts.setOnLoadCallback(drawChart);
 function drawChart() {
 
-  var totlaDeposit = json2;
+  var totlaDeposit = deposit;
   var totalSpend = json3;
-  // var totalSpend = 10;
+
   var data = google.visualization.arrayToDataTable([
     ["item", "amounts"],
     ["Total Spend", totalSpend],
