@@ -176,7 +176,7 @@ h2 {
 @media only screen and (max-width: 900px) {
   .mb-main__summarry {
     padding-top: 4rem;
-    padding-bottom: 28rem;
+    padding-bottom: 16rem;
   }
 }
 
@@ -202,7 +202,7 @@ h2 {
 .mb__footer {
   font-size: 1.6rem;
   text-align: center;
-  padding: .6rem;
+  padding: 0.6rem;
   background: #c69963;
   color: #f9f7f6;
 }
