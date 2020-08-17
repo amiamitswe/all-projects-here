@@ -221,7 +221,7 @@ p {
 
   &::after {
     content: "\f061";
-    font-family: FontAwesome;
+    font-family: $FontAwesome;
     font-size: 14px;
     margin-left: 28px;
     position: absolute;
@@ -233,10 +233,15 @@ p {
 }
 
 .add-to-cart-icon {
-  background-image: url(../images/cart-icon-w.png);
-  background-repeat: no-repeat;
-  background-size: 24px;
-  background-position: 20px 50%;
+  position: relative;
+
+  &:after {
+    content: "\f07a";
+    position: absolute;
+    font-family: $FontAwesome;
+    left: 20px;
+    font-weight: 400;
+  }
 }
 
 /*------------ links -------------------*/
@@ -394,7 +399,7 @@ p {
   color: $color-black;
 
   &:focus {
-    box-shadow: inset 0px 0px 5px #0534D8;
+    box-shadow: inset 0px 0px 5px #0534d8;
     border-color: $color-brand;
   }
 

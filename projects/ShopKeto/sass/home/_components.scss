@@ -8,8 +8,13 @@
     height: 10px;
     width: 10px;
     right: 2px;
-    top: 10px;
+    top: 6px;
     border-radius: 50%;
+
+    @include respond(phone) {
+      right: 3px;
+      top: 8px;
+    }
   }
 }
 

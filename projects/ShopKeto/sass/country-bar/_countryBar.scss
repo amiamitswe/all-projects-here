@@ -4,6 +4,16 @@
   min-height: 100vh;
   height: auto;
 
+  &__header {
+    padding: 11px 16px;
+    line-height: 23px;
+  }
+
+  &__header-title {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
   &__list {
     list-style: none;
 
@@ -73,6 +83,11 @@
     &:hover {
       text-decoration: none;
       color: currentColor;
+    }
+
+    &--icon {
+      height: 30px;
+      margin-right: 10px;
     }
   }
 

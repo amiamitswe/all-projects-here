@@ -157,11 +157,15 @@
     -webkit-transition: all 0.2s;
     -o-transition: all 0.2s;
     transition: all 0.2s;
+    position: relative;
 
-    background-image: url(../images/checkout-cart-icon.png);
-    background-repeat: no-repeat;
-    background-size: 16px;
-    background-position: 20px 50%;
+    &:before {
+      content: "\f07a";
+      position: absolute;
+      font-family: "Font Awesome 5 Pro";
+      left: 20px;
+      font-weight: 400;
+    }
 
     &:hover {
       background-color: #fbbd11;

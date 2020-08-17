@@ -240,3 +240,15 @@ window.onload = function() {
   css.innerHTML = ".typewrite";
   document.body.appendChild(css);
 };
+
+
+// nav bar scroll effect 
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.querySelector('.sk-header__navbar').classList.add("sk-header__sticky");
+  } else {
+    document.querySelector('.sk-header__navbar').classList.remove("sk-header__sticky");
+  }
+}

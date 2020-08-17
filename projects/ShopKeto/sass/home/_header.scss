@@ -1,4 +1,10 @@
 .sk-header {
+  &-wrap {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+  }
   &__offer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -23,6 +29,18 @@
         cursor: pointer;
         color: $color-white;
       }
+    }
+  }
+
+  &__navbar {
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    z-index: 100;
+    top: 40px;
+
+    @include respond(phone) {
+      top: 60px;
     }
   }
 
@@ -54,10 +72,16 @@
 
   #{&}__nav-link.nav-link {
     padding: 6px;
+
+    margin-left: 24px;
   }
 
   &__country-icon {
     height: 17px;
+  }
+
+  &__user-card {
+    font-size: 24px;
   }
 
   &__nav-desktop {
@@ -88,6 +112,7 @@
 
   &__navbar {
     padding: 6px 0;
+    transition: all 0.2s;
 
     @include respond(phone) {
       padding: 0;
@@ -96,5 +121,9 @@
         padding: 6px 10px;
       }
     }
+  }
+
+  &__sticky {
+    padding: 0;
   }
 }

@@ -1,11 +1,11 @@
 .sk-main {
   &__top {
-    margin-top: 63px;
+    margin-top: 180px;
     overflow: hidden;
 
     @include respond(phone) {
       padding: 0 18px;
-      margin-top: 30px;
+      margin-top: 150px;
     }
   }
 

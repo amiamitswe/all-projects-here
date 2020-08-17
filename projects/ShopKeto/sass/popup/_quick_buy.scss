@@ -35,20 +35,12 @@
   }
 
   .close {
-    width: 28px;
     position: absolute;
-    height: 28px;
-    color: $color-white;
-    background: $color-black;
     opacity: 1;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     z-index: 100;
     right: 24px;
     top: 24px;
-    font-size: $btn-default-fontsize;
+    font-size: $font-mid-big-m;
 
     @include respond(phone) {
       right: 11px;
@@ -87,6 +79,10 @@
 
     @include respond(phone) {
       margin-top: 22px;
+    }
+
+    .fa-long-arrow-alt-right {
+      padding-left: 5px;
     }
   }
 
