@@ -19,7 +19,7 @@
   <div class="add_overlay">
     <header class="sk-header">
       <!-- header offer section  -->
-      <div class="color-black-bg text-center">
+      <div class="color-black-bg text-center sk-header-wrap">
         <div class="container-fluid sk-header__offer">
           <a href="#" class="sk-header__offer--link disclaimer-reg">💸 Save 22% on Ketones and Reboot Systems <span
               class="font-bold br-mobile">Offer ends in 12d 4h 10m 53s</span></a>
@@ -51,7 +51,7 @@
 
               <li class="nav-item">
                 <a class="nav-link sk-header__nav-link 
-            sk-header__cart cart-has-product" href="javascript:void(0);">
+              sk-header__cart cart-has-product" href="javascript:void(0);">
                   <i class="far fa-shopping-cart sk-header__user-card color-black"></i></a>
               </li>
             </ul>
@@ -1445,7 +1445,7 @@
         <div class="modal-content sk-pruver__content color-light-white-bg">
           <div class="modal-body sk-pruver__body">
             <button type="button" class="close position-absolute" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true"><i class="fas fa-times"></i></span>
+              <span aria-hidden="true"><i class="fas fa-times-circle"></i></span>
             </button>
 
             <div class="sk-pruver__user-info text-center">
@@ -1476,6 +1476,81 @@
       </div>
     </div>
     <!--independentPruver Modal end -->
+
+    <!-- offer Modal -->
+    <div class="modal fade" id="limited_offer" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered liOf__modal-dialog" role="document">
+        <div class="modal-content border-0 overflow-hidden liOf__modal-content">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><i class="fas fa-times-circle"></i></span>
+          </button>
+
+          <div class="modal-body p-0">
+            <section class="">
+              <div class="container">
+                <div class="row">
+
+                  <div class="col-md-6 col-12 p-0">
+                    <figure class="liOf__banner-left">
+                      <div class="liOf__main-img">
+                        <img
+                          src="https://demo.shopketo.com/wp-content/uploads/2019/04/one_time_offer_15_off_3_3_2371.png"
+                          alt="Limited offer" class="img-fluid liOf__thum-img">
+                      </div>
+                    </figure>
+                  </div>
+
+                  <div class="col-md-6 col-12 liOf-product__select">
+                    <figure class="liOf__banner-right">
+
+                      <div class="liOf__style-for-m">
+                        <h6 class="liOf__time-title color-white">Limited time only</h6>
+
+                        <h3 class="color-black liOf__title">Get Prüvit’s very own Pürify Hand
+                          Sanitizer</h3>
+                        <p class="color-gray liOf__sort-info">The world’s first and only Pure
+                          Therapeutic Ketones® made
+                          naturally.</p>
+
+                        <p class="color-gray">📦 5 packs</p>
+
+                        <figure
+                          class="sk-product__user-amount liOf__user-amount d-flex justify-content-between align-items-center">
+                          <div class="sk-product__amount-modify d-flex justify-content-between align-items-center">
+                            <button class="pack-qty-btn"><i class="fas fa-minus"></i></button>
+                            <p class="text-center qty-width p-small font-bold">1</p>
+                            <button class="pack-qty-btn"><i class="fas fa-plus"></i></button>
+                          </div>
+
+                          <div class="sk-product__amount-cost">
+                            <h4 class="color-green"><del class="color-black font-reg">$130.00</del> $101.40 <span
+                                class="d-none d-md-inline-block">USD</span></h4>
+                          </div>
+                        </figure>
+
+                      </div>
+
+                      <button class="button button-large button-primary full-width add-to-cart-icon">ADD
+                        TO order</button>
+
+                      <div class="text-center liOf__no-thanks">
+                        <a class="a-link link-hover color-black font-reg" href="#" data-dismiss="modal"
+                          aria-label="Close">No, thanks</a>
+                      </div>
+
+                    </figure>
+                  </div>
+                </div>
+
+              </div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- end off offer modal  -->
 
 
     <footer class="footer color-black-bg">
@@ -1640,10 +1715,11 @@
   <!-- country menu  -->
   <div class="sk-country color-white-bg">
     <ul class="sk-country__list accordion" id="accordionExample">
-      <li class="sk-country__list-close">
-        <a href="javascript:void(0);" class="sk-country__link button color-black">
-          <img src="./images/cross-sign.png" alt="Cross sign" class="img-fluid cross-sign">
-          <!-- &times; -->
+
+      <li class="sk-country__header d-flex justify-content-between">
+        <h4 class="color-black sk-cart__header-title">Country/Region</h4>
+        <a href="javascript:void(0)" class="sk-country__list-close">
+          <img src="./images/cross-sign.png" alt="Cross sign" class="img-fluid sk-cart__cross-sign">
         </a>
       </li>
 
@@ -1657,8 +1733,12 @@
 
         <div id="countryOne" class="collapse" aria-labelledby="CheadingOne" data-parent="#accordionExample">
           <ul class="sk-country__sub-list">
-            <li><a href="#" class="sk-country__sub-link disclaimer-reg color-black">English</a></li>
-            <li><a href="#" class="sk-country__sub-link disclaimer-reg color-black">Español</a></li>
+            <li><a href="#" class="sk-country__sub-link disclaimer-reg color-black">
+                <img class="sk-country__sub-link--icon" src="https://image.flaticon.com/icons/svg/2151/2151303.svg"
+                  alt="zh-hant"> English</a></li>
+            <li><a href="#" class="sk-country__sub-link disclaimer-reg color-black">
+                <img class="sk-country__sub-link--icon" src="https://image.flaticon.com/icons/svg/2151/2151319.svg"
+                  alt="de"> Español</a></li>
           </ul>
         </div>
       </li>
@@ -1672,8 +1752,12 @@
 
         <div id="countryTwo" class="collapse" aria-labelledby="CheadingTwo" data-parent="#accordionExample">
           <ul class="sk-country__sub-list">
-            <li><a href="#" class="sk-country__sub-link disclaimer-reg color-black">English</a></li>
-            <li><a href="#" class="sk-country__sub-link disclaimer-reg color-black">Español</a></li>
+            <li><a href="#" class="sk-country__sub-link disclaimer-reg color-black">
+                <img class="sk-country__sub-link--icon" src="https://image.flaticon.com/icons/svg/2151/2151303.svg"
+                  alt="zh-hant"> English</a></li>
+            <li><a href="#" class="sk-country__sub-link disclaimer-reg color-black">
+                <img class="sk-country__sub-link--icon" src="https://image.flaticon.com/icons/svg/2151/2151319.svg"
+                  alt="de"> Español</a></li>
           </ul>
         </div>
       </li>
@@ -1687,8 +1771,12 @@
 
         <div id="countryThree" class="collapse" aria-labelledby="CheadingThree" data-parent="#accordionExample">
           <ul class="sk-country__sub-list">
-            <li><a href="#" class="sk-country__sub-link disclaimer-reg color-black">English</a></li>
-            <li><a href="#" class="sk-country__sub-link disclaimer-reg color-black">Español</a></li>
+            <li><a href="#" class="sk-country__sub-link disclaimer-reg color-black">
+                <img class="sk-country__sub-link--icon" src="https://image.flaticon.com/icons/svg/2151/2151303.svg"
+                  alt="zh-hant"> English</a></li>
+            <li><a href="#" class="sk-country__sub-link disclaimer-reg color-black">
+                <img class="sk-country__sub-link--icon" src="https://image.flaticon.com/icons/svg/2151/2151319.svg"
+                  alt="de"> Español</a></li>
           </ul>
         </div>
       </li>
@@ -1702,6 +1790,7 @@
 
     </ul>
   </div>
+
 
 
   <!-- yourcart -->
@@ -1826,7 +1915,8 @@
 
     <!-- checkout btn  -->
     <figure class="sk-cart__padd sk-cart__chackout-btn-wrap">
-      <button class="button button-large sk-cart__chackout-btn position-relative">CHECKOUT</button>
+      <button class="button button-large sk-cart__chackout-btn position-relative" data-toggle="modal"
+        data-target="#limited_offer">CHECKOUT</button>
     </figure>
 
     <figure class="text-center sk-cart__padd sk-cart__payment">

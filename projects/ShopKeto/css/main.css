@@ -1914,13 +1914,13 @@ select::-ms-expand {
 
 /*import product page style ------------*/
 .sk-product__banner {
-  padding-top: 80px;
+  padding-top: 180px;
   margin-bottom: 100px;
 }
 
 @media only screen and (max-width: 767px) {
   .sk-product__banner {
-    padding-top: 25px;
+    padding-top: 160px;
     margin-bottom: 50px;
   }
 }
@@ -3196,6 +3196,167 @@ select::-ms-expand {
   .sk-pruver__btn:not(:last-child) {
     margin-right: auto;
     margin-bottom: 14px;
+  }
+}
+
+/* offer popup --------------------*/
+.liOf__modal-dialog {
+  max-width: 1100px;
+  margin: 5px auto;
+}
+
+@media only screen and (max-width: 767px) {
+  .liOf__modal-dialog {
+    margin: 5px;
+  }
+}
+
+.liOf__modal-dialog .close {
+  position: absolute;
+  opacity: 1;
+  z-index: 100;
+  right: 18px;
+  top: 18px;
+  font-size: 30px;
+}
+
+@media only screen and (max-width: 767px) {
+  .liOf__modal-dialog .close {
+    right: 9px;
+    top: 9px;
+  }
+}
+
+.liOf__modal-content {
+  border-radius: 20px;
+  height: 588px;
+}
+
+@media only screen and (max-width: 767px) {
+  .liOf__modal-content {
+    height: auto;
+  }
+}
+
+.liOf__main-img {
+  height: 590px;
+  padding: 35px 35px 35px 50px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+  .liOf__main-img {
+    height: auto;
+    padding: unset;
+    margin-top: 30px;
+  }
+}
+
+.liOf__thum-img {
+  height: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+  .liOf__thum-img {
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .liOf-product__select {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.liOf__banner-right {
+  padding-left: 35px;
+  padding-top: 52px;
+  padding-right: 80px;
+}
+
+@media only screen and (max-width: 767px) {
+  .liOf__banner-right {
+    padding: 24px 0 30px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .liOf__style-for-m {
+    padding-left: 13px;
+    padding-right: 25px;
+  }
+  .liOf__style-for-m p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+.liOf__time-title {
+  background-image: url(../images/offer-text-bg.png);
+  display: inline-block;
+  background-size: 100% 33px;
+  padding: 8px 27px 6px;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 18px;
+}
+
+@media only screen and (max-width: 767px) {
+  .liOf__time-title {
+    margin-bottom: 10px;
+  }
+}
+
+.liOf__title {
+  margin-bottom: 18px;
+}
+
+@media only screen and (max-width: 767px) {
+  .liOf__title {
+    margin-bottom: 11px;
+    line-height: 29px;
+  }
+}
+
+.liOf__sort-info {
+  margin-bottom: 14px;
+}
+
+@media only screen and (max-width: 767px) {
+  .liOf__sort-info {
+    margin-bottom: 20px;
+  }
+}
+
+.liOf__user-amount {
+  margin: 55px 0 42px;
+}
+
+@media only screen and (max-width: 767px) {
+  .liOf__user-amount {
+    margin: 32px 0 22px;
+  }
+}
+
+.liOf__no-thanks {
+  margin-top: 13px;
+}
+
+@media only screen and (max-width: 767px) {
+  .liOf__no-thanks {
+    margin-top: 17px;
+  }
+}
+
+.liOf__no-thanks a {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 767px) {
+  .liOf__no-thanks a {
+    font-size: 16px;
+    line-height: 22px;
   }
 }
 

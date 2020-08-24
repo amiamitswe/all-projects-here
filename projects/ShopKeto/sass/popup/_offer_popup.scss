@@ -1,0 +1,140 @@
+/* offer popup --------------------*/
+
+.liOf {
+  &__modal-dialog {
+    max-width: $width-1100;
+    margin: 5px auto;
+
+    @include respond(phone) {
+      margin: 5px;
+    }
+
+    .close {
+      position: absolute;
+      opacity: 1;
+      z-index: 100;
+      right: 18px;
+      top: 18px;
+      font-size: 30px;
+
+      @include respond(phone) {
+        right: 9px;
+        top: 9px;
+      }
+    }
+  }
+
+  &__modal-content {
+    border-radius: 20px;
+    height: 588px;
+
+    @include respond(phone) {
+      height: auto;
+    }
+  }
+
+  &__main-img {
+    height: 590px;
+    padding: 35px 35px 35px 50px;
+    text-align: center;
+
+    @include respond(phone) {
+      height: auto;
+      padding: unset;
+      margin-top: 30px;
+    }
+  }
+
+  &__thum-img {
+    height: 100%;
+
+    @include respond(phone) {
+      height: auto;
+    }
+  }
+
+  &-product__select {
+    @include respond(phone) {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+
+  &__banner-right {
+    padding-left: 35px;
+    padding-top: 52px;
+    padding-right: 80px;
+
+    @include respond(phone) {
+      padding: 24px 0 30px;
+    }
+  }
+
+  &__style-for-m {
+    @include respond(phone) {
+      padding-left: 13px;
+      padding-right: 25px;
+
+      p {
+        font-size: 14px;
+        line-height: 22px;
+      }
+    }
+  }
+
+  &__time-title {
+    background-image: url(../images/offer-text-bg.png);
+    display: inline-block;
+    background-size: 100% 33px;
+    padding: 8px 27px 6px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 18px;
+
+    @include respond(phone) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 18px;
+
+    @include respond(phone) {
+      margin-bottom: 11px;
+      line-height: 29px;
+    }
+  }
+
+  &__sort-info {
+    margin-bottom: 14px;
+
+    @include respond(phone) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__user-amount {
+    margin: 55px 0 42px;
+
+    @include respond(phone) {
+      margin: 32px 0 22px;
+    }
+  }
+
+  &__no-thanks {
+    margin-top: 13px;
+
+    @include respond(phone) {
+      margin-top: 17px;
+    }
+
+    a {
+      text-decoration: underline;
+
+      @include respond(phone) {
+        font-size: 16px;
+        line-height: 22px;
+      }
+    }
+  }
+}

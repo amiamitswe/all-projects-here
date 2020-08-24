@@ -1,10 +1,10 @@
 .sk-product {
   &__banner {
-    padding-top: 80px;
+    padding-top: 180px;
     margin-bottom: 100px;
 
     @include respond(phone) {
-      padding-top: 25px;
+      padding-top: 160px;
       margin-bottom: 50px;
     }
   }
