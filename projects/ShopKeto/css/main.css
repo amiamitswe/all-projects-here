@@ -2825,6 +2825,10 @@ select::-ms-expand {
   }
 }
 
+.sk-product-faq-title {
+  border: none;
+}
+
 .sk-product-faq-title p {
   width: 397px;
 }
