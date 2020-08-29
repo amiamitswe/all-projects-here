@@ -18,7 +18,7 @@
 
 .checkmark {
   position: absolute;
-  top: 50%;
+  top: 24px;
   left: 22px;
   transform: translate(-50%, -50%);
   width: 16px;
@@ -55,4 +55,13 @@
   transform: translate(-50%, -50%);
   border-radius: 50%;
   background: $color-brand;
+}
+
+.custom-radio input:disabled ~ .checkmark {
+  border: 1px solid #919192;
+  cursor: not-allowed;
+}
+
+.custom-radio:hover input:disabled ~ .checkmark {
+  background-color: unset;
 }

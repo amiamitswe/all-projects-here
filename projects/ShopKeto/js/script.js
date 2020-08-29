@@ -252,3 +252,21 @@ function scrollFunction() {
     document.querySelector('.sk-header__navbar').classList.remove("sk-header__sticky");
   }
 }
+
+// category products 
+$('.sk-category__products').slick({
+  infinite: false,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: false,
+  responsive: [
+    {
+
+      breakpoint: 768,
+
+      settings: {
+        slidesToShow: 2
+      }
+    }
+  ]
+});

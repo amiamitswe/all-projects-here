@@ -1,0 +1,203 @@
+.sk-category {
+  margin-top: 45px;
+
+  @include respond(phone) {
+    margin-top: 0;
+  }
+
+  &__list {
+    margin-top: 20px;
+    white-space: nowrap;
+    overflow-x: auto;
+
+    @include respond(phone) {
+      margin-top: 8px;
+    }
+  }
+
+  &__list-item {
+    list-style: none;
+
+    &:not(:last-child) {
+      margin-right: 12px;
+
+      @include respond(phone) {
+        margin-right: 8px;
+      }
+    }
+  }
+
+  &__link {
+    font-size: $h4-font-size;
+    font-family: $h4-font-family;
+    font-style: $h4-font-style;
+    font-weight: $h4-font-weight;
+    letter-spacing: $h4-letter-spacing;
+    line-height: 140%;
+
+    @include respond(phone) {
+      font-size: $font-small-m;
+    }
+  }
+
+  &__btn {
+    padding: 26px 30px;
+    background-color: #f9f9f9;
+    border-radius: 20px;
+    max-width: fit-content;
+    text-align: center;
+    white-space: nowrap;
+    display: inline-block;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      cursor: pointer;
+      background-color: #f3f3f3;
+      text-decoration: none;
+      color: currentColor;
+    }
+
+    @include respond(phone) {
+      padding: 10px 15px;
+      border-radius: 10px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 28px;
+  }
+
+  &__main-products {
+    margin-top: 55px;
+    padding-bottom: 0;
+
+    @include respond(phone) {
+      margin-top: 28px;
+    }
+
+    &:last-child {
+      padding-bottom: 187px;
+
+      @include respond(phone) {
+        padding-bottom: 28px;
+      }
+    }
+
+    .sk-main__product {
+      margin-bottom: 0;
+    }
+  }
+
+  &__products {
+    @include respond(phone) {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    .slick-prev,
+    .slick-next {
+      width: 48px;
+      height: 48px;
+
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 50%;
+      z-index: 10;
+      transition: all 0.2s;
+      top: 42%;
+
+      @include respond(phone) {
+        height: 34px;
+        width: 34px;
+      }
+
+      &:hover {
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+      }
+
+      &.slick-disabled {
+        display: none !important;
+      }
+
+      &::before {
+        font-family: "Font Awesome 5 Pro";
+        color: #2152ff;
+        opacity: 1;
+        font-size: 22px;
+
+        @include respond(phone) {
+          font-size: 12px;
+        }
+      }
+    }
+
+    .slick-next {
+      right: -8px;
+
+      @include respond(phone) {
+        right: 5px;
+      }
+      &:before {
+        content: "\f054";
+        margin-left: 3px;
+      }
+    }
+
+    .slick-prev {
+      left: -8px;
+
+      @include respond(phone) {
+        left: 5px;
+      }
+      &:before {
+        content: "\f053";
+        margin-right: 3px;
+      }
+    }
+  }
+
+  &__custom-padd {
+    @include respond(phone) {
+      padding-right: 5px;
+      padding-left: 5px;
+    }
+  }
+
+  &__parent {
+    padding-top: 120px;
+  }
+
+  &__parent-title-wrap {
+    padding-top: 55px;
+
+    @include respond(phone) {
+      padding-top: 25px;
+    }
+  }
+
+  &__parent-title {
+    @include respond(phone) {
+      font-size: 32px;
+      line-height: 100%;
+    }
+  }
+
+  &__parent-subtitle {
+    margin-top: 25px;
+
+    @include respond(phone) {
+      font-size: 14px;
+      line-height: 150%;
+      width: 65%;
+      margin: 18px auto 0;
+    }
+  }
+
+  &__parent-products {
+    margin-top: 37px;
+    padding-bottom: 145px;
+
+    @include respond(phone) {
+      margin-top: 27px;
+    }
+  }
+}

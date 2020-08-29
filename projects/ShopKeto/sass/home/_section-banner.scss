@@ -98,7 +98,7 @@
       }
 
       @include respond(phone) {
-        left: 0;
+        left: -6px;
       }
 
       @include respond(phone_small) {
@@ -114,7 +114,7 @@
       }
 
       @include respond(phone) {
-        right: 0;
+        right: -6px;
       }
 
       @include respond(phone_small) {

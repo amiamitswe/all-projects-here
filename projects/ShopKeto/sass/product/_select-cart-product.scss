@@ -96,6 +96,10 @@
     }
   }
 
+  &__user-select-details {
+    max-width: 90%;
+  }
+
   &__earn-offer {
     margin-top: 8px;
     a {
@@ -105,6 +109,12 @@
         color: $btn-hover-color;
       }
     }
+  }
+
+  &__not-instock {
+    display: flex;
+    justify-content: space-between;
+    cursor: not-allowed;
   }
 
   &__user-amount {

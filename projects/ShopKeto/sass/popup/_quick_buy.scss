@@ -20,17 +20,18 @@
 
   &__modal-body {
     padding: 69px 93px 65px;
+    padding: 40px;
 
     @include respond(tab_port) {
-      padding: 75px 25px 50px;
+      padding: 60px 25px 50px;
     }
 
     @include respond(phone) {
-      padding: 87px 5px 42px;
+      padding: 50px 5px 40px;
     }
 
     @include respond(phone_small) {
-      padding: 87px 0 42px;
+      padding: 40px 0;
     }
   }
 
@@ -50,13 +51,12 @@
 
   &__thum-img {
     width: 357.96px;
-    margin-bottom: 42px;
-    margin-left: 20px;
+    margin: 0 auto 30px;
+    display: block;
 
     @include respond(phone) {
       @include customWidth(222px);
       margin-bottom: 23px;
-      display: block;
     }
   }
 
