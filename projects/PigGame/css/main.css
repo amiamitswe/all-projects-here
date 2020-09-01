@@ -46,7 +46,6 @@ body {
 }
 
 
-
 /**********************************************
 *** PLAYERS
 **********************************************/
@@ -70,8 +69,13 @@ body {
     margin-bottom: 130px;
 }
 
-.active { background-color: #f7f7f7; }
-.active .player-name { font-weight: 300; }
+.active {
+    background-color: #f7f7f7;
+}
+
+.active .player-name {
+    font-weight: 300;
+}
 
 .active .player-name::after {
     content: "\2022";
@@ -119,8 +123,13 @@ button {
     transition: background-color 0.3s, color 0.3s;
 }
 
-button:hover { font-weight: 600; }
-button:hover i { margin-right: 20px; }
+button:hover {
+    font-weight: 600;
+}
+
+button:hover i {
+    margin-right: 20px;
+}
 
 button:focus {
     outline: none;
@@ -137,9 +146,28 @@ i {
     transition: margin 0.3s;
 }
 
-.btn-new { top: 45px;}
-.btn-roll { top: 403px;}
-.btn-hold { top: 467px;}
+.btn-new {
+    top: 45px;
+}
+
+.btn-roll {
+    top: 403px;
+}
+
+.btn-hold {
+    top: 467px;
+}
+
+/*.btn-roll:disabled:hover,*/
+/*.btn-hold:disabled:hover{*/
+/*    font-weight: unset;*/
+/*    cursor: not-allowed;*/
+/*}*/
+
+/*.btn-roll:disabled:hover i,*/
+/*.btn-hold:disabled:hover i{*/
+/*    margin-right: 15px;*/
+/*}*/
 
 .dice {
     position: absolute;
@@ -150,5 +178,11 @@ i {
     box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.10);
 }
 
-.winner { background-color: #f7f7f7; }
-.winner .player-name { font-weight: 300; color: #EB4D4D; }
+.winner {
+    background-color: #f7f7f7;
+}
+
+.winner .player-name {
+    font-weight: 300;
+    color: #EB4D4D;
+}
