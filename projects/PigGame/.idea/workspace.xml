@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2a2e57d1-8cad-4220-9025-465b0145fc10" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="HTML4 File" />
+        <option value="XHTML File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1gu5KA2pcsf6TSJgT7bi9EQn97T" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="XHTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PigGame" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.JavaScript" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2a2e57d1-8cad-4220-9025-465b0145fc10" name="Default Changelist" comment="" />
+      <created>1598951570150</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1598951570150</updated>
+      <workItem from="1598951571205" duration="3332000" />
+      <workItem from="1598976439328" duration="3831000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="258" y="291" width="424" height="491" key="FileChooserDialogImpl" timestamp="1598980269429">
+      <screen x="0" y="27" width="1920" height="1013" />
+    </state>
+    <state x="258" y="291" width="424" height="491" key="FileChooserDialogImpl/0.27.1920.1013@0.27.1920.1013" timestamp="1598980269429" />
+    <state x="0" y="168" width="1037" height="737" key="SettingsEditor" timestamp="1598977966170">
+      <screen x="0" y="27" width="1920" height="1013" />
+    </state>
+    <state x="0" y="168" width="1037" height="737" key="SettingsEditor/0.27.1920.1013@0.27.1920.1013" timestamp="1598977966170" />
+  </component>
+</project>
