@@ -59,6 +59,20 @@ body {
     margin-top: 20px;
     margin-bottom: 10px;
     position: relative;
+    transition: all 0.2s;
+}
+
+.player-name:hover {
+    cursor: pointer;
+}
+
+.player-name:hover::before {
+    position: absolute;
+    content: 'Click for EDIT player name';
+    font-size: 10px;
+    width: 100%;
+    left: 50%;
+    transform: translateY(-10px) translateX(-50%);
 }
 
 .player-score {
@@ -158,21 +172,63 @@ i {
     top: 467px;
 }
 
-/*.btn-roll:disabled:hover,*/
-/*.btn-hold:disabled:hover{*/
-/*    font-weight: unset;*/
-/*    cursor: not-allowed;*/
-/*}*/
+.btn-score-limit {
+    left: 90px;
+    width: fit-content;
+    top: 50%;
+    transform: translateY(-50%);
+}
 
-/*.btn-roll:disabled:hover i,*/
-/*.btn-hold:disabled:hover i{*/
-/*    margin-right: 15px;*/
-/*}*/
+.set-goal-input {
+    top: 275px;
+    position: absolute;
+    width: 190px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.wineScore {
+    width: 80px;
+    font-size: 20px;
+    border: 1px solid #008000;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.wineScore:focus {
+    border-color: #EB4D4D;
+    outline: none;
+}
+
+.wineScore-view-bord {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 325px;
+}
+
+.btn-score-limit:disabled,
+.btn-roll:disabled,
+.btn-hold:disabled {
+    opacity: .5;
+}
+
+.btn-score-limit:disabled:hover,
+.btn-roll:disabled:hover,
+.btn-hold:disabled:hover {
+    font-weight: unset;
+    cursor: not-allowed;
+}
+
+.btn-roll:disabled:hover i,
+.btn-hold:disabled:hover i {
+    margin-right: 15px;
+}
 
 .dice {
     position: absolute;
     left: 50%;
-    top: 178px;
+    top: 150px;
     transform: translateX(-50%);
     height: 100px;
     box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.10);
