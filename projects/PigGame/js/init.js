@@ -1,6 +1,5 @@
-let scores, roundScore, currentPlayer, wineScore, showDice, isGamePlaying, nameCount1, nameCount2
-
-nameCount2 = nameCount1 = 0
+let scores, roundScore, currentPlayer, wineScore, showDice, isGamePlaying, nameCount1, nameCount2, previousScore
 
 showDice = document.querySelector('.dice')
+showDice2 = document.querySelector('.dice-2')
 
